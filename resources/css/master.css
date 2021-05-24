@@ -1,66 +1,65 @@
 /** Header styles **/
 nav {
-  background-color: #EF4430;
-  padding: .5em 0em;
-  margin: 0em .5em;
-	border-bottom: 1px solid black;
-	border-top: 1px solid black;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: baseline;
+  background-color: #ef4430;
+  padding: 0.5em 0em;
+  margin: 0em 0.5em;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
 }
 nav li {
-	display: inline;
-	font-size: 2rem;
-	padding-right: 1.5rem;
+  display: inline;
+  font-size: 2rem;
+  padding-right: 1.5rem;
 }
 nav h1 {
-	color: black;
-	font-size: 3rem;
-	padding-left: 1rem;
+  color: black;
+  font-size: 3rem;
+  padding-left: 1rem;
 }
 nav a:link {
-	color: white;
-	text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 nav a:hover {
-	color: #3A9BC8;
+  color: #3a9bc8;
 }
 nav a:visited {
-	color: #F3D559;
+  color: #f3d559;
 }
 h1 a,
 h1 a:visited,
 h1 a:hover {
-	color: black;
+  color: black;
 }
 /** Typography **/
 h2 {
-	font-family: 'Roboto', sans-serif;
-	font-size: 2rem;
-	padding: 1rem 2rem;
-	font-weight: 700;
-  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  color: black;
 }
 p {
-	font-weight: 700;
-	font-family: 'Roboto', sans-serif;
-	font-size: 1rem;
-	padding: 1rem 1rem;
-	line-height: 1.5rem;
-  color: white;
-
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  line-height: 1.5rem;
+  color: black;
 }
 
-/** Banner style **/
+/** Banner style 
 #banner {
-	background-image: url('https://bn1ap000files.storage.live.com/y4m5BHvjMEtJH4AGUysTGbUbr7K1lKMCL_TSWS7nJXBAuadzEbtywNCYamtnQZJf60fILyyu8TAdA4glqj-ysreg3kS-gHcwEr7_qvKceYA2AnWU71W_VT07U5g_3K42NOkl5HYP0j-K0PbvgxKgJcxE6Zub84I9OkPorYrMjMiU9rMIYD3l2RtoypmwpwtOBUQ?width=1000&height=667&cropmode=none');
+  background-image: url("https://bn1ap000files.storage.live.com/y4m5BHvjMEtJH4AGUysTGbUbr7K1lKMCL_TSWS7nJXBAuadzEbtywNCYamtnQZJf60fILyyu8TAdA4glqj-ysreg3kS-gHcwEr7_qvKceYA2AnWU71W_VT07U5g_3K42NOkl5HYP0j-K0PbvgxKgJcxE6Zub84I9OkPorYrMjMiU9rMIYD3l2RtoypmwpwtOBUQ?width=1000&height=667&cropmode=none");
   height: 100%;
-	background-size: cover;
+  background-size: cover;
   background-position: center center;
-	background-repeat: no-repeat;
-	margin: 0em .5em;
+  background-repeat: no-repeat;
+  margin: 0em 0.5em;
 }
 .content {
   background-image: linear-gradient(
@@ -76,3 +75,4 @@ p {
     hsla(0, 0%, 0%, 0.8) 100%
   );
 }
+**/
