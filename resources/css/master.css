@@ -44,14 +44,44 @@ h2 {
   color: black;
 }
 p {
-  font-weight: 700;
+  font-weight: 400;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 2rem;
   padding: 1rem 1rem;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   color: black;
 }
+.journal {
+  padding: 0 25% 4rem 25%;
+  background-color: rgba(196, 106, 54, 0.356);
+  color: #4a4a4a;
+}
+.photo {
+  width: 75%;
+  padding: 1.11rem;
+  border-radius: 5px;
+  margin: 0 auto 2.44rem auto;
+  background-color: white;
+}
+.photo .image-container {
+  overflow: hidden;
+  /* margin-bottom: 1rem; */
+}
 
+.photo .image-container img {
+  width: 100%;
+}
+
+.photo .caption {
+  line-height: 2.5rem;
+  font-style: italic;
+}
+
+.photo .first {
+  position: relative;
+  top: -2.77rem;
+  margin-bottom: 1.67rem;
+}
 /** Banner style 
 #banner {
   background-image: url("https://bn1ap000files.storage.live.com/y4m5BHvjMEtJH4AGUysTGbUbr7K1lKMCL_TSWS7nJXBAuadzEbtywNCYamtnQZJf60fILyyu8TAdA4glqj-ysreg3kS-gHcwEr7_qvKceYA2AnWU71W_VT07U5g_3K42NOkl5HYP0j-K0PbvgxKgJcxE6Zub84I9OkPorYrMjMiU9rMIYD3l2RtoypmwpwtOBUQ?width=1000&height=667&cropmode=none");
