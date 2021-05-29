@@ -1,43 +1,46 @@
 /** Header styles **/
-nav {
+.menuWrap {
   background-color: #ef4430;
-  padding: 0.5em 0em;
-  margin: 0em 0.5em;
+  padding: 0.5rem 1rem;
+  min-height: 2.75rem;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
-nav li {
-  display: inline;
-  font-size: 2rem;
-  padding-right: 1.5rem;
-}
-nav h1 {
+
+.firstItem,
+.firstItem:visited,
+.firstItem:hover {
+  font-family: "Merriweather Sans", sans-serif;
   color: black;
+  text-decoration: none;
   font-size: 3rem;
-  padding-left: 1rem;
+  margin-right: auto;
 }
-nav a:link {
+.listItem {
   color: white;
   text-decoration: none;
+  margin-left: 1rem;
+  font-family: "Oswald", serif;
+  font-size: 2rem;
+  letter-spacing: 0.125rem;
+  padding-right: 5px;
 }
-nav a:hover {
+.listItem:hover {
   color: #3a9bc8;
 }
-nav a:visited {
-  color: #f3d559;
-}
-h1 a,
-h1 a:visited,
-h1 a:hover {
-  color: black;
+/**Content**/
+.journal {
+  max-height: 100%;
 }
 /** Typography **/
+/**additional fonts 
+font-family: "Neuton", serif;
+font-family: "Oswald", sans-serif;
+**/
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   font-size: 2rem;
   padding: 1rem 2rem;
   font-weight: 700;
@@ -45,7 +48,7 @@ h2 {
 }
 p {
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family: "Neutron", serif;
   font-size: 2rem;
   padding: 1rem 1rem;
   line-height: 2.5rem;
@@ -73,6 +76,7 @@ p {
 }
 
 .photo .caption {
+  font-family: "Abel", sans-serif;
   line-height: 2.5rem;
   font-style: italic;
 }
@@ -81,6 +85,17 @@ p {
   position: relative;
   top: -2.77rem;
   margin-bottom: 1.67rem;
+}
+
+/**Footer style**/
+.pageFooter {
+  background-color: #ef4430;
+  padding: 0.5rem 1rem;
+  min-height: 2.75rem;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  display: flex;
+  align-items: center;
 }
 /** Banner style 
 #banner {
