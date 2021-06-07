@@ -66,7 +66,6 @@ ul {
   padding: 0 10% 4rem 10%;
   background-color: rgba(196, 106, 54, 0.356);
   color: #4a4a4a;
-
 }
 .photo {
   width: 50%;
@@ -110,7 +109,7 @@ ul {
 }
 .headShot {
   width: 100px;
-  height: : auto;
+  height: auto;
   border-radius: 50%;
   padding-right: 25px;
 }
@@ -123,43 +122,43 @@ ul {
 .headShotLeader #italic {
   padding: 0px 5px;
 }
-.collapseAfter > a{
+.collapseAfter > a {
   text-decoration: none;
   color: white;
 }
 /** Collapsible CSS **/
 .toggle_collapse {
   /* make it show to work across all ua's */
-  display:block;
+  display: block;
 }
 .toggle_collapse, /* hide off screen */
 .toggle_collapse + * > .collapseAfter ~ * {
- position:absolute;
- /*top:-999em; removed to stop page jump to header */
- left:-999em;
+  position: absolute;
+  /*top:-999em; removed to stop page jump to header */
+  left: -999em;
 }
-.toggle_collapse:checked + *  .collapseAfter ~ * {
-  position:static;
+.toggle_collapse:checked + * .collapseAfter ~ * {
+  position: static;
 }
 .toggle_collapse + * + label {
-  display:inline-block; /* make visible for screen media */
-  color:#ef4430;
+  display: inline-block; /* make visible for screen media */
+  color: #ef4430;
 }
 .toggle_collapse + * + label:before {
- content:"See More";
+  content: "See More";
 }
 .toggle_collapse:checked + * + label:before {
- content:"See Less";
+  content: "See Less";
 }
 .toggle_collapse + * + label:after {
- content:"\25BC";
- display:inline-block;
- padding:0.4em 0 0 0.3em;
- vertical-align:top;
- font-size:0.625em;
+  content: "\25BC";
+  display: inline-block;
+  padding: 0.4em 0 0 0.3em;
+  vertical-align: top;
+  font-size: 0.625em;
 }
 .toggle_collapse:checked + * + label:after {
- content:"\25B2";
+  content: "\25B2";
 }
 
 /** Banner style
