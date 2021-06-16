@@ -4,7 +4,8 @@ html {
 }
 
 /**Header Styles Mobile First**/
-.menuWrap {
+.headerMenuWrap,
+.footerMenuWrap {
   background-color: #ef4430;
   padding: 0.5rem 0.5rem;
   min-height: 2.25rem;
@@ -14,9 +15,9 @@ html {
   align-items: center;
 }
 
-.firstItem,
-.firstItem:visited,
-.firstItem:hover {
+.headerFirstItem,
+.headerFirstItem:visited,
+.headerFirstItem:hover {
   font-family: "Merriweather Sans", sans-serif;
   color: black;
   text-decoration: none;
@@ -24,7 +25,8 @@ html {
   margin-right: auto;
   line-height: 1.25rem;
 }
-.listItem {
+.headerListItem,
+.footerListItem {
   color: white;
   text-decoration: none;
   font-family: "Oswald", serif;
@@ -32,11 +34,15 @@ html {
   letter-spacing: 0.125rem;
   padding: 0 1rem;
 }
-.listItem:last-of-type {
+.headerListItem:last-of-type {
   padding-right: 0.75rem;
 }
-.listItem:hover {
+.headerListItem:hover,
+.footerListItem:hover {
   color: #3a9bc8;
+}
+.footerMenuWrap {
+  justify-content: center;
 }
 @media only screen and (max-width: 550px) {
   .navName {
@@ -117,15 +123,7 @@ ul {
 }
 
 /**Footer style**/
-.pageFooter {
-  background-color: #ef4430;
-  padding: 0.5rem 1rem;
-  min-height: 2.75rem;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  display: flex;
-  align-items: center;
-}
+
 .headShot {
   width: 100px;
   height: auto;
