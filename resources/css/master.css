@@ -62,7 +62,9 @@ html {
   }
 }
 @media only screen and (min-width: 700px) {
-  .headerFirstItem {
+  .headerFirstItem,
+  .headerFirstItem:visited,
+  .headerFirstItem:hover {
     font-size: 1.5rem;
   }
 }
@@ -71,7 +73,9 @@ html {
   .headerListItem {
     font-size: 1.5rem;
   }
-  .headerFirstItem {
+  .headerFirstItem,
+  .headerFirstItem:visited,
+  .headerFirstItem:hover {
     font-size: 2rem;
   }
 }
@@ -91,11 +95,18 @@ h2 {
   font-weight: 700;
   color: black;
 }
+h3 {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem 0.5rem 2rem;
+  font-weight: 700;
+  color: black;
+}
 p {
   font-weight: 400;
   font-family: "Neutron", serif;
-  font-size: 2rem;
-  padding: 1rem 1rem;
+  font-size: 1.5rem;
+  padding: .75rem 1rem;
   line-height: 2.5rem;
   color: black;
 }
