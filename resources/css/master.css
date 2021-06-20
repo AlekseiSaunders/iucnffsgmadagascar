@@ -44,15 +44,35 @@ html {
 .footerMenuWrap {
   justify-content: center;
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 560px) {
   .navName {
     display: none;
   }
 }
 /**Header Styles Responsive**/
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 560px) {
   .navIcon {
     display: none;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .headerListItem,
+  .footerListItem {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .headerFirstItem {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 900px){
+  .headerListItem {
+    font-size: 1.5rem;
+  }
+  .headerFirstItem {
+    font-size: 2rem;
   }
 }
 /**Content**/
