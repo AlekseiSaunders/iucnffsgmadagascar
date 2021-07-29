@@ -18,7 +18,7 @@ html {
 .headerFirstItem,
 .headerFirstItem:visited,
 .headerFirstItem:hover {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   color: black;
   text-decoration: none;
   font-size: 1rem;
@@ -29,7 +29,7 @@ html {
 .footerListItem {
   color: white;
   text-decoration: none;
-  font-family: "Oswald", serif;
+  font-family: 'Oswald', serif;
   font-size: 0.75rem;
   letter-spacing: 0.125rem;
   padding: 0 1rem;
@@ -69,7 +69,7 @@ html {
   }
 }
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 900px) {
   .headerListItem {
     font-size: 1.5rem;
   }
@@ -89,14 +89,14 @@ font-family: "Neuton", serif;
 font-family: "Oswald", sans-serif;
 **/
 h2 {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   font-size: 2rem;
   padding: 1rem 2rem;
   font-weight: 700;
   color: black;
 }
 h3 {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.5rem;
   padding: 1.5rem 2rem 0.5rem 2rem;
   font-weight: 700;
@@ -104,15 +104,15 @@ h3 {
 }
 p {
   font-weight: 400;
-  font-family: "Neutron", serif;
+  font-family: 'Neutron', serif;
   font-size: 1.5rem;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   line-height: 2.5rem;
   color: black;
 }
 ul {
   font-weight: 400;
-  font-family: "Neutron", serif;
+  font-family: 'Neutron', serif;
   font-size: 2rem;
   padding: 1rem 1rem;
   line-height: 2.5rem;
@@ -142,7 +142,7 @@ ul {
 }
 
 .photo .caption {
-  font-family: "Abel", sans-serif;
+  font-family: 'Abel', sans-serif;
   line-height: 2.5rem;
   font-style: italic;
 }
@@ -151,6 +151,46 @@ ul {
   position: relative;
   top: -2.77rem;
   margin-bottom: 1.67rem;
+}
+
+/** Card Styles **/
+.cardGridWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 600px);
+  grid-gap: 30px;
+}
+
+.cardBody {
+  width: min-content;
+  height: auto;
+  display: flex;
+  background-color: beige;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+/* .cardImg {
+} */
+
+.cardText {
+  padding: 10px;
+}
+img {
+  width: 300px;
+  padding: 5px;
+}
+@media screen and (min-width: 600px) {
+  .cardBody {
+    flex-wrap: nowrap;
+    width: 600px;
+    height: auto;
+  }
+  .cardGridWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto, 600px);
+    justify-content: center;
+    grid-gap: 30px;
+  }
 }
 
 /**Footer style**/
@@ -165,7 +205,7 @@ ul {
   display: flex;
   align-items: center;
   margin: 0px 25px;
-  font-family: "Merriweather", sans-serif;
+  font-family: 'Merriweather', sans-serif;
 }
 .headShotLeader #italic {
   padding: 0px 5px;
