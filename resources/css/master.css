@@ -49,44 +49,13 @@ body {
 .footerMenuWrap {
   justify-content: center;
 }
-@media only screen and (max-width: 560px) {
-  .navName {
-    display: none;
-  }
-}
-/**Header Styles Responsive**/
-@media only screen and (min-width: 560px) {
-  .navIcon {
-    display: none;
-  }
-}
-@media only screen and (min-width: 650px) {
-  .headerListItem,
-  .footerListItem {
-    font-size: 1rem;
-  }
-}
-@media only screen and (min-width: 700px) {
-  .headerFirstItem,
-  .headerFirstItem:visited,
-  .headerFirstItem:hover {
-    font-size: 1.5rem;
-  }
-}
 
-@media only screen and (min-width: 900px) {
-  .headerListItem {
-    font-size: 1.5rem;
-  }
-  .headerFirstItem,
-  .headerFirstItem:visited,
-  .headerFirstItem:hover {
-    font-size: 2rem;
-  }
-}
 /**Content**/
 .journal {
   max-height: fit-Content;
+}
+.sectionTitle {
+  padding: 2rem 0rem;
 }
 /** Typography **/
 /**additional fonts
@@ -158,6 +127,24 @@ ul {
   margin-bottom: 1.67rem;
 }
 
+.headShot {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  padding-right: 25px;
+}
+.headShotLeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 25px;
+  font-family: 'Merriweather', sans-serif;
+  flex-wrap: nowrap;
+}
+.headShotLeader #italic {
+  padding: 0px 5px;
+}
+
 /** Card Styles **/
 .cardGridWrapper {
   display: grid;
@@ -206,18 +193,54 @@ img {
   margin-top: auto;
 }
 
-.headShot {
-  width: 100px;
-  height: auto;
-  border-radius: 50%;
-  padding-right: 25px;
+@media only screen and (max-width: 560px) {
+  .navName {
+    display: none;
+  }
+  .headShotLeader {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+  .headShotLeader #italic {
+    padding: 1rem;
+  }
+  .headShot {
+    padding-bottom: 1rem;
+  }
 }
-.headShotLeader {
-  display: flex;
-  align-items: center;
-  margin: 0px 25px;
-  font-family: 'Merriweather', sans-serif;
+/**Header Styles Responsive**/
+@media only screen and (min-width: 560px) {
+  .navIcon {
+    display: none;
+  }
 }
-.headShotLeader #italic {
-  padding: 0px 5px;
+@media only screen and (min-width: 650px) {
+  .headerListItem,
+  .footerListItem {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .headerFirstItem,
+  .headerFirstItem:visited,
+  .headerFirstItem:hover {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .headerListItem {
+    font-size: 1.5rem;
+  }
+  .headerFirstItem,
+  .headerFirstItem:visited,
+  .headerFirstItem:hover {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .photo {
+    width: 75%;
+  }
 }
