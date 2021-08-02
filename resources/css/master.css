@@ -1,10 +1,9 @@
 /**Base Setting**/
 html {
   font-size: 16px;
-  height: 100%;
 }
 body {
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -51,8 +50,11 @@ body {
 }
 
 /**Content**/
-.journal {
-  max-height: fit-Content;
+.pageMain {
+  padding: 0 10% 4rem 10%;
+  background-color: rgba(196, 106, 54, 0.356);
+  color: #4a4a4a;
+  min-height: 100vh;
 }
 .sectionTitle {
   padding: 2rem 0rem;
@@ -92,11 +94,7 @@ ul {
   line-height: 2.5rem;
   color: black;
 }
-.journal {
-  padding: 0 10% 4rem 10%;
-  background-color: rgba(196, 106, 54, 0.356);
-  color: #4a4a4a;
-}
+
 .photo {
   width: 50%;
   padding: 1.11rem;
@@ -173,25 +171,22 @@ img {
   width: 300px;
   padding: 5px;
 }
-@media screen and (min-width: 600px) {
-  .cardBody {
-    flex-wrap: nowrap;
-    width: 600px;
-    height: auto;
-  }
+
   .cardGridWrapper {
     display: grid;
     grid-template-columns: repeat(auto, 600px);
     justify-content: center;
     grid-gap: 30px;
   }
-}
+
 
 /**Footer style**/
 
 .pageFooter {
   margin-top: auto;
 }
+
+/** Media queries **/
 
 @media only screen and (max-width: 560px) {
   .navName {
@@ -209,6 +204,13 @@ img {
     padding-bottom: 1rem;
   }
 }
+
+@media screen and (min-width: 600px) {
+  .cardBody {
+    flex-wrap: nowrap;
+    width: 600px;
+    height: auto;
+  }
 /**Header Styles Responsive**/
 @media only screen and (min-width: 560px) {
   .navIcon {
