@@ -102,6 +102,17 @@ ul {
   margin: 0 auto 2.44rem auto;
   background-color: white;
 }
+.projectPhoto {
+  width: 50%;
+  padding: 1.11rem;
+  border-radius: 5px;
+  margin: 0 auto 2.44rem auto;
+  background-color: white;
+}
+.projectPhoto .image-container {
+  overflow: hidden;
+  /* margin-bottom: 1rem; */
+}
 .photo .image-container {
   overflow: hidden;
   /* margin-bottom: 1rem; */
@@ -112,7 +123,14 @@ ul {
 .photo .image-container img {
   width: 100%;
 }
-
+.projectPhoto .image-container img {
+  width: 100%;
+}
+.projectPhoto .caption {
+  font-family: 'Abel', sans-serif;
+  line-height: 2.5rem;
+  font-style: italic;
+}
 .photo .caption {
   font-family: 'Abel', sans-serif;
   line-height: 2.5rem;
@@ -126,6 +144,12 @@ ul {
 }
 
 .headShot {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  padding-right: 25px;
+}
+.projectIcon {
   width: 100px;
   height: auto;
   border-radius: 50%;
@@ -211,6 +235,7 @@ img {
     width: 600px;
     height: auto;
   }
+}
 /**Header Styles Responsive**/
 @media only screen and (min-width: 560px) {
   .navIcon {
