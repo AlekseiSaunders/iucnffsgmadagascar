@@ -266,11 +266,10 @@ img {
   }
 }
 @media only screen and (max-width: 650px){
-  .cardBody{
-    margin: auto;
-  }
+ 
   .cardGridWrapper{
     grid-template-columns: 340px;
+    justify-content: center;
   }
   .pageMain {
     padding: 1rem 2% 1rem 2%;
