@@ -51,7 +51,7 @@ body {
 
 /**Content**/
 .pageMain {
-  padding: 0 10% 4rem 10%;
+  padding: 0 5% 4rem 5%;
   background-color: rgba(196, 106, 54, 0.356);
   color: #4a4a4a;
   min-height: 100vh;
@@ -170,10 +170,11 @@ ul {
 /** Card Styles **/
 .cardGridWrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 600px);
+  grid-template-columns: repeat(auto-fill, 630px);
   grid-row-start: 2;
   grid-gap: 30px;
   padding-top: 10px;
+  justify-content: space-evenly;
 }
 
 .cardBody {
@@ -195,14 +196,6 @@ img {
   width: 300px;
   padding: 5px;
 }
-
-  .cardGridWrapper {
-    display: grid;
-    grid-template-columns: repeat(auto, 600px);
-    justify-content: center;
-    grid-gap: 30px;
-  }
-
 
 /**Footer style**/
 
@@ -229,11 +222,12 @@ img {
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
   .cardBody {
     flex-wrap: nowrap;
     width: 600px;
     height: auto;
+
   }
 }
 /**Header Styles Responsive**/
@@ -269,5 +263,16 @@ img {
 @media only screen and (max-width: 1000px) {
   .photo {
     width: 75%;
+  }
+}
+@media only screen and (max-width: 650px){
+  .cardBody{
+    margin: auto;
+  }
+  .cardGridWrapper{
+    grid-template-columns: 340px;
+  }
+  .pageMain {
+    padding: 1rem 2% 1rem 2%;
   }
 }
