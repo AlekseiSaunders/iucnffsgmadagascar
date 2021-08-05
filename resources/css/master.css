@@ -269,7 +269,10 @@ img {
  
   .cardGridWrapper{
     grid-template-columns: 340px;
-    justify-content: center;
+    margin: auto;
+  }
+  .cardBody{
+    justify-self: center;
   }
   .pageMain {
     padding: 1rem 2% 1rem 2%;
