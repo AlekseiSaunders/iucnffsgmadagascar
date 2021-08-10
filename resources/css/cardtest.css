@@ -176,7 +176,7 @@ ul {
 .cardImg img {
   max-width:300px;
   height: auto;
-  padding: 2px 2px 10px 2px;
+  padding: 2px 6px 10px 4px;
   filter: drop-shadow(5px 5px 5px #857E7B);
 }
 .cardBody {
@@ -258,9 +258,10 @@ ul {
   .cardGridWrapper{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 340px));
-    margin: 10px;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    grid-gap: 5px;
+    margin: 10px;
   }
   .cardBody{
     display: flex;
