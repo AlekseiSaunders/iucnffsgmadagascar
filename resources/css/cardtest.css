@@ -176,7 +176,7 @@ ul {
 .cardImg img {
   max-width:300px;
   height: auto;
-  padding: 5px;
+  padding: 2px 2px 10px 2px;
   filter: drop-shadow(5px 5px 5px #857E7B);
 }
 .cardBody {
@@ -202,12 +202,22 @@ ul {
 }
 
 /** Media queries **/
-
 @media only screen and (max-width: 560px) {
   .navName {
     display: none;
   }
-
+  .headShotLeader {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+  .headShotLeader #italic {
+    padding: 1rem;
+  }
+  .headShot {
+    padding-bottom: 1rem;
+  }
+}
 
 /**Header Styles Responsive**/
 @media only screen and (min-width: 560px) {
@@ -237,5 +247,28 @@ ul {
   .headerFirstItem:visited,
   .headerFirstItem:hover {
     font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .photo {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 580px){
+  .cardGridWrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 340px));
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  .pageMain {
+    padding: 1rem 2% 1rem 2%;
   }
 }
