@@ -1,0 +1,1200 @@
+{
+  "siteName": "01_IX_1997_01",
+  "region": "Parc Ranomafana",
+  "village": "Parc Ranomafana",
+  "waterBody": "unnamed stream",
+  "waterType": "freshwater",
+  "siteDescription": "small creek flowing into Namorona River on outskirts of Ranomafana ",
+  "latitude": -21.2663889,
+  "longitude": 47.4575,
+  "waterParams": [
+    {
+      "temperature": 61,
+      "pH": 6.0,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 12,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp nov 'Namorona'"
+  ],
+  "miscNotes": "probable type locality for Bedotia sp. nov. 'Namorona'."
+},
+{
+  "siteName": "02_IX_1997_02",
+  "region": " ",
+  "village": "Kianjavato Village",
+  "waterBody": " unnamed stream",
+  "waterType": "freshwater",
+  "siteDescription": "small creek flowing into Namorona River on outskirts of Ranomafana, on road to Mananjary",
+  "latitude": -21.3413889,
+  "longitude": 47.66583333333333,
+  "waterParams": [
+    {
+      "temperature": 64.5,
+      "pH": 6.5,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 16,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp.",
+    "Gambusia sp"
+  ],
+  "miscNotes": "Bedotia with broad red distal margin on caudal fin"
+},
+{
+  "siteName": "02_IX_1997_03",
+  "region": " ",
+  "village": "Andranomaitso",
+  "waterBody": "Andrazanomaintsa River",
+  "waterType": "freshwater",
+  "siteDescription": "aka Green River",
+  "latitude": -21.3533333,
+  "longitude": 47.75361111111111,
+  "waterParams": [
+    {
+      "temperature": 67,
+      "pH": 7.0,
+      "gDH": 2,
+      "kDH": 1,
+      "conductivity": 19,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp.",
+    "Xiphophorus sp."
+  ],
+  "miscNotes": "Bedotia with 'classic' madagascarensis phenotype, spot on chin"
+},
+{
+  "siteName": "03_IX_1997_04",
+  "region": " ",
+  "village": " ",
+  "waterBody": "Ajnavjavy Stream",
+  "waterType": "freshwater",
+  "siteDescription": "1.5km from road heading south to Manenjary",
+  "latitude": -23.0416667,
+  "longitude": 47.72527777777778,
+  "waterParams": [
+    {
+      "temperature": 67,
+      "pH": 6.5,
+      "gDH": 2,
+      "kDH": 1,
+      "conductivity": 30,
+    }
+  ],
+  "speciesPresent": [
+    "Khulia sp.",
+    "Syngnathidae"
+  ],
+  "miscNotes": "Syngnathidae possibly Microphis fluviatilis"
+},
+{
+  "siteName": "03_IX_1997_05",
+  "region": " ",
+  "village": "Ampataka",
+  "waterBody": "Sahambauy River",
+  "waterType": "freshwater",
+  "siteDescription": "between Vagaindrano and Ranomena",
+  "latitude": -23.3516667,
+  "longitude": 47.475,
+  "waterParams": [
+    {
+      "temperature": 74,
+      "pH": 6.0,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 17,
+    }
+  ],
+  "speciesPresent": [
+    "Paratilapia polleni",
+    "Ptychochromis sp.",
+    "Bedotia sp.",
+    "Ancharius sp.",
+    "Chonophorus sp.",
+    "Scicydium sp.",
+    "Gambusia affinis",
+    "Oreochromis niloticus"
+  ],
+  "miscNotes": "Ptychochromis most likely grandidieri"
+},
+{
+  "siteName": "03_IX_1997_06",
+  "region": " ",
+  "village": " ",
+  "waterBody": "unnamed brook",
+  "waterType": "freshwater",
+  "siteDescription": "between Vagaindrano and Ranomena",
+  "latitude": -23.3544444,
+  "longitude": 47.45861111111111,
+  "waterParams": [
+    {
+      "temperature": 78,
+      "pH": 0,
+      "gDH": 0,
+      "kDH": 0,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Paratilapia polleni",
+    "Bedotia sp."
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "03_IX_1997_07",
+  "region": " ",
+  "village": "Ankarefo",
+  "waterBody": "Andrafria River",
+  "waterType": "freshwater",
+  "siteDescription": " ",
+  "latitude": -23.3847222,
+  "longitude": 47.422777777777775,
+  "waterParams": [
+    {
+      "temperature": 76,
+      "pH": 6.0,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 18,
+    }
+  ],
+  "speciesPresent": [
+    "Gambusia affinis",
+    "Bedotia sp."
+  ],
+  "miscNotes": "new phenotype on Bedotia sp."
+},
+{
+  "siteName": "03_IX_1997_08",
+  "region": " ",
+  "village": " ",
+  "waterBody": "Manampatrana River",
+  "waterType": "freshwater",
+  "siteDescription": "on road between Farafangana and Ranomena",
+  "latitude": -22.7383333,
+  "longitude": 47.79472222222222,
+  "waterParams": [
+    {
+      "temperature": 72,
+      "pH": 6.2,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 16,
+    }
+  ],
+  "speciesPresent": [
+    "Paretroplus polyactis",
+    "Ptychochromis sp."
+  ],
+  "miscNotes": "fishermen collected in river, interview"
+},
+{
+  "siteName": "03_IX_1997_09",
+  "region": " ",
+  "village": " ",
+  "waterBody": "Farony River",
+  "waterType": "freshwater",
+  "siteDescription": "below bridge, on way to Ranomafana",
+  "latitude": -21.7875,
+  "longitude": 47.95249999999999,
+  "waterParams": [
+    {
+      "temperature": 0,
+      "pH": 6.5,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 17,
+    }
+  ],
+  "speciesPresent": [
+    "Teramulus sp.",
+    "Mugilidae"
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "03_IX_1997_10",
+  "region": " ",
+  "village": "Ankofafa",
+  "waterBody": "Botely River",
+  "waterType": "freshwater",
+  "siteDescription": "below bridge, on way to Ranomafana",
+  "latitude": -21.3644444,
+  "longitude": 47.97083333333334,
+  "waterParams": [
+    {
+      "temperature": 0,
+      "pH": 0,
+      "gDH": 0,
+      "kDH": 0,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp.
+  ],
+  "miscNotes": "Specimens appear identical to those at Andranomaintso"
+},
+{
+  "siteName": "03_IX_1997_11",
+  "region": " ",
+  "village": "Ambohibary",
+  "waterBody": " ",
+  "waterType": "freshwater",
+  "siteDescription": " ",
+  "latitude": -19.2894444,
+  "longitude": 48.22027777777778,
+  "waterParams": [
+    {
+      "temperature": 68,
+      "pH": 6.0,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 10,
+    }
+  ],
+  "speciesPresent": [
+    "Rheocles wrightae",
+    "Xiphophorus maculatus"
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "03_IX_1997_12",
+  "region": " ",
+  "village": "Ampahitrav",
+  "waterBody": "Sahasarotra River",
+  "waterType": "freshwater",
+  "siteDescription": " ",
+  "latitude": -19.0594444,
+  "longitude": 48.23555555555556,
+  "waterParams": [
+    {
+      "temperature": 70,
+      "pH": 6.5,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 15,
+    }
+  ],
+  "speciesPresent": [
+    "Rheocles aleotrensis",
+    "Xiphophorus maculatus",
+    "Ctenopoma ansorgei"
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "03_IX_1997_13",
+  "region": " ",
+  "village": "Soarano",
+  "waterBody": "Soarano River",
+  "waterType": "freshwater",
+  "siteDescription": " ",
+  "latitude": -18.9516667,
+  "longitude": 48.486111111111114,
+  "waterParams": [
+    {
+      "temperature": 62,
+      "pH": 5.0,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 9,
+    }
+  ],
+  "speciesPresent": [
+    "Rheocles aleotrensis",
+    "Xiphophorus maculatus",
+    "Ratsirakia legendrei"
+  ],
+  "miscNotes": "Name means 'Good Water'"
+},
+{
+  "siteName": "08_IX_1997_14",
+  "region": "Nosy Boraha",
+  "village": "Ambatoroa",
+  "waterBody": "Iampana River" ,
+  "waterType": "brackish water",
+  "siteDescription": " ",
+  "latitude": -16.7680556,
+  "longitude": 49.97666666666667,
+  "waterParams": [
+    {
+      "temperature": 84,
+      "pH": 6.2,
+      "gDH": 3,
+      "kDH": 2,
+      "conductivity": 90,
+    }
+  ],
+  "speciesPresent": [
+    "Monodacylus sp.",
+    "Ambassis sp."",
+    "Eleotrids",
+    "Gobidae"
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "08_IX_1997_15",
+  "region": "Nosy Boraha",
+  "village": "Ambatoroa",
+  "waterBody": "Iampana tributary" ,
+  "waterType": "freshwater",
+  "siteDescription": "small creek flowing into Iampana river, collection site within rice fields",
+  "latitude": -16.8222222,
+  "longitude": 49.94555555555555,
+  "waterParams": [
+    {
+      "temperature": 84,
+      "pH": 6.2,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 22,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia longianalis",
+    "Ambassis sp.",
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "08_IX_1997_16",
+  "region": "Nosy Boraha",
+  "village": "Ambodiatafana",
+  "waterBody": "Andranomainty River" ,
+  "waterType": "freshwater",
+  "siteDescription": "blackwater swamp",
+  "latitude": -16.725,
+  "longitude": 50.02166666666667,
+  "waterParams": [
+    {
+      "temperature": 80,
+      "pH": 4.5,
+      "gDH": 24,
+      "kDH": 2,
+      "conductivity": 46,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia longianalis",
+    "Eleotris pellegrini",
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "08_IX_1997_17",
+  "region": "Nosy Boraha",
+  "village": "Ambodiatafana",
+  "waterBody": "Andranobe River" ,
+  "waterType": "brackish",
+  "siteDescription": "intertidal influence",
+  "latitude": -16.7352778,
+  "longitude": 50.00527777777778,
+  "waterParams": [
+    {
+      "temperature": 0,
+      "pH": 0,
+      "gDH": 0,
+      "kDH": 0,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Ophiocara macrolepidota",
+    "Eleotris pellegrini",
+    "Kuhlia rupestris",
+    "Eleotris sp."
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "08_IX_1997_18",
+  "region": "Nosy Boraha",
+  "village": "Ambobidena",
+  "waterBody": "Ampouasana River" ,
+  "waterType": "freshwater",
+  "siteDescription": "small creek flowing into larger stream",
+  "latitude": -16.8616667,
+  "longitude": 49.95638888888889,
+  "waterParams": [
+    {
+      "temperature": 74,
+      "pH": 6.0,
+      "gDH": 2,
+      "kDH": 2,
+      "conductivity": 40,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia longianalis"
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "08_IX_1997_19",
+  "region": "Nosy Boraha",
+  "village": "Nosindrabela",
+  "waterBody": "Nosindrabela River" ,
+  "waterType": "freshwater",
+  "siteDescription": "small stream in eucalyptus forest",
+  "latitude": -16.8552778,
+  "longitude": 49.95194444444445,
+  "waterParams": [
+    {
+      "temperature": 72,
+      "pH": 4.5,
+      "gDH": 12,
+      "kDH": 2,
+      "conductivity": 20,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia longianalis"
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "08_IX_1997_20",
+  "region": "Nosy Boraha",
+  "village": "Ambolitsivory",
+  "waterBody": "Ambolitsivory River" ,
+  "waterType": "freshwater",
+  "siteDescription": "small stream in cultivated area",
+  "latitude": -16.9325,
+  "longitude": 49.92055555555555,
+  "waterParams": [
+    {
+      "temperature": 76,
+      "pH": 5.0,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 22,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia longianalis",
+    "Kuhlia rupestris"
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "08_IX_1997_21",
+  "region": "Nosy Boraha",
+  "village": "Anafiafy",
+  "waterBody": "Marovampeny River" ,
+  "waterType": "freshwater",
+  "siteDescription": "large pool with clear water and sandy substrate",
+  "latitude": -16.9094444,
+  "longitude": 49.92111111111111,
+  "waterParams": [
+    {
+      "temperature": 76,
+      "pH": 4.5,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia longianalis",
+    "Typhonodorum sp."
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "08_IX_1998_01",
+  "region": " ",
+  "village": "Parc Ranomafana",
+  "waterBody": "Namorona River tributary" ,
+  "waterType": "freshwater",
+  "siteDescription": "small stream flowing into the Namorona river",
+  "latitude": -21.2580556,
+  "longitude": 47.4575,
+  "waterParams": [
+    {
+      "temperature": 0,
+      "pH": 0,
+      "gDH": 0,
+      "kDH": 0,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp nov. ranomafana",
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "09_IX_1998_02",
+  "region": " ",
+  "village": "Kianjavato/Antajotenona",
+  "waterBody": "unnamed stream" ,
+  "waterType": "freshwater",
+  "siteDescription": "small stream crossing the road between Parc Ranomafana and the coast",
+  "latitude": -21.3413889,
+  "longitude": 47.66583333333333,
+  "waterParams": [
+    {
+      "temperature": 0,
+      "pH": 0,
+      "gDH": 0,
+      "kDH": 0,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp nov. ranomafana",
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "09_IX_1998_03",
+  "region": " ",
+  "village": "Ambodiraha",
+  "waterBody": "unnamed stream" ,
+  "waterType": "freshwater",
+  "siteDescription": " ",
+  "latitude": -21.3463889,
+  "longitude": 47.705555555555556,
+  "waterParams": [
+    {
+      "temperature": 0,
+      "pH": 0,
+      "gDH": 0,
+      "kDH": 0,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp.",
+  ],
+  "miscNotes": "Bedotia had broad red margin on distal caudal"
+},
+{
+  "siteName": "09_IX_1998_04",
+  "region": " ",
+  "village": "Andranomaitso",
+  "waterBody": "Vintano/Green River" ,
+  "waterType": "freshwater",
+  "siteDescription": " ",
+  "latitude": -21.3533333,
+  "longitude": 47.75361111111111,
+  "waterParams": [
+    {
+      "temperature": 0,
+      "pH": 0,
+      "gDH": 0,
+      "kDH": 0,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp.",
+  ],
+  "miscNotes": "Bedotia had 'classic' madagascarensis colouration"
+},
+{
+  "siteName": "09_IX_1998_05",
+  "region": " ",
+  "village": "Ankofafa",
+  "waterBody": "Botely River" ,
+  "waterType": "freshwater",
+  "siteDescription": " ",
+  "latitude": -21.3644444,
+  "longitude": 47.80416666666667,
+  "waterParams": [
+    {
+      "temperature": 0,
+      "pH": 0,
+      "gDH": 0,
+      "kDH": 0,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp.",
+  ],
+  "miscNotes": "Bedotia had 'classic' madagascarensis colouration, similar to Vintano/Green River"
+},
+{
+  "siteName": "10_IX_1998_07",
+  "region": " ",
+  "village": "Farafangana",
+  "waterBody": "Manampatrana River" ,
+  "waterType": "freshwater",
+  "siteDescription": " ",
+  "latitude": -22.7383333,
+  "longitude": 47.79472222222222,
+  "waterParams": [
+    {
+      "temperature": 0,
+      "pH": 0,
+      "gDH": 0,
+      "kDH": 0,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Paretroplus polyactis",
+    "Ptychochromis sp."
+  ],
+  "miscNotes": "Ptychochromis most likely grandidieri"
+},
+{
+  "siteName": "10_IX_1998_08",
+  "region": " ",
+  "village": "Lopary",
+  "waterBody": "Mananivo River" ,
+  "waterType": "freshwater",
+  "siteDescription": "between Farafangana and Vangaindrano",
+  "latitude": -23.19563,
+  "longitude": 47.67190,
+  "waterParams": [
+    {
+      "temperature": 0,
+      "pH": 0,
+      "gDH": 0,
+      "kDH": 0,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Paretroplus polyactis",
+    "Ptychochromis sp.",
+    "Oreochromis niloticus",
+    "Oreochromis mossambicus"
+  ],
+  "miscNotes": "Ptychochromis most likely grandidieri"
+},
+{
+  "siteName": "10_IX_1998_09",
+  "region": " ",
+  "village": "Ampataka",
+  "waterBody": "Sahambauy River" ,
+  "waterType": "freshwater",
+  "siteDescription": "between Vagaindrano and Ranomena",
+  "latitude": -23.3516667,
+  "longitude": 47.475,
+  "waterParams": [
+    {
+      "temperature": 0,
+      "pH": 0,
+      "gDH": 0,
+      "kDH": 0,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Paratilapia polleni",
+    "Bedotia sp.",
+    "Ancharius sp",
+    "Ptychochromis sp."
+  ],
+  "miscNotes": "Double check Paratilapia identification"
+},
+{
+  "siteName": "10_IX_1998_10",
+  "region": " ",
+  "village": "Ranomena",
+  "waterBody": "unnamed brook" ,
+  "waterType": "freshwater",
+  "siteDescription": "small brook towards Ranomena",
+  "latitude": -23.3544444,
+  "longitude": 47.45861111111111,
+  "waterParams": [
+    {
+      "temperature": 0,
+      "pH": 0,
+      "gDH": 0,
+      "kDH": 0,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Paratilapia polleni",
+    "Bedotia sp.",
+  ],
+  "miscNotes": "Paratilapia breeding in small pool, double check id"
+},
+{
+  "siteName": "10_IX_1998_11",
+  "region": " ",
+  "village": "Ankarefo",
+  "waterBody": "Andrafria River" ,
+  "waterType": "freshwater",
+  "siteDescription": " ",
+  "latitude": -23.3847222,
+  "longitude": 47.422777777777775,
+  "waterParams": [
+    {
+      "temperature": 0,
+      "pH": 0,
+      "gDH": 0,
+      "kDH": 0,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp."
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "15_IX_1998_12",
+  "region": " ",
+  "village": "Soarano/Amelonabe",
+  "waterBody": "Soarano/Amelonabe River" ,
+  "waterType": "freshwater",
+  "siteDescription": "towards coast from Andasibe Village",
+  "latitude": -18.9516667,
+  "longitude": 48.486111111111114,
+  "masl": 780,
+  "waterParams": [
+    {
+      "temperature": 0,
+      "pH": 0,
+      "gDH": 0,
+      "kDH": 0,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Ratsirakia legendrie",
+    "Rheocles alaotrensis"
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "15_IX_1998_13",
+  "region": " ",
+  "village": "Ampahitrav",
+  "waterBody": "Sahasarotra River" ,
+  "waterType": "freshwater",
+  "siteDescription": " ",
+  "latitude": -19.0594444,
+  "longitude": 48.23555555555556,
+  "masl": 0,
+  "waterParams": [
+    {
+      "temperature": 0,
+      "pH": 0,
+      "gDH": 0,
+      "kDH": 0,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Ctenopoma ansorgei",
+    "Rheocles alaotrensis"
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "16_IX_1998_14",
+  "region": "Mangoro River drainage",
+  "village": "Ambohibary",
+  "waterBody": "Mamavo River" ,
+  "waterType": "freshwater",
+  "siteDescription": " ",
+  "latitude": -19.2894444,
+  "longitude": 48.22027777777778,
+  "masl": 0,
+  "waterParams": [
+    {
+      "temperature": 0,
+      "pH": 0,
+      "gDH": 0,
+      "kDH": 0,
+      "conductivity": 0,
+    }
+  ],
+  "speciesPresent": [
+    "Rheocles wrightae"
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "22_X_1999_01",
+  "region": " ",
+  "village": "Madiorano",
+  "waterBody": "Namoly River" ,
+  "waterType": "freshwater",
+  "siteDescription": "on road north east of Vondrozo on way to Vevembe",
+  "latitude": -22.791817,
+  "longitude": 47.2506,
+  "masl": 345,
+  "waterParams": [
+    {
+      "temperature": 72,
+      "pH": 6.0,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 16,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp."
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "22_X_1999_02",
+  "region": "Sahapindra drainage system",
+  "village": " ",
+  "waterBody": "Marosivy River" ,
+  "waterType": "freshwater",
+  "siteDescription": "dark, clear water, rocky-mud bottom with emergent reeds and grasses at 13:58",
+  "latitude": -22.805533,
+  "longitude": 47.165617,
+  "masl": 600,
+  "waterParams": [
+    {
+      "temperature": 72,
+      "pH": 4.5,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 14,
+    }
+  ],
+  "speciesPresent": [
+    "Paratilapia sp.",
+    "Bedotia sp."
+  ],
+  "miscNotes": "caught with seine along banks in faster flowing water"
+},
+{
+  "siteName": "23_X_1999_03",
+  "region": " ",
+  "village": "Amparafatra",
+  "waterBody": "Sambalahy River" ,
+  "waterType": "freshwater",
+  "siteDescription": "headwaters of Rangohatra River, gravel bottom with mix of mud and sand, clear, tea coloured water, no vegetation present at site at 12:54",
+  "latitude": -22.7938889,
+  "longitude": 47.058611111111105,
+  "masl": 657,
+  "waterParams": [
+    {
+      "temperature": 77,
+      "pH": 4.5,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 15,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp.",
+    "Tilapia sp.",
+    "Gambusia affinis"
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "24_X_1999_04",
+  "region": " ",
+  "village": "Amparafatra",
+  "waterBody": "Ampisika River" ,
+  "waterType": "freshwater",
+  "siteDescription": "7:00",
+  "latitude": -22.7794444,
+  "longitude": 47.03333333333333,
+  "masl": 540,
+  "waterParams": [
+    {
+      "temperature": 72,
+      "pH": 4.5,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 39,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp.",
+    "Paratilapia sp.",
+    "Ancharius sp.",
+    "Tilapia sp.",
+    "Carassius auratus"
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "24_X_1999_05",
+  "region": " ",
+  "village": "Beraketa",
+  "waterBody": "Rangahitra River" ,
+  "waterType": "freshwater",
+  "siteDescription": "rocky, muddy substrate, 13m wide and 4 to 6 meter deep, crocodiles present, 9:50",
+  "latitude": -22.7408333,
+  "longitude": 47.019444444444446,
+  "masl": 609,
+  "waterParams": [
+    {
+      "temperature": 75,
+      "pH": 4.5,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 15,
+    }
+  ],
+  "speciesPresent": [
+    "Paratilapia polleni",
+    "Tilapia sp.",
+    "Gambusia affinis"
+  ],
+  "miscNotes": "Paratilapia observed spawning"
+},
+{
+  "siteName": "24_X_1999_06",
+  "region": " ",
+  "village": " ",
+  "waterBody": "unnamed swampy pool" ,
+  "waterType": "freshwater",
+  "siteDescription": "on road to Miapaka",
+  "latitude": -22.7344444,
+  "longitude": 46.996944444444445,
+  "masl": 587,
+  "waterParams": [
+    {
+      "temperature": 83,
+      "pH": 4.5,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 16,
+    }
+  ],
+  "speciesPresent": [
+    "Tilapia sp.",
+    "Gambusia affinis"
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "26_X_1999_07",
+  "region": " ",
+  "village": "Ampataka",
+  "waterBody": "Sahambouy River" ,
+  "waterType": "freshwater",
+  "siteDescription": "13:07",
+  "latitude": -22.7791667,
+  "longitude": 47.03333333333333,
+  "masl": 40,
+  "waterParams": [
+    {
+      "temperature": 72,
+      "pH": 5.0,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 39,
+    }
+  ],
+  "speciesPresent": [
+    " "
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "27_X_1999_08",
+  "region": " ",
+  "village": "Forest Classe in Manombo",
+  "waterBody": "unnamed stream" ,
+  "waterType": "freshwater",
+  "siteDescription": "site at 2nd bridge past Forest Classe gate, sandy bottom stream with emergent reeds, some large rocks in streambed at 15:48",
+  "latitude": -23.0436111,
+  "longitude": 47.72833333333333,
+  "masl": -20,
+  "waterParams": [
+    {
+      "temperature": 80,
+      "pH": 6.0,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 79,
+    }
+  ],
+  "speciesPresent": [
+    "Ambassis sp.",
+    "Tilapia sp."
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "27_X_1999_09",
+  "region": " ",
+  "village": "Forest Classe in Manombo",
+  "waterBody": "unnamed stream" ,
+  "waterType": "freshwater",
+  "siteDescription": "16:33",
+  "latitude": -23.0347222,
+  "longitude": 47.738055555555555,
+  "masl": -20,
+  "waterParams": [
+    {
+      "temperature": 78,
+      "pH": 6.0,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 68,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp"
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "27_X_1999_10",
+  "region": " ",
+  "village": "Special Reserve by Manombo",
+  "waterBody": "Takoandra River" ,
+  "waterType": "freshwater",
+  "siteDescription": "17:09",
+  "latitude": -23.0291667,
+  "longitude": 47.723888888888894,
+  "masl": -20,
+  "waterParams": [
+    {
+      "temperature": 78,
+      "pH": 6.0,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 64,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp",
+    "Ambassis sp.",
+    "Tilapia sp."
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "29_X_1999_11",
+  "region": " ",
+  "village": "Vohibary/Maropandy",
+  "waterBody": "Marotaolana River" ,
+  "waterType": "freshwater",
+  "siteDescription": "14:03",
+  "latitude": -21.8077778,
+  "longitude": 47.879444444444445,
+  "masl": 58,
+  "waterParams": [
+    {
+      "temperature": 78,
+      "pH": 6.0,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 64,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp",
+    "Xiphophorus sp.",
+    "Tilapia sp."
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "31_X_1999_12",
+  "region": " ",
+  "village": "Volomborone",
+  "waterBody": "Volomborone River" ,
+  "waterType": "freshwater",
+  "siteDescription": "10:06",
+  "latitude": -21.1772222,
+  "longitude": 48.22972222222222,
+  "masl": 58,
+  "waterParams": [
+    {
+      "temperature": 72,
+      "pH": 6.0,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 76,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp"
+  ],
+  "miscNotes": "possibly Bedotia geayi"
+},
+{
+  "siteName": "31_X_1999_13",
+  "region": " ",
+  "village": "Ambaladara",
+  "waterBody": "Ambatromainty River" ,
+  "waterType": "freshwater",
+  "siteDescription": "13:45",
+  "latitude": -21.1683333,
+  "longitude": 48.113055555555555,
+  "masl": 64,
+  "waterParams": [
+    {
+      "temperature": 75,
+      "pH": 5.0,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 54,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp"
+  ],
+  "miscNotes": "possibly Bedotia geayi"
+},
+{
+  "siteName": "31_X_1999_14",
+  "region": " ",
+  "village": "Tanandava",
+  "waterBody": "Sakajara River" ,
+  "waterType": "freshwater",
+  "siteDescription": "14:30",
+  "latitude": -21.1886111,
+  "longitude": 48.17472222222222,
+  "masl": 60,
+  "waterParams": [
+    {
+      "temperature": 74,
+      "pH": 5.0,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 59,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp"
+  ],
+  "miscNotes": " "
+},
+{
+  "siteName": "01_XI_1999_15",
+  "region": " ",
+  "village": "Andranomaintsa",
+  "waterBody": "Vintano River" ,
+  "waterType": "freshwater",
+  "siteDescription": "11:40",
+  "latitude": -21.3522222,
+  "longitude": 47.75555555555555,
+  "masl": 326,
+  "waterParams": [
+    {
+      "temperature": 75,
+      "pH": 6.5,
+      "gDH": 1,
+      "kDH": 1,
+      "conductivity": 52,
+    }
+  ],
+  "speciesPresent": [
+    "Bedotia sp",
+    "Xiphophorus sp."
+  ],
+  "miscNotes": " "
+},

@@ -103,10 +103,9 @@ ul {
   background-color: white;
 }
 .researcherPhoto {
-  width: 500px;
+  width: 300px;
   padding: 1.11rem;
   border-radius: 5px;
-  margin: 0 10rem 2.44rem 0rem;
   background-color: white;
 }
 .projectPhoto {
@@ -131,7 +130,7 @@ ul {
   width: 100%;
 }
 .researcherPhoto .image-container img {
-  width: fit-content;
+  width: 100%;
 }
 .projectPhoto .image-container img {
   width: 100%;
@@ -180,6 +179,11 @@ ul {
 }
 .headShotLeader #italic {
   padding: 0px 5px;
+}
+.details {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  justify-items: center;
 }
 
 /** Card Styles **/
