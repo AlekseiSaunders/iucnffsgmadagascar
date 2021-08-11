@@ -102,6 +102,12 @@ ul {
   margin: 0 auto 2.44rem auto;
   background-color: white;
 }
+.researcherPhoto {
+  width: 300px;
+  padding: 1.11rem;
+  border-radius: 5px;
+  background-color: white;
+}
 .projectPhoto {
   width: 50%;
   padding: 1.11rem;
@@ -123,6 +129,9 @@ ul {
 .photo .image-container img {
   width: 100%;
 }
+.researcherPhoto .image-container img {
+  width: 100%;
+}
 .projectPhoto .image-container img {
   width: 100%;
 }
@@ -132,6 +141,11 @@ ul {
   font-style: italic;
 }
 .photo .caption {
+  font-family: 'Abel', sans-serif;
+  line-height: 2.5rem;
+  font-style: italic;
+}
+.researcherPhoto .caption {
   font-family: 'Abel', sans-serif;
   line-height: 2.5rem;
   font-style: italic;
@@ -165,6 +179,11 @@ ul {
 }
 .headShotLeader #italic {
   padding: 0px 5px;
+}
+.details {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  justify-items: center;
 }
 
 /** Card Styles **/
@@ -227,7 +246,6 @@ img {
     flex-wrap: nowrap;
     width: 600px;
     height: auto;
-
   }
 }
 /**Header Styles Responsive**/
@@ -265,13 +283,12 @@ img {
     width: 75%;
   }
 }
-@media only screen and (max-width: 650px){
- 
-  .cardGridWrapper{
+@media only screen and (max-width: 650px) {
+  .cardGridWrapper {
     grid-template-columns: 340px;
     margin: auto;
   }
-  .cardBody{
+  .cardBody {
     justify-self: center;
   }
   .pageMain {
