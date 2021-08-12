@@ -1099,6 +1099,187 @@
 				"Xiphophorus sp."
 			],
 			"miscNotes": " "
-		}
+		},
+		{
+			"siteName": "09_X_2006_01",
+			"region": " ",
+			"village": "Ambalavato",
+			"waterBody": "unnamed pond",
+			"waterType": "freshwater",
+			"siteDescription": "bridge site south of Matanga, near Lac Masianaka, 300m inland from large bay, 20ft by 20ft, near rice cultivation at 11:09",
+			"latitude": -23.594667,
+			"longitude": 47.613133,
+			"masl": 13,
+			"waterParams": [{
+				"temperature": 84.3,
+				"pH": 6.65,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 17.91
+			}],
+			"speciesPresent": [
+				"Gambusia affinis",
+				"Tilapia sp."
+			],
+			"miscNotes": "fishing in connected bay resulted in Clupeids, Bathygobius sp., Paretroplus polyactis, and larger Tilapia sp. "
+		},
+		{
+			"siteName": "10_X_2006_01",
+			"region": " ",
+			"village": " ",
+			"waterBody": "unnamed forest stream",
+			"waterType": "freshwater",
+			"siteDescription": "small forest stream with large 20ft by 40ft and deep 12ft pool at base of waterfall. Gravel, cobble, and large rock, with some exposed granite at waterfall base, at 12:03",
+			"latitude": -23.476467,
+			"longitude": 47.520033,
+			"masl": 57,
+			"waterParams": [{
+				"temperature": 75.7,
+				"pH": 7.27,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 212
+			}],
+			"speciesPresent": [
+				"Gobidae",
+				"Khulia sp."
+			],
+			"miscNotes": "difficult fishing in pool due to depth and substrate"
+		},
+		{
+			"siteName": "10_X_2006_02",
+			"region": " ",
+			"village": "Anivorano",
+			"waterBody": "Lac Tohadrano",
+			"waterType": "freshwater",
+			"siteDescription": "castnetters interviewed, some fish purchased, species present are reported, not collected",
+			"latitude": -23.4844,
+			"longitude": 47.52755,
+			"masl": 11,
+			"waterParams": [{
+				"temperature": 0,
+				"pH": 0,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 0
+			}],
+			"speciesPresent": [
+				"Ptychochromis sp.",
+				"Paratilapia sp."
+			],
+			"miscNotes": "fishers report Eels, Tilapia, and Channa caught at this location. Ptychochromis most likely grandidieri, Paratilapia likely polleni"
+		},
+		{
+			"siteName": "11_X_2006_01_I",
+			"region": " ",
+			"village": "Ampataka",
+			"waterBody": "Sambavy",
+			"waterType": "freshwater",
+			"siteDescription": "cultivation is much closer to river than in past years",
+			"latitude": -23.3516,
+			"longitude": 47.4712,
+			"masl": 25,
+			"waterParams": [{
+				"temperature": 0,
+				"pH": 0,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 0
+			}],
+			"speciesPresent": [
+				" "
+			],
+			"miscNotes": " "
+		},
+		{
+			"siteName": "11_X_2006_02_I",
+			"region": " ",
+			"village": " ",
+			"waterBody": "Sahamolotry River",
+			"waterType": "freshwater",
+			"siteDescription": "fish traps placed in river",
+			"latitude": -23.3607,
+			"longitude": 47.437183,
+			"masl": 46,
+			"waterParams": [{
+				"temperature": 0,
+				"pH": 0,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 0
+			}],
+			"speciesPresent": [
+				"Bedotia sp."
+			],
+			"miscNotes": " "
+		},
+		{
+			"siteName": "11_X_2006_03_I",
+			"region": " ",
+			"village": "Ankarefo",
+			"waterBody": "Andrafria River",
+			"waterType": "freshwater",
+			"siteDescription": "cultivation on both hillsides of river, forest cover still along riparian strip",
+			"latitude": -23.374417,
+			"longitude": 47.41485,
+			"masl": 82,
+			"waterParams": [{
+				"temperature": 0,
+				"pH": 0,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 0
+			}],
+			"speciesPresent": [
+				"Bedotia sp."
+			],
+			"miscNotes": " "
+		},
+		{
+			"siteName": "11_X_2006_04_I",
+			"region": " ",
+			"village": " ",
+			"waterBody": "Mananatana River",
+			"waterType": "freshwater",
+			"siteDescription": "interview only, no collection",
+			"latitude": -23.410276,
+			"longitude": 47.3220,
+			"masl": 0,
+			"waterParams": [{
+				"temperature": 0,
+				"pH": 0,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 0
+			}],
+			"speciesPresent": [
+				" "
+			],
+			"miscNotes": "villagers report Ptychochromis sp., Paretroplus sp., Khulia sp., Channa sp., Tilapia sp., Bedotia sp., Gambusia sp."
+		},
+		{
+			"siteName": "11_X_2006_01_C",
+			"region": " ",
+			"village": "Sahabe",
+			"waterBody": "Manambonoro River",
+			"waterType": "freshwater",
+			"siteDescription": "45ft wide river, 1.5ft deep in riffles with pools 10ft deep. Substrate gravel and cobble mix with some boulder and occasional sandbar. Little overhead vegetation as channel is quiet wide for floodwaters 250ft. Cultivation present near site.",
+			"latitude": -23.411083,
+			"longitude": 47.194467,
+			"masl": 76,
+			"waterParams": [{
+				"temperature": 75.9,
+				"pH": 7.21,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 100
+			}],
+			"speciesPresent": [
+				"Bedotia sp.",
+				"Khulia sp.",
+				"Gobidae"
+			],
+			"miscNotes": "villagers report that Tilapia sp., Channa sp., and Malagasy cichlids are not caught at this site."
+		},
 	]
 }
