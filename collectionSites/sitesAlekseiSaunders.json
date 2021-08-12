@@ -1328,7 +1328,7 @@
 			"miscNotes": "this is an observation only site"
 		},
 		{
-			"siteName": "13_X_2006_03_C",
+			"siteName": "13_X_2006_03_O",
 			"region": " ",
 			"village": "Manombo Special Reserve",
 			"waterBody": "unnamed stream",
@@ -1350,7 +1350,7 @@
 				"Khulia sp.",
 				"Gobidae"
 			],
-			"miscNotes": "some collection done"
+			"miscNotes": "this is an observation only site"
 		},
 		{
 			"siteName": "13_X_2006_05_O",
@@ -1372,10 +1372,10 @@
 			"speciesPresent": [
 				"Khulia sp."
 			],
-			"miscNotes": "observation only"
+			"miscNotes": "this is an observation only site"
 		},
 		{
-			"siteName": "13_X_2006_04_C",
+			"siteName": "13_X_2006_04_O",
 			"region": " ",
 			"village": "Manombo Special Reserve",
 			"waterBody": "unnamed stream",
@@ -1394,7 +1394,7 @@
 			"speciesPresent": [
 				"Bedotia sp."
 			],
-			"miscNotes": "strong population numbers"
+			"miscNotes": "this is an observation only site, strong population numbers"
 		},
 		{
 			"siteName": "13_X_2006_07_O",
@@ -1416,7 +1416,74 @@
 			"speciesPresent": [
 				"Bedotia sp."
 			],
-			"miscNotes": "observation only"
+			"miscNotes": "this is an observation only site"
+		},
+		{
+			"siteName": "13_X_2006_01_C",
+			"region": " ",
+			"village": "Marovato forest",
+			"waterBody": "unnamed stream",
+			"waterType": "freshwater",
+			"siteDescription": "area is bulge in small forest stream, 7ft wide at max, 10 to 17 inches deep. Heavily shaded by natural forest, soft clay banks. 50% sand, 30% gravel, 20% cobble/pebble. Very slow flow with abundant leaf little in. ",
+			"latitude": -23.0163889,
+			"longitude": 47.72638888888889,
+			"masl": 0,
+			"waterParams": [{
+				"temperature": 70.8,
+				"pH": 6.61,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 107
+			}],
+			"speciesPresent": [
+				"Bedotia sp."
+			],
+			"miscNotes": "two large males, a few large females, most specimens half-size of adults. About 30 individuals seen in 42ft stretch of stream"
+		},
+		{
+			"siteName": "13_X_2006_02_C",
+			"region": " ",
+			"village": " ",
+			"waterBody": "unnamed stream",
+			"waterType": "freshwater",
+			"siteDescription": "forest stream that wanders out and in of palm and fern savanna like area. Stream deeply incised in savanna, pools at forest edges and becomes shallower in spots.",
+			"latitude": -23.0136111,
+			"longitude": 47.727222222222224,
+			"masl": 43,
+			"waterParams": [{
+				"temperature": 74.3,
+				"pH": 6.59,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 129
+			}],
+			"speciesPresent": [
+				"Bedotia sp."
+			],
+			"miscNotes": "very strong numbers of Bedotia sp., with smaller individuals keeping to overhanging or submerged vegetation."
+		},
+		{
+			"siteName": "13_X_2006_03_C",
+			"region": " ",
+			"village": " ",
+			"waterBody": "unnamed stream",
+			"waterType": "freshwater",
+			"siteDescription": "little overhead cover, stream is source of water for large nearby marshy area. Stream is deep upto 5ft, between 25ft and 3ft wide, shallows as enters marsh. Substrate appears to be packed mud and leaf litter.",
+			"latitude": -23.0261111,
+			"longitude": 47.730000000000004,
+			"masl": 8,
+			"waterParams": [{
+				"temperature": 82.7,
+				"pH": 6.15,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 164
+			}],
+			"speciesPresent": [
+				"Bedotia sp.",
+				"Gobidae"
+			],
+			"miscNotes": "all fish occured before stream enters marsh, no fish found in marshy area."
 		}
 	]
 }
