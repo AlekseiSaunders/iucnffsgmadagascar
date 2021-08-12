@@ -1281,5 +1281,142 @@
 			],
 			"miscNotes": "villagers report that Tilapia sp., Channa sp., and Malagasy cichlids are not caught at this site."
 		},
+		{
+			"siteName": "12_X_2006_01_I",
+			"region": " ",
+			"village": "Manombo",
+			"waterBody": "Behora River",
+			"waterType": "freshwater",
+			"siteDescription": "small collection of houses on west side of RN12 outside of Manombo Special Reserve 57km south of Farafangana",
+			"latitude": -23.03110,
+			"longitude": 47.73544,
+			"masl": 0,
+			"waterParams": [{
+				"temperature": 0,
+				"pH": 0,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 0
+			}],
+			"speciesPresent": [
+				"Bedotia sp.",
+				"Hypseleotris sp.",
+				"Gambusia affinis"
+			],
+			"miscNotes": "villagers report that Tilapia sp., Channa sp., and Malagasy cichlids are not caught at this site."
+		},
+		{
+			"siteName": "13_X_2006_02_O",
+			"region": " ",
+			"village": "Manombo Special Reserve",
+			"waterBody": "unnamed stream",
+			"waterType": "freshwater",
+			"siteDescription": "small stream in grassy field",
+			"latitude": -23.0158333,
+			"longitude": 47.73222222222223,
+			"masl": 19,
+			"waterParams": [{
+				"temperature": 0,
+				"pH": 0,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 0
+			}],
+			"speciesPresent": [
+				"Bedotia sp."
+			],
+			"miscNotes": "this is an observation only site"
+		},
+		{
+			"siteName": "13_X_2006_03_C",
+			"region": " ",
+			"village": "Manombo Special Reserve",
+			"waterBody": "unnamed stream",
+			"waterType": "freshwater",
+			"siteDescription": " ",
+			"latitude": -23.015,
+			"longitude": 47.733333333333334,
+			"masl": 27,
+			"waterParams": [{
+				"temperature": 0,
+				"pH": 0,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 0
+			}],
+			"speciesPresent": [
+				"Bedotia sp.",
+				"Ambassis sp.",
+				"Khulia sp.",
+				"Gobidae"
+			],
+			"miscNotes": "some collection done"
+		},
+		{
+			"siteName": "13_X_2006_05_O",
+			"region": " ",
+			"village": "Manombo Special Reserve",
+			"waterBody": "unnamed pool",
+			"waterType": "freshwater",
+			"siteDescription": "large forested pool",
+			"latitude": -23.0113889,
+			"longitude": 47.717222222222226,
+			"masl": 0,
+			"waterParams": [{
+				"temperature": 0,
+				"pH": 0,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 0
+			}],
+			"speciesPresent": [
+				"Khulia sp."
+			],
+			"miscNotes": "observation only"
+		},
+		{
+			"siteName": "13_X_2006_04_C",
+			"region": " ",
+			"village": "Manombo Special Reserve",
+			"waterBody": "unnamed stream",
+			"waterType": "freshwater",
+			"siteDescription": " ",
+			"latitude": -23.0138889,
+			"longitude": 47.72944444444445,
+			"masl": 0,
+			"waterParams": [{
+				"temperature": 0,
+				"pH": 0,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 0
+			}],
+			"speciesPresent": [
+				"Bedotia sp."
+			],
+			"miscNotes": "strong population numbers"
+		},
+		{
+			"siteName": "13_X_2006_07_O",
+			"region": " ",
+			"village": "Manombo Special Reserve",
+			"waterBody": "unnamed stream",
+			"waterType": "freshwater",
+			"siteDescription": " ",
+			"latitude": -23.0125,
+			"longitude": 47.71944444444445,
+			"masl": 0,
+			"waterParams": [{
+				"temperature": 0,
+				"pH": 0,
+				"gDH": 0,
+				"kDH": 0,
+				"conductivity": 0
+			}],
+			"speciesPresent": [
+				"Bedotia sp."
+			],
+			"miscNotes": "observation only"
+		}
 	]
 }
