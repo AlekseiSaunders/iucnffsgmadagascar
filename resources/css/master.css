@@ -186,6 +186,9 @@ ul {
   justify-items: center;
 }
 /** Card Styles **/
+.cardGridWrapper a {
+  text-decoration: none;
+}
 .cardGridWrapper {
   display: flex;
   flex-direction: column;
