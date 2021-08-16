@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Load data from an external GeoJSON file</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .marker {
+            background-image: url('./resources/images/svg/aquarium.svg');
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script>
+        // TO MAKE THE MAP APPEAR YOU MUST
+        // ADD YOUR ACCESS TOKEN FROM
+        // https://account.mapbox.com
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYWxla3NlaXNhdW5kZXJzIiwiYSI6ImNrc2RpMWxsZzBxd3oydG5ydG90c2c0M3MifQ.LL8KNLTtfteetRUvIJxt1Q';
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/outdoors-v11', // style URL
+            zoom: 13, // starting zoom
+            center: [47.730000000000004, -23.0261111] // starting center
+        });
+
+        map.on('load', () => {
+            map.addSource('bspnovManombo', {
+                type: 'geojson',
+                // Use a URL for the value for the `data` property.
+                data: './resources/geoFiles/bspnovManombo.geojson'
+            });
+
+            map.addLayer({
+                'id': 'fish-layer',
+                'type': 'circle',
+                'source': 'bspnovManombo',
+                'paint': {
+                    'circle-radius': 8,
+                    'circle-stroke-width': 2,
+                    'circle-color': 'red',
+                    'circle-stroke-color': 'white'
+                }
+            });
+        });
+        geojson.features.forEach(function (marker) {
+
+            // create a HTML element for each feature
+            var el = document.createElement('div');
+            el.className = 'marker';
+
+            // make a marker for each feature and add to the map
+            new mapboxgl.Marker(el)
+                .setLngLat(marker.geometry.coordinates)
+                .addTo(map);
+        });
+        /*
+        Add an event listener that runs
+          when a user clicks on the map element.
+        */
+        map.on('click', function (e) {
+            // If the user clicked on one of your markers, get its information.
+            var features = map.queryRenderedFeatures(e.point, {
+                layers: ['fish-layer'] // replace with your layer name
+            });
+            if (!features.length) {
+                return;
+            }
+            var feature = features[0];
+
+            // Code from the next step will go here.
+            /*
+      
+                Create a popup, specify its options
+                and properties, and add it to the map.
+              */
+            var popup = new mapboxgl.Popup({ offset: [0, -15] })
+                .setLngLat(feature.geometry.coordinates)
+                .setHTML(
+                    '<h3>' + feature.properties.title + '</h3>' +
+                    '<p>' + feature.properties.description + '</p>'
+                )
+                .addTo(map);
+        });
+
+    </script>
+
+</body>
+
+</html>
