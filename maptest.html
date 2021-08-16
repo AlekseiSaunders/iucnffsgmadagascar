@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 
 <head>
-    <meta charset="utf-8">
-    <title>Load data from an external GeoJSON file</title>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset='utf-8' />
+    <title>mapTest</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css' rel='stylesheet' />
     <style>
@@ -20,63 +19,23 @@
             bottom: 0;
             width: 100%;
         }
-
-        .marker {
-            background-image: url('./resources/images/svg/aquarium.svg');
-            background-size: cover;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            cursor: pointer;
-        }
     </style>
 </head>
 
 <body>
-    <div id="map"></div>
-
+    <div id='map'></div>
     <script>
-        // TO MAKE THE MAP APPEAR YOU MUST
-        // ADD YOUR ACCESS TOKEN FROM
-        // https://account.mapbox.com
+        // The value for 'accessToken' begins with 'pk...'
         mapboxgl.accessToken = 'pk.eyJ1IjoiYWxla3NlaXNhdW5kZXJzIiwiYSI6ImNrc2RpMWxsZzBxd3oydG5ydG90c2c0M3MifQ.LL8KNLTtfteetRUvIJxt1Q';
-        const map = new mapboxgl.Map({
-            container: 'map', // container ID
-            style: 'mapbox://styles/mapbox/outdoors-v11', // style URL
-            zoom: 13, // starting zoom
-            center: [47.730000000000004, -23.0261111] // starting center
+        var map = new mapboxgl.Map({
+            container: 'map',
+            // Replace YOUR_STYLE_URL with your style URL.
+            style: 'mapbox://styles/alekseisaunders/cksdyykh915nc17pl7ymnnfxb',
+            center: [47.730000000000004, -23.0261111],
+            zoom: 12.7
         });
 
-        map.on('load', () => {
-            map.addSource('bspnovManombo', {
-                type: 'geojson',
-                // Use a URL for the value for the `data` property.
-                data: './resources/geoFiles/bspnovManombo.geojson'
-            });
-
-            map.addLayer({
-                'id': 'fish-layer',
-                'type': 'circle',
-                'source': 'bspnovManombo',
-                'paint': {
-                    'circle-radius': 8,
-                    'circle-stroke-width': 2,
-                    'circle-color': 'red',
-                    'circle-stroke-color': 'white'
-                }
-            });
-        });
-        geojson.features.forEach(function (marker) {
-
-            // create a HTML element for each feature
-            var el = document.createElement('div');
-            el.className = 'marker';
-
-            // make a marker for each feature and add to the map
-            new mapboxgl.Marker(el)
-                .setLngLat(marker.geometry.coordinates)
-                .addTo(map);
-        });
+        // Code from the next step will go here.
         /*
         Add an event listener that runs
           when a user clicks on the map element.
@@ -84,7 +43,7 @@
         map.on('click', function (e) {
             // If the user clicked on one of your markers, get its information.
             var features = map.queryRenderedFeatures(e.point, {
-                layers: ['fish-layer'] // replace with your layer name
+                layers: ['bedotiaspnovmanombo'] // replace with your layer name
             });
             if (!features.length) {
                 return;
@@ -105,9 +64,7 @@
                 )
                 .addTo(map);
         });
-
     </script>
-
 </body>
 
 </html>

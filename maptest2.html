@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Demo: Add custom markers in Mapbox GL JS</title>
+    <title>MapTest2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js"></script>
@@ -24,8 +24,8 @@
         .marker {
             background-image: url('./resources/images/svg/aquarium.svg');
             background-size: cover;
-            width: 30px;
-            height: 30px;
+            width: 15px;
+            height: 15px;
             border-radius: 50%;
             cursor: pointer;
         }
@@ -47,129 +47,129 @@
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiYWxla3NlaXNhdW5kZXJzIiwiYSI6ImNrc2RpMWxsZzBxd3oydG5ydG90c2c0M3MifQ.LL8KNLTtfteetRUvIJxt1Q';
 
-        var geojson = 
+        var geojson =
         {
-                "type": "FeatureCollection",
-                "features": [
-                    {
-                        "type": "Feature",
-                        "properties": {
-                            "title": "13_X_2006_07_O",
-                            "description": "Manombo Special Reserve, unnamed stream",
-                            "speciesPresent": "Bedotia sp."
-                        },
-                        "geometry": {
-                            "coordinates": [47.719444, -23.0125],
-                            "type": "Point"
-                        },
-                        "id": "139f800738076083e3577bf2655c025e"
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "title": "13_X_2006_07_O",
+                        "description": "Manombo Special Reserve, unnamed stream",
+                        "speciesPresent": "Bedotia sp."
                     },
-                    {
-                        "type": "Feature",
-                        "properties": {
-                            "title": "12_X_2006_01_I",
-                            "description": "Manombo, Behora River, small collection of houses on west side of RN12 outside of Manombo Special Reserve 57km south of Farafangana",
-                            "speciesPresent": "Bedotia sp., Hypseleotris sp., Gambusia affinis"
-                        },
-                        "geometry": {
-                            "coordinates": [47.73544, -23.0311],
-                            "type": "Point"
-                        },
-                        "id": "1b6215c107b4433d91e6251f41c8e577"
+                    "geometry": {
+                        "coordinates": [47.719444, -23.0125],
+                        "type": "Point"
                     },
-                    {
-                        "type": "Feature",
-                        "properties": {
-                            "title": "13_X_2006_02_C",
-                            "description": "Manombo Special Reserve, unnamed stream, forest stream that wanders out and in of palm and fern savanna like area. Stream deeply incised in savanna, pools at forest edges and becomes shallower in spots.",
-                            "speciesPresent": "Bedotia sp."
-                        },
-                        "geometry": {
-                            "coordinates": [47.727222, -23.013611],
-                            "type": "Point"
-                        },
-                        "id": "1fbebb539161c940ddb33a31dcd8f5b7"
+                    "id": "139f800738076083e3577bf2655c025e"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "title": "12_X_2006_01_I",
+                        "description": "Manombo, Behora River, small collection of houses on west side of RN12 outside of Manombo Special Reserve 57km south of Farafangana",
+                        "speciesPresent": "Bedotia sp., Hypseleotris sp., Gambusia affinis"
                     },
-                    {
-                        "type": "Feature",
-                        "properties": {
-                            "title": "13_X_2006_04_O",
-                            "description": "Manombo Special Reserve, unnamed stream",
-                            "speciesPresent": "Bedotia sp."
-                        },
-                        "geometry": {
-                            "coordinates": [47.729444, -23.013888],
-                            "type": "Point"
-                        },
-                        "id": "366d640dadb7390df39be53cca6ad20c"
+                    "geometry": {
+                        "coordinates": [47.73544, -23.0311],
+                        "type": "Point"
                     },
-                    {
-                        "type": "Feature",
-                        "properties": {
-                            "title": "13_X_2006_01_C",
-                            "description": "Marovato forest, unnamed stream, area is bulge in small forest stream, 7ft wide at max, 10 to 17 inches deep. Heavily shaded by natural forest, soft clay banks. 50% sand, 30% gravel, 20% cobble/pebble. Very slow flow with abundant leaf little in.",
-                            "speciesPresent": "Bedotia sp."
-                        },
-                        "geometry": {
-                            "coordinates": [47.726388, -23.016388],
-                            "type": "Point"
-                        },
-                        "id": "422a73f61316399bbba8e733fb0770ff"
+                    "id": "1b6215c107b4433d91e6251f41c8e577"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "title": "13_X_2006_02_C",
+                        "description": "Manombo Special Reserve, unnamed stream, forest stream that wanders out and in of palm and fern savanna like area. Stream deeply incised in savanna, pools at forest edges and becomes shallower in spots.",
+                        "speciesPresent": "Bedotia sp."
                     },
-                    {
-                        "type": "Feature",
-                        "properties": {
-                            "title": "13_X_2006_03_O",
-                            "description": "Manombo Special Reserve, unnamed stream",
-                            "speciesPresent": "Bedotia sp., Ambassis sp., Khulia sp., Gobidae"
-                        },
-                        "geometry": {
-                            "coordinates": [47.733333, -23.015],
-                            "type": "Point"
-                        },
-                        "id": "450654efa055696f6ef5a68a501d9983"
+                    "geometry": {
+                        "coordinates": [47.727222, -23.013611],
+                        "type": "Point"
                     },
-                    {
-                        "type": "Feature",
-                        "properties": {
-                            "title": "13_X_2006_05_O",
-                            "description": "Manombo Special Reserve, unnamed pool, large forested pool",
-                            "speciesPresent": "Khulia sp."
-                        },
-                        "geometry": {
-                            "coordinates": [47.717222, -23.011388],
-                            "type": "Point"
-                        },
-                        "id": "5698e89b759810ef46892c253b4ad13e"
+                    "id": "1fbebb539161c940ddb33a31dcd8f5b7"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "title": "13_X_2006_04_O",
+                        "description": "Manombo Special Reserve, unnamed stream",
+                        "speciesPresent": "Bedotia sp."
                     },
-                    {
-                        "type": "Feature",
-                        "properties": {
-                            "title": "13_X_2006_02_O",
-                            "description": "Manombo Special Reserve, unnamed stream, small stream in grassy field ",
-                            "speciesPresent": "Bedotia sp."
-                        },
-                        "geometry": {
-                            "coordinates": [47.732222, -23.015833],
-                            "type": "Point"
-                        },
-                        "id": "cbc8e19fa24de1bae853ed6cb5410790"
+                    "geometry": {
+                        "coordinates": [47.729444, -23.013888],
+                        "type": "Point"
                     },
-                    {
-                        "type": "Feature",
-                        "properties": {
-                            "title": "13_X_2006_03_C",
-                            "description": "Manombo Special Reserve, unnamed stream, little overhead cover, stream is source of water for large nearby marshy area. Stream is deep upto 5ft, between 25ft and 3ft wide, shallows as enters marsh. Substrate appears to be packed mud and leaf litter.",
-                            "speciesPresent": "Bedotia sp., Gobidae"
-                        },
-                        "geometry": {
-                            "coordinates": [47.73, -23.026111],
-                            "type": "Point"
-                        },
-                        "id": "e0fe2495f7bc217f0e65407aa299adf3"
-                    }
-                ],
-            };
+                    "id": "366d640dadb7390df39be53cca6ad20c"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "title": "13_X_2006_01_C",
+                        "description": "Marovato forest, unnamed stream, area is bulge in small forest stream, 7ft wide at max, 10 to 17 inches deep. Heavily shaded by natural forest, soft clay banks. 50% sand, 30% gravel, 20% cobble/pebble. Very slow flow with abundant leaf little in.",
+                        "speciesPresent": "Bedotia sp."
+                    },
+                    "geometry": {
+                        "coordinates": [47.726388, -23.016388],
+                        "type": "Point"
+                    },
+                    "id": "422a73f61316399bbba8e733fb0770ff"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "title": "13_X_2006_03_O",
+                        "description": "Manombo Special Reserve, unnamed stream",
+                        "speciesPresent": "Bedotia sp., Ambassis sp., Khulia sp., Gobidae"
+                    },
+                    "geometry": {
+                        "coordinates": [47.733333, -23.015],
+                        "type": "Point"
+                    },
+                    "id": "450654efa055696f6ef5a68a501d9983"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "title": "13_X_2006_05_O",
+                        "description": "Manombo Special Reserve, unnamed pool, large forested pool",
+                        "speciesPresent": "Khulia sp."
+                    },
+                    "geometry": {
+                        "coordinates": [47.717222, -23.011388],
+                        "type": "Point"
+                    },
+                    "id": "5698e89b759810ef46892c253b4ad13e"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "title": "13_X_2006_02_O",
+                        "description": "Manombo Special Reserve, unnamed stream, small stream in grassy field ",
+                        "speciesPresent": "Bedotia sp."
+                    },
+                    "geometry": {
+                        "coordinates": [47.732222, -23.015833],
+                        "type": "Point"
+                    },
+                    "id": "cbc8e19fa24de1bae853ed6cb5410790"
+                },
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "title": "13_X_2006_03_C",
+                        "description": "Manombo Special Reserve, unnamed stream, little overhead cover, stream is source of water for large nearby marshy area. Stream is deep upto 5ft, between 25ft and 3ft wide, shallows as enters marsh. Substrate appears to be packed mud and leaf litter.",
+                        "speciesPresent": "Bedotia sp., Gobidae"
+                    },
+                    "geometry": {
+                        "coordinates": [47.73, -23.026111],
+                        "type": "Point"
+                    },
+                    "id": "e0fe2495f7bc217f0e65407aa299adf3"
+                }
+            ],
+        };
 
 
         const map = new mapboxgl.Map({
@@ -179,7 +179,7 @@
             zoom: 13.5
         });
 
-  
+
         // add markers to map
 
 
