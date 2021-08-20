@@ -35,27 +35,27 @@
         </nav>
     </header>
     <main class="speciesMain">
-        <h1>Bedotoa sp nov "Manombo"</h1>
+        <h1>Collection Site: 13_X_2006_C</h1>
         <div class="speciesHeader">
-            <div class="speciesImages"><img src="../resources/images/species/bedotiinae/bspnovManombo_1200.jpg" alt="">
+            <div class="speciesImages"><img src="../resources/images/habitats/13X0603Cmanombo_1200.jpg" alt="">
             </div>
             <div class="speciesMap">
                 <div id='map'></div>
             </div>
         </div>
-        <h2>Species Details</h2>
+        <h2>Site Details</h2>
         <div class="speciesDetails">
 
             <div class="speciesSummary">
-                <h3>Species Summary</h3>
+                <h3>Site Summary</h3>
                 <ul>
-                    <h4>Collection Locations:</h4>
-                    <li><a href="../collectionSites/13_X_2006_03_C.html">13_X_2006_03_C</a></li>
+                    <h4>Species Collected</h4>
+                    <li><a href="../bedotiinae/bspnovManombo.html">Bedotia sp nov "Manombo"</a></li>
                 </ul>
 
             </div>
             <div class="speciesDiscussion">
-                <h3>Species Discussion</h3>
+                <h3>Site Discussion</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A voluptatibus
                     recusandae itaque, inventore optio laboriosam quaerat sed velit sapiente quae dolor deserunt aliquid
                     fuga incidunt. Delectus laudantium expedita est reprehenderit?</p>
@@ -117,7 +117,6 @@
                     '<h3 class="mapH3">' + feature.properties.title + '</h3>' +
                     '<p class="mapPara">' + feature.properties.description + '</p>' +
                     '<a href="../collectionSites/' + feature.properties.title + '.html">Site link</a>'
-                    // '<a target="_blank" href="../resources/images/habitats/' + feature.properties.title + '.jpg">Image link</a>'
                 )
                 .addTo(map);
         });
