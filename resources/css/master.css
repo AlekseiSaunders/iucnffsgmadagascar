@@ -241,12 +241,7 @@ ul {
   height: 500px;
   filter: drop-shadow(5px 5px 5px #6e8387);
 }
-/** Map styles **/
-#map {
-  width: 500px;
-  height: 500px;
-  filter: drop-shadow(5px 5px 5px #6e8387);
-}
+
 .speciesDetails {
   display: flex;
   flex-wrap: wrap;
@@ -260,6 +255,23 @@ ul {
 }
 .speciesDiscussion {
   flex-basis: 500px;
+}
+
+/** Map styles **/
+#map {
+  width: 500px;
+  height: 500px;
+  filter: drop-shadow(5px 5px 5px #6e8387);
+}
+
+.mapH3 {
+  padding: .5px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.mapPara {
+  font-size: 1rem;
+  line-height: normal;
 }
 /**Footer style**/
 
