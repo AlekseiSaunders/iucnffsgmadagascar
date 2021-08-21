@@ -92,6 +92,13 @@ h3 {
   font-weight: 700;
   color: black;
 }
+h4 {
+  font-family: 'Neutron', sans-serif;
+  font-size: 1.75rem;
+  padding: 1.5rem 2rem 0.5rem 2rem;
+  font-weight: 500;
+  color: black;
+}
 p {
   font-weight: 400;
   font-family: 'Neutron', serif;
@@ -107,8 +114,18 @@ ul {
   padding: 1rem 1rem;
   line-height: 2.5rem;
   color: black;
+  list-style-type: disc;
 }
 
+li {
+  font-weight: 300;
+  font-family: 'Neutron', serif;
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  line-height: 1rem;
+  color: black;
+  text-align: left;
+}
 .photo {
   width: 50%;
   padding: 1.11rem;
@@ -251,10 +268,10 @@ ul {
   text-align: center;
 }
 .speciesSummary {
-  flex-basis: 500px;
+  width: 600px;
 }
 .speciesDiscussion {
-  flex-basis: 500px;
+  width: 700px;
 }
 
 /** Map styles **/
@@ -265,7 +282,7 @@ ul {
 }
 
 .mapH3 {
-  padding: .5px;
+  padding: 0.5px;
   font-size: 1rem;
   font-weight: 800;
 }
