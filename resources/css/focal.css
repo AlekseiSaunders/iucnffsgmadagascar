@@ -1,0 +1,293 @@
+/**Base Setting**/
+html {
+  font-size: 16px;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/**Header Styles Mobile First**/
+.headerMenuWrap,
+.footerMenuWrap {
+  background-color: #ef4430;
+  padding: 0.5rem 0.5rem;
+  min-height: 2.25rem;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.headerFirstItem,
+.headerFirstItem:visited,
+.headerFirstItem:hover {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-right: auto;
+  line-height: 1.25rem;
+}
+.headerListItem,
+.footerListItem {
+  color: white;
+  text-decoration: none;
+  font-family: 'Oswald', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.125rem;
+  padding: 0 1rem;
+}
+.headerListItem:last-of-type {
+  padding-right: 0.75rem;
+}
+.headerListItem:hover,
+.footerListItem:hover {
+  color: #3a9bc8;
+}
+.footerMenuWrap {
+  justify-content: center;
+}
+
+/**Content**/
+.pageMain {
+  padding: 0 5% 4rem 5%;
+  background-color: rgba(196, 106, 54, 0.356);
+  color: #4a4a4a;
+  min-height: 100vh;
+}
+.speciesMain {
+  padding: 0 5% 4rem 5%;
+  background-color: rgba(196, 106, 54, 0.356);
+  color: #4a4a4a;
+  min-height: 100vh;
+  text-align: center;
+}
+.sectionTitle {
+  padding: 2rem 0rem;
+}
+/** Typography **/
+/**additional fonts
+font-family: "Neuton", serif;
+font-family: "Oswald", sans-serif;
+**/
+h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 2.25rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  color: black;
+}
+h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  color: black;
+}
+h3 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem 0.5rem 2rem;
+  font-weight: 700;
+  color: black;
+}
+h4 {
+  font-family: 'Neutron', sans-serif;
+  font-size: 1.75rem;
+  padding: 1.5rem 2rem 0.5rem 2rem;
+  font-weight: 500;
+  color: black;
+}
+p {
+  font-weight: 400;
+  font-family: 'Neutron', serif;
+  font-size: 1.5rem;
+  padding: 0.75rem 1rem;
+  line-height: 2.5rem;
+  color: black;
+}
+ul {
+  font-weight: 400;
+  font-family: 'Neutron', serif;
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  line-height: 2.5rem;
+  color: black;
+  list-style-type: disc;
+}
+
+li {
+  font-weight: 300;
+  font-family: 'Neutron', serif;
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  line-height: 1rem;
+  color: black;
+  text-align: left;
+}
+
+.speciesHeader {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: #4a4a4a 2px solid;
+  padding: 25px 15px;
+}
+.speciesImages img {
+  max-width: 300px;
+  height: auto;
+  filter: drop-shadow(5px 5px 5px #6e8387);
+}
+.speciesMain h1 {
+  font-size: 1.25rem;
+}
+ .speciesMain h2 {
+    font-size: 1.25rem;
+  }
+.speciesMain h4 {
+    font-size: 1.25rem;
+    text-decoration: underline;
+  }
+.speciesSummary li, p, a{
+  font-size: 1.25rem;
+}
+.speciesDetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: #4a4a4a 2px solid;
+  padding: 25px 15px;
+  text-align: center;
+}
+.speciesSummary {
+  width: 600px;
+}
+.speciesDiscussion {
+  width: 700px;
+}
+
+/** Map styles **/
+#map {
+  width: 300px;
+  height: 400px;
+  margin: 15px 0px 0px 0px;
+  filter: drop-shadow(5px 5px 5px #6e8387);
+}
+
+.mapH3 {
+  padding: 0.5px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.mapPara {
+  font-size: 1rem;
+  line-height: normal;
+}
+/**Footer style**/
+
+.pageFooter {
+  margin-top: auto;
+}
+
+/** Media queries **/
+@media only screen and (max-width: 560px) {
+  .navName {
+    display: none;
+  }
+}
+
+/**Header Styles Responsive**/
+@media only screen and (min-width: 560px) {
+  .navIcon {
+    display: none;
+  }
+  .speciesImages img {
+    max-width: 450px;
+    height: auto;
+  }
+  #map {
+    width: 450px;
+    height: 450px;
+    margin: 15px 0px 0px 0px;
+  }
+  .speciesMain h1 {
+    font-size: 1.75rem;
+  }
+   .speciesMain h2 {
+    font-size: 1.5rem;
+  }
+  .speciesMain h4 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+  }
+.speciesSummary li, p, a{
+  font-size: 1.5rem;
+}
+}
+@media only screen and (min-width: 650px) {
+  .headerListItem,
+  .footerListItem {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .headerFirstItem,
+  .headerFirstItem:visited,
+  .headerFirstItem:hover {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .headerListItem {
+    font-size: 1.5rem;
+  }
+  .headerFirstItem,
+  .headerFirstItem:visited,
+  .headerFirstItem:hover {
+    font-size: 2rem;
+  }
+  .speciesImages img {
+    max-width: 500px;
+    height: auto;
+  }
+  #map {
+    width: 500px;
+    height: 500px;
+    margin: 15px 0px 0px 0px;
+  }
+   .speciesMain h1 {
+    font-size: 2rem;
+  }
+  .speciesHeader {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+   .speciesMain h2 {
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (min-width:1450px) {
+   .speciesImages img {
+    max-width: 100%;
+    height: 400px;
+  }
+  .speciesHeader {
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .photo {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 580px) {
+
+  .pageMain {
+    padding: 1rem 2% 1rem 2%;
+  }
+ 
+}
