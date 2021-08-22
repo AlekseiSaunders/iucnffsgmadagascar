@@ -66,6 +66,11 @@ body {
 .sectionTitle {
   padding: 2rem 0rem;
 }
+.journal {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+}
 /** Typography **/
 /**additional fonts
 font-family: "Neuton", serif;
@@ -134,7 +139,7 @@ li {
   background-color: white;
 }
 .projectPhoto {
-  width: 50%;
+  width: 70%;
   padding: 1.11rem;
   border-radius: 5px;
   margin: 0 auto 2.44rem auto;
