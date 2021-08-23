@@ -35,9 +35,9 @@
         </nav>
     </header>
     <main class="speciesMain">
-        <h1>Bedotoa sp nov "Manombo"</h1>
+        <h1>Ptychochromis insolitus</h1>
         <div class="speciesHeader">
-            <div class="speciesImages"><img src="../resources/images/species/bedotiinae/bspnovManombo_1200.jpg" alt="">
+            <div class="speciesImages"><img src="../resources/images/species/cichlidae/ptyInsolitus_1200.jpg" alt="">
             </div>
             <div class="speciesMap">
                 <div id='map'></div>
@@ -50,7 +50,9 @@
                 <h4>Species Summary</h4>
                 <ul>
                     <h4>Collection Locations:</h4>
-                    <li><a href="../collectionSites/13_X_2006_03_C.html">13_X_2006_03_C</a></li>
+                    <li>Type location - Northeastern Madagascar, Mahajanga Province, near town of Mandritsara, Sofia
+                        drainage basin, Amboaboa (Ambomboa) River.</li>
+                    <li><a href="#">Lat: -15.83, Long: 48.71</a></li>
                 </ul>
 
             </div>
@@ -83,10 +85,11 @@
         var map = new mapboxgl.Map({
             container: 'map',
             // Replace YOUR_STYLE_URL with your style URL.
-            style: 'mapbox://styles/alekseisaunders/cksdyykh915nc17pl7ymnnfxb',
-            center: [47.730000000000004, -23.0261111],
-            zoom: 12.7
+            style: 'mapbox://styles/mapbox/satellite-streets-v11',
+            center: [48.71416666666667, -15.8336111],
+            zoom: 6
         });
+
 
         map.addControl(new mapboxgl.NavigationControl());
         map.scrollZoom.disable();
@@ -95,32 +98,25 @@
         Add an event listener that runs
           when a user clicks on the map element.
         */
-        map.on('click', function (e) {
-            // If the user clicked on one of your markers, get its information.
-            var features = map.queryRenderedFeatures(e.point, {
-                layers: ['bedotiaspnovmanombo'] // replace with your layer name
-            });
-            if (!features.length) {
-                return;
-            }
-            var feature = features[0];
 
-            // Code from the next step will go here.
-            /*
-      
-                Create a popup, specify its options
-                and properties, and add it to the map.
-              */
-            var popup = new mapboxgl.Popup({ offset: [0, -15] })
-                .setLngLat(feature.geometry.coordinates)
-                .setHTML(
-                    '<h3 class="mapH3">' + feature.properties.title + '</h3>' +
-                    '<p class="mapPara">' + feature.properties.description + '</p>' +
-                    '<a href="../collectionSites/' + feature.properties.title + '.html">Site link</a>'
-                    // '<a target="_blank" href="../resources/images/habitats/' + feature.properties.title + '.jpg">Image link</a>'
-                )
-                .addTo(map);
-        });
+
+        // Code from the next step will go here.
+        /*
+  
+            Create a popup, specify its options
+            and properties, and add it to the map.
+          */
+        const popup = new mapboxgl.Popup({ offset: [0, -15] }).setText(
+            'Type Locale for Ptychochromis insolitus - Stiassny, M., and Sparks, J. S. (2006)'
+        );
+
+        const el = document.createElement('div');
+        el.id = 'marker';
+
+        const typeLocaleMarker = new mapboxgl.Marker()
+            .setLngLat([48.71416666666667, -15.8336111])
+            .setPopup(popup)
+            .addTo(map);
     </script>
 </body>
 

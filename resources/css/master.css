@@ -69,7 +69,10 @@ body {
 .journal {
   display: flex;
   flex-direction: column;
-  margin: 0 10%;
+  margin: 0 5.5%;
+}
+.journal h3 {
+  line-height: 3rem;
 }
 /** Typography **/
 /**additional fonts
@@ -130,6 +133,9 @@ li {
   line-height: 1rem;
   color: black;
   text-align: left;
+}
+.journal h3 {
+  line-height: 3rem;
 }
 .photo {
   width: 50%;
