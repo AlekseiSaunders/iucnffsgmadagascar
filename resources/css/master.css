@@ -165,9 +165,10 @@ li {
   overflow: hidden;
   /* margin-bottom: 1rem; */
 }
-#italic {
+.italic {
   font-style: italic;
 }
+
 .photo .image-container img {
   width: 100%;
 }
