@@ -243,6 +243,12 @@ li {
   padding: 2px 6px 10px 4px;
   filter: drop-shadow(5px 5px 5px #857e7b);
 }
+.mapImg img {
+    width: 300px;
+    padding: 2px 6px 10px 4px;
+    filter: drop-shadow(5px 5px 5px #857e7b);
+  }
+
 .cardBody {
   max-width: 310px;
   border: 1px #0d0a0b solid;
@@ -253,6 +259,7 @@ li {
   background-color: #f3d559;
   color: #0d0a0b;
   filter: drop-shadow(5px 5px 5px #6e8387);
+  justify-content: center;
 }
 
 .cardText {
@@ -399,6 +406,11 @@ li {
   .cardImg img {
     max-width: 300px;
     height: auto;
+    padding: 2px 6px 10px 4px;
+    filter: drop-shadow(5px 5px 5px #857e7b);
+  }
+  .mapImg img {
+    width: 400px;
     padding: 2px 6px 10px 4px;
     filter: drop-shadow(5px 5px 5px #857e7b);
   }
