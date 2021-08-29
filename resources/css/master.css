@@ -88,14 +88,14 @@ h1 {
 }
 h2 {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem 2rem;
   font-weight: 700;
   color: black;
 }
 h3 {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   padding: 1.5rem 2rem 0.5rem 2rem;
   font-weight: 700;
   color: black;
@@ -110,7 +110,7 @@ h4 {
 p {
   font-weight: 400;
   font-family: 'Neutron', serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 0.75rem 1rem;
   line-height: 2.5rem;
   color: black;
@@ -344,6 +344,15 @@ li {
   .headerListItem,
   .footerListItem {
     font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 700px) {
