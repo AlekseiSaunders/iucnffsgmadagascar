@@ -170,7 +170,14 @@ a {
 .speciesDiscussion {
   width: 700px;
 }
-
+.supportBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: #4a4a4a 2px solid;
+  padding: 25px 15px;
+}
 /** Map styles **/
 #map {
   width: 300px;
