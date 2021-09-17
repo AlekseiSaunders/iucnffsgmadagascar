@@ -541,3 +541,15 @@ li {
     padding-bottom: 0px;
   }
 }
+@media screen and (max-width: 570px) {
+  .heroText {
+    grid-area: 1/1/2/7;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .actionCall {
+    font-size: 1rem;
+    grid-area: 6/3/7/7;
+    padding-bottom: 0px;
+  }
+}
