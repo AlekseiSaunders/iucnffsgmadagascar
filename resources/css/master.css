@@ -51,16 +51,14 @@ body {
 
 /**Content**/
 .pageMain {
-  padding: 0 5% 4rem 5%;
   background-color: rgba(196, 106, 54, 0.356);
   color: #4a4a4a;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero {
-  position: absolute;
-  top: 54px;
-  left: 0px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -106,6 +104,23 @@ body {
 .journal h3 {
   line-height: 3rem;
 }
+.postHero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2.5% 2.5%;
+}
+.postHero h2 {
+  background-color: lightslategray;
+  border-radius: 10px;
+}
+.postHero h3 {
+  width: 35%;
+  background-color: hsla(0, 0%, 100%, 0.4);
+  line-height: 3rem;
+  border-radius: 10px;
+}
 /** Typography **/
 /**additional fonts
 font-family: "Neuton", serif;
@@ -121,6 +136,7 @@ h1 {
 h2 {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.5rem;
+  line-height: 3rem;
   padding: 1rem 2rem;
   font-weight: 700;
   color: black;
@@ -425,9 +441,6 @@ li {
     align-items: center;
     margin: 10px;
   }
-  .pageMain {
-    padding: 1rem 2% 1rem 2%;
-  }
   .cardText {
     font-size: 1.15rem;
     line-height: 1.5rem;
@@ -492,6 +505,14 @@ li {
   .actionCall {
     font-size: 2rem;
   }
+  .postHero {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .postHero h3 {
+    width: 80%;
+    margin: 10px auto;
+  }
 }
 @media screen and (max-width: 880px) {
   .heroText {
@@ -504,7 +525,7 @@ li {
     grid-area: 6/4/7/7;
     align-items: end;
     padding: 0;
-    padding-right:10px;
+    padding-right: 10px;
   }
 }
 
@@ -520,4 +541,3 @@ li {
     padding-bottom: 0px;
   }
 }
-
