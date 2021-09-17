@@ -107,7 +107,7 @@ p {
   line-height: 2.5rem;
   color: black;
 }
-ul {
+/* ul {
   font-weight: 400;
   font-family: 'Neutron', serif;
   font-size: 2rem;
@@ -115,9 +115,9 @@ ul {
   line-height: 2.5rem;
   color: black;
   list-style-type: disc;
-}
+} */
 
-li {
+/* li {
   font-weight: 300;
   font-family: 'Neutron', serif;
   font-size: 1.5rem;
@@ -125,7 +125,7 @@ li {
   line-height: 2rem;
   color: black;
   text-align: left;
-}
+} */
 .italic {
   font-style: italic;
 }
@@ -157,12 +157,6 @@ a {
   font-size: 1.25rem;
 }
 .speciesDetails {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border: #4a4a4a 2px solid;
-  padding: 25px 15px;
-  text-align: center;
 }
 .speciesSummary {
   width: 600px;
@@ -301,4 +295,71 @@ a {
   .pageMain {
     padding: 1rem 2% 1rem 2%;
   }
+}
+.tabset > input {
+  display: block;
+  position: absolute;
+  left: -100%;
+}
+.tabset > ul {
+  position: relative;
+  z-index: 999;
+  list-style: none;
+  display: flex;
+  margin-bottom: -1px;
+}
+.tabset > ul label,
+.tabset > div {
+  border: 1px solid hsla(6, 85%, 56%, 0.5);
+}
+.tabset > ul label {
+  display: inline-block;
+  padding: 1em 1em;
+  background: hsla(6, 85%, 70%, 0.5);
+  border-right-width: 0;
+}
+.tabset > ul li:first-child label {
+  border-radius: 0.5em 0 0 0;
+}
+.tabset > ul li:last-child label {
+  border-right-width: 1px;
+  border-radius: 0 0.5em 0 0;
+}
+.tabset > div {
+  position: relative;
+  background: hsla(220, 100%, 98%, 0.5);
+  border-radius: 0 0.5em 0.5em 0.5em;
+}
+.tabset > input:nth-child(1):focus ~ ul li:nth-child(1) label,
+.tabset > input:nth-child(2):focus ~ ul li:nth-child(2) label,
+.tabset > input:nth-child(3):focus ~ ul li:nth-child(3) label {
+  text-decoration: none;
+}
+.tabset > input:nth-child(1):focus ~ ul li:nth-child(1) label,
+.tabset > input:nth-child(2):focus ~ ul li:nth-child(2) label,
+.tabset > input:nth-child(3):focus ~ ul li:nth-child(3) label {
+  background: hsla(220, 100%, 98%, 0.5);
+  border-bottom-color: hsla(220, 100%, 98%, 0.5);
+}
+.tabset > div > section,
+.tabset > div > section h2 {
+  position: absolute;
+  top: -999em;
+  left: -999em;
+}
+.tabset > div > section {
+  padding: 1em 1em 0;
+}
+.tabset > input:nth-child(1):checked ~ div > section:nth-child(1),
+.tabset > input:nth-child(2):checked ~ div > section:nth-child(2),
+.tabset > input:nth-child(3):checked ~ div > section:nth-child(3) {
+  position: static;
+}
+.tabset > ul label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
