@@ -62,28 +62,28 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: min-content;
+  grid-template-rows: repeat(auto-fill, minmax(1fr, auto));
 }
-
 .heroImage {
   grid-area: 1/1/7/7;
-  width: 100%;
+  max-width: 100%;
 }
 .heroText {
-  font-size: 3.5rem;
+  font-size: 3vw;
   letter-spacing: 0.1rem;
-  line-height: 3.75rem;
+  line-height: 3.75vw;
   color: white;
   grid-column: 3 / 7;
   grid-row: 1 / 3;
 }
 .actionCall {
-  font-size: 3.5rem;
+  font-size: 3vw;
   letter-spacing: 0.1rem;
-  line-height: 3.75rem;
+  line-height: 3.75vw;
   color: white;
   grid-area: 6/4/7/7;
-  align-self: center;
+  justify-self: end;
+  align-self: start;
 }
 
 .speciesMain {
@@ -476,35 +476,7 @@ li {
     padding: 2px 10px 2px 10px;
   }
 }
-@media screen and (max-width: 1460px) {
-  .actionCall {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 1340px) {
-  .heroText {
-    font-size: 3rem;
-  }
-}
-@media screen and (max-width: 1290px) {
-  .heroText {
-    font-size: 2.5rem;
-    line-height: 3rem;
-  }
-  .actionCall {
-    font-size: 2.5rem;
-    justify-self: end;
-  }
-}
 @media screen and (max-width: 1060px) {
-  .heroText {
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-  .actionCall {
-    font-size: 2rem;
-  }
   .postHero {
     flex-direction: column;
     justify-content: space-between;
@@ -514,42 +486,12 @@ li {
     margin: 10px auto;
   }
 }
-@media screen and (max-width: 880px) {
-  .heroText {
-    grid-area: 1/2/3/7;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-  }
-  .actionCall {
-    font-size: 1.5rem;
-    grid-area: 6/4/7/7;
-    align-items: end;
-    padding: 0;
-    padding-right: 10px;
-  }
-}
 
-@media screen and (max-width: 670px) {
-  .heroText {
-    grid-area: 1/1/3/7;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-  .actionCall {
-    font-size: 1.25rem;
-    grid-area: 6/3/7/7;
-    padding-bottom: 0px;
-  }
-}
 @media screen and (max-width: 570px) {
   .heroText {
-    grid-area: 1/1/2/7;
-    font-size: 1rem;
-    line-height: 1rem;
+    grid-column: 2 / 7;
   }
   .actionCall {
-    font-size: 1rem;
-    grid-area: 6/3/7/7;
-    padding-bottom: 0px;
+    grid-column: 3 / 7;
   }
 }
