@@ -553,13 +553,13 @@ li {
 
 @media screen and (max-width: 570px) {
   .heroText {
-    grid-column: 2 / 7;
-    font-size: 1.5rem;
+    grid-column: 1 / 7;
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
   .actionCall {
     grid-column: 1 / 7;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     position: relative;
     bottom: 20px;
     right: 50px;
@@ -574,7 +574,8 @@ li {
     font-size: 1.5rem;
   }
   .callOut a {
-    font-size: 1rem;
-    margin: 10px 0px;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin: 10px 5px;
   }
 }
