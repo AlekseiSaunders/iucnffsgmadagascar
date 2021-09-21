@@ -47,8 +47,8 @@
         <div class="speciesDetails">
             <div class="tabset">
                 <input type="radio" name="tabset_1" id="tabset_1_naturalHistory" hidden aria-hidden="true" checked>
-                <input type="radio" name="tabset_1" id="tabset_1_conservation" hidden aria-hidden="true" checked>
-                <input type="radio" name="tabset_1" id="tabset_1_husbandry" hidden aria-hidden="true" checked>
+                <input type="radio" name="tabset_1" id="tabset_1_conservation" hidden aria-hidden="true">
+                <input type="radio" name="tabset_1" id="tabset_1_husbandry" hidden aria-hidden="true">
                 <ul hidden aria-hidden="true">
                     <li><label for="tabset_1_naturalHistory">Natural History</label></li>
                     <li><label for="tabset_1_conservation">Conservation</label></li>
@@ -56,26 +56,26 @@
                 </ul>
                 <div>
                     <section>
-                        <h2>Natural Hisotry</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, pariatur nam eos id sunt
-                            consequatur ut exercitationem illum et maiores nulla qui molestiae quod nisi dolores, soluta
-                            accusamus dolorem dicta!Lorem</p>
+                        <h2>Natural History</h2>
+                        <div class="innerTab">
+                            <h3>Collection Locations:</h3>
+                            <a href="../collectionSites/13_X_2006_03_C.html">Site: 13_X_2006_03_C</a>
+                        </div>
                     </section>
                     <section>
                         <h2>Conservation</h2>
-                        <ul>
-                            <li><p>This species is not currently in conservation breeding programs in-situ nor ex-situ.</p>
-                            </li>
-                            <li>
-                                <p>Parc Manombo offers some protection of this species' habitat.</p>
-                            </li>
-                        </ul>
+                        <div class="innerTab">
+                            <h3>Conservation Efforts:</h3>
+                            <p>This species is not currently in conservation breeding programs in-situ nor ex-situ.
+                            </p>
+                            <p>Parc Manombo offers some protection of this species' habitat.</p>
+                        </div>
                     </section>
                     <section>
                         <h2>Husbandry</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ea minima excepturi
-                            recusandae accusamus magnam! Quidem, voluptatum dicta! Odio accusantium rerum recusandae,
-                            hic nam facilis nesciunt dolorem vero numquam quasi.</p>
+                        <div class="innerTab">
+                            <p>This species has not been kept in captivity.</p>
+                            <div class="innerTab"></div>
                     </section>
                 </div>
             </div>
@@ -99,8 +99,10 @@
 
     <footer class="pageFooter">
         <nav class="footerMenuWrap">
-            <a class="footerListItem" href="https://us5.list-manage.com/contact-form?u=3b42d6e2447bdae5dbad626f7&form_id=9fc62a01312406dd4f2089c3fb9eaeeb"><span class="navIcon"><i
-                        class="far fa-envelope fa-lg"></i></span><span class="navName">Contact Us</span></a>
+            <a class="footerListItem"
+                href="https://us5.list-manage.com/contact-form?u=3b42d6e2447bdae5dbad626f7&form_id=9fc62a01312406dd4f2089c3fb9eaeeb"><span
+                    class="navIcon"><i class="far fa-envelope fa-lg"></i></span><span class="navName">Contact
+                    Us</span></a>
             <a class="footerListItem" href="../index.html"><span class="navIcon"><i
                         class="fas fa-sitemap fa-lg"></i></span><span class="navName">Site Map</span></a>
             <a class="footerListItem" href="../index.html"><span class="navIcon"><i
@@ -149,8 +151,7 @@
                 .setLngLat(feature.geometry.coordinates)
                 .setHTML(
                     '<h3 class="mapH3">' + feature.properties.title + '</h3>' +
-                    '<p class="mapPara">' + feature.properties.description + '</p>' +
-                    '<a href="../collectionSites/' + feature.properties.title + '.html">Site link</a>'
+                    '<p class="mapPara">' + feature.properties.description + '</p>'
                     // '<a target="_blank" href="../resources/images/habitats/' + feature.properties.title + '.jpg">Image link</a>'
                 )
                 .addTo(map);

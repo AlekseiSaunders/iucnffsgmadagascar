@@ -207,7 +207,7 @@ a {
   border: 1px solid hsla(6, 85%, 56%, 0.5);
 }
 .tabset > ul label {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.25rem;
   display: inline-block;
   padding: 1em 1em;
@@ -231,9 +231,9 @@ a {
 .tabset > input:nth-child(3):focus ~ ul li:nth-child(3) label {
   text-decoration: none;
 }
-.tabset > input:nth-child(1):focus ~ ul li:nth-child(1) label,
-.tabset > input:nth-child(2):focus ~ ul li:nth-child(2) label,
-.tabset > input:nth-child(3):focus ~ ul li:nth-child(3) label {
+.tabset > input:nth-child(1):checked ~ ul li:nth-child(1) label,
+.tabset > input:nth-child(2):checked ~ ul li:nth-child(2) label,
+.tabset > input:nth-child(3):checked ~ ul li:nth-child(3) label {
   background: hsla(220, 100%, 98%, 0.5);
   border-bottom-color: hsla(220, 100%, 98%, 0.5);
 }
@@ -259,6 +259,19 @@ a {
   -ms-user-select: none;
   user-select: none;
 }
+section div.innerTab {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+section div.innerTab h3 {
+  text-decoration: underline;
+}
+.innerTab a {
+  padding: 10px 55px;
+  text-decoration: none;
+}
+
 /**Footer style**/
 
 .pageFooter {
@@ -271,8 +284,8 @@ a {
     display: none;
   }
   .tabset > ul label {
-  font-size: .75rem;
-}
+    font-size: 0.75rem;
+  }
 }
 
 /**Header Styles Responsive**/
@@ -369,4 +382,3 @@ a {
     padding: 1rem 2% 1rem 2%;
   }
 }
-
