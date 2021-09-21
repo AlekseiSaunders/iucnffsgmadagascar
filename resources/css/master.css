@@ -104,6 +104,50 @@ body {
 .journal h3 {
   line-height: 3rem;
 }
+.callOut {
+  width: 80%;
+  background-color: hsla(0, 0%, 100%, 0.4);
+  line-height: 3rem;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.callOut h2,
+.callOut h4 {
+  padding: 1rem;
+}
+.callOut:first-child {
+  margin-top: 25px;
+}
+/* .callOut:last-child {
+  margin-bottom: 0px;
+} */
+.callOut a {
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5rem;
+  align-self: center;
+  border: 1px solid hsla(6, 85%, 56%, 0.5);
+  background-color: hsla(6, 85%, 56%, 0.5);
+  border-radius: 10px;
+  padding: 3px 10px;
+  color: black;
+  box-shadow: 0px 6px hsla(6, 85%, 35%, 0.5);
+}
+.callOut a:hover {
+  cursor: pointer;
+  top: 2px;
+  box-shadow: 0px 4px hsla(6, 85%, 35%, 0.45);
+}
+.callOut a:active {
+  top: 6px;
+  box-shadow: none;
+}
+
 .postHero {
   display: flex;
   flex-direction: row;
@@ -510,8 +554,27 @@ li {
 @media screen and (max-width: 570px) {
   .heroText {
     grid-column: 2 / 7;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
   }
   .actionCall {
-    grid-column: 3 / 7;
+    grid-column: 1 / 7;
+    font-size: 1.75rem;
+    position: relative;
+    bottom: 20px;
+    right: 50px;
+  }
+  .callOut {
+    margin-bottom: 25px;
+  }
+  .callOut h2,
+  .callOut h4 {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    font-size: 1.5rem;
+  }
+  .callOut a {
+    font-size: 1rem;
+    margin: 10px 0px;
   }
 }
