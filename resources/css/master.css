@@ -36,19 +36,28 @@ body {
   font-family: 'Oswald', serif;
   font-size: 0.75rem;
   letter-spacing: 0.125rem;
-  padding: 0 16px;
+  margin: 0 16px;
 }
-.headerListItem:last-of-type {
+/* .headerListItem:last-of-type {
   padding-right: 12px;
-}
+} */
 .headerListItem:hover,
 .footerListItem:hover {
-  color: hsla(199deg, 56%, 51%, 1);
+  color: hsla(190deg, 60%, 51%, 1);
+  padding-bottom: 8px;
+  border-bottom: hsla(190deg, 60%, 51%, 1) solid 2px;
+  transform: translate(0, 4px);
 }
 .footerMenuWrap {
   justify-content: center;
 }
-
+.currentLink,
+.currentLink:hover {
+  color: hsla(190deg, 60%, 100%, 1);
+  padding-bottom: 8px;
+  border-bottom: hsla(190deg, 60%, 100%, 1) solid 2px;
+  transform: translate(0, 4px);
+}
 /**Content**/
 .pageMain {
   background-color: hsla(22deg, 57%, 49%, 0.356);
