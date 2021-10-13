@@ -10,9 +10,9 @@ body {
 /**Header Styles Mobile First**/
 .headerMenuWrap,
 .footerMenuWrap {
-  background-color: #ef4430;
-  padding: 0.5rem 0.5rem;
-  min-height: 2.25rem;
+  background-color: hsla(6deg, 86%, 56%, 1);
+  padding: 10px 10px;
+  min-height: 38px;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   display: flex;
@@ -36,14 +36,14 @@ body {
   font-family: 'Oswald', serif;
   font-size: 0.75rem;
   letter-spacing: 0.125rem;
-  padding: 0 1rem;
+  padding: 0 16px;
 }
 .headerListItem:last-of-type {
-  padding-right: 0.75rem;
+  padding-right: 12px;
 }
 .headerListItem:hover,
 .footerListItem:hover {
-  color: #3a9bc8;
+  color: hsla(199deg, 56%, 51%, 1);
 }
 .footerMenuWrap {
   justify-content: center;
@@ -51,8 +51,8 @@ body {
 
 /**Content**/
 .pageMain {
-  background-color: rgba(196, 106, 54, 0.356);
-  color: #4a4a4a;
+  background-color: hsla(22deg, 57%, 49%, 0.356);
+  color: hsla(0deg, 0%, 29%, 1);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -88,8 +88,8 @@ body {
 
 .speciesMain {
   padding: 0 5% 4rem 5%;
-  background-color: rgba(196, 106, 54, 0.356);
-  color: #4a4a4a;
+  background-color: hsla(22deg, 57%, 49%, 0.356);
+  color: hsla(0deg, 0%, 29%, 1);
   min-height: 100vh;
   text-align: center;
 }
@@ -106,7 +106,7 @@ body {
 }
 .callOut {
   width: 80%;
-  background-color: hsla(0, 0%, 100%, 0.4);
+  background-color: hsla(0deg, 0%, 100%, 0.4);
   line-height: 3rem;
   border-radius: 10px;
   margin: auto;
@@ -117,7 +117,7 @@ body {
 }
 .callOut h2,
 .callOut h4 {
-  padding: 1rem;
+  padding: 16px;
 }
 .callOut:first-child {
   margin-top: 25px;
@@ -156,7 +156,7 @@ body {
   margin: 2.5% 2.5%;
 }
 .postHero h2 {
-  background-color: lightslategray;
+  background-color: hsla(210deg, 14%, 53%, 1);
   border-radius: 10px;
 }
 .postHero h3 {
@@ -173,7 +173,7 @@ font-family: "Oswald", sans-serif;
 h1 {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 2.25rem;
-  padding: 1rem 2rem;
+  padding: 16px 32px;
   font-weight: 700;
   color: black;
 }
@@ -181,21 +181,21 @@ h2 {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.5rem;
   line-height: 3rem;
-  padding: 1rem 2rem;
+  padding: 16px 32px;
   font-weight: 700;
   color: black;
 }
 h3 {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 1.1rem;
-  padding: 1.5rem 2rem 0.5rem 2rem;
+  padding: 24px 32px 8px 32px;
   font-weight: 700;
   color: black;
 }
 h4 {
   font-family: 'Neutron', sans-serif;
   font-size: 1.75rem;
-  padding: 1.5rem 2rem 0.5rem 2rem;
+  padding: 24px 32px 8px 32px;
   font-weight: 500;
   color: black;
 }
@@ -203,7 +203,7 @@ p {
   font-weight: 400;
   font-family: 'Neutron', serif;
   font-size: 1rem;
-  padding: 0.75rem 1rem;
+  padding: 12px 16px;
   line-height: 2.5rem;
   color: black;
 }
@@ -211,7 +211,7 @@ ul {
   font-weight: 400;
   font-family: 'Neutron', serif;
   font-size: 2rem;
-  padding: 1rem 1rem;
+  padding: 16px 16px;
   line-height: 2.5rem;
   color: black;
   list-style-type: disc;
@@ -221,7 +221,7 @@ li {
   font-weight: 300;
   font-family: 'Neutron', serif;
   font-size: 1.5rem;
-  padding: 1rem 1rem;
+  padding: 16px 16px;
   line-height: 1rem;
   color: black;
   text-align: left;
@@ -231,21 +231,21 @@ li {
 }
 .photo {
   width: 50%;
-  padding: 1.11rem;
+  padding: 16px;
   border-radius: 5px;
-  margin: 0 auto 2.44rem auto;
+  margin: 0 auto 39px auto;
   background-color: white;
 }
 .projectPhoto {
   width: 70%;
-  padding: 1.11rem;
+  padding: 16px;
   border-radius: 5px;
-  margin: 0 auto 2.44rem auto;
+  margin: 0 auto 39px auto;
   background-color: white;
 }
 .researcherPhoto {
   width: 300px;
-  padding: 1.11rem;
+  padding: 16px;
   border-radius: 5px;
   background-color: white;
 }
@@ -288,8 +288,8 @@ li {
 
 .photo .first {
   position: relative;
-  top: -2.77rem;
-  margin-bottom: 1.67rem;
+  top: -44px;
+  margin-bottom: 26px;
 }
 
 .headShot {
@@ -334,24 +334,24 @@ li {
   max-width: 300px;
   height: auto;
   padding: 2px 6px 10px 4px;
-  filter: drop-shadow(5px 5px 5px #857e7b);
+  filter: drop-shadow(5px 5px 5px hsla(18deg, 4%, 50%, 1));
 }
 .mapImg img {
   width: 300px;
   padding: 2px 6px 10px 4px;
-  filter: drop-shadow(5px 5px 5px #857e7b);
+  filter: drop-shadow(5px 5px 5px hsla(18deg, 4%, 50%, 1));
 }
 
 .cardBody {
   max-width: 310px;
-  border: 1px #0d0a0b solid;
+  border: 1px hsla(340deg, 13%, 5%, 1) solid;
   border-radius: 5px;
-  padding: 1rem 1rem;
-  margin: 1rem 0rem;
+  padding: 16px 16px;
+  margin: 16px 0px;
   text-align: center;
-  background-color: #f3d559;
-  color: #0d0a0b;
-  filter: drop-shadow(5px 5px 5px #6e8387);
+  background-color: hsla(48deg, 87%, 65%, 1);
+  color: hsla(340deg, 13%, 5%, 1);
+  filter: drop-shadow(5px 5px 5px hsla(190deg, 10%, 48%, 1));
   justify-content: center;
 }
 
@@ -363,20 +363,20 @@ li {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  border: #4a4a4a 2px solid;
+  border: hsla(0deg, 0%, 29%, 1) 2px solid;
   padding: 25px 15px;
 }
 .speciesImages img {
   width: 100%;
   height: 500px;
-  filter: drop-shadow(5px 5px 5px #6e8387);
+  filter: drop-shadow(5px 5px 5px hsla(190deg, 10%, 48%, 1));
 }
 
 .speciesDetails {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  border: #4a4a4a 2px solid;
+  border: hsla(0deg, 0%, 29%, 1) 2px solid;
   padding: 25px 15px;
   text-align: center;
 }
@@ -391,7 +391,7 @@ li {
 #map {
   width: 500px;
   height: 500px;
-  filter: drop-shadow(5px 5px 5px #6e8387);
+  filter: drop-shadow(5px 5px 5px hsla(190deg, 10%, 48%, 1));
 }
 
 .mapH3 {
@@ -420,10 +420,10 @@ li {
     font-size: 1.2rem;
   }
   .headShotLeader #italic {
-    padding: 1rem;
+    padding: 16px;
   }
   .headShot {
-    padding-bottom: 1rem;
+    padding-bottom: 16px;
   }
 }
 
@@ -526,12 +526,12 @@ li {
     max-width: 300px;
     height: auto;
     padding: 2px 6px 10px 4px;
-    filter: drop-shadow(5px 5px 5px #857e7b);
+    filter: drop-shadow(5px 5px 5px hsla(18, 4%, 50%, 1));
   }
   .mapImg img {
     width: 400px;
     padding: 2px 6px 10px 4px;
-    filter: drop-shadow(5px 5px 5px #857e7b);
+    filter: drop-shadow(5px 5px 5px hsla(18, 4%, 50%, 1));
   }
   .cardText {
     min-width: 300px;
