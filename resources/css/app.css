@@ -80,10 +80,12 @@ select {
 :root {
   /* Colors */
   --clr-black: 0, 0%, 0%;
+  --clr-text-black: 0, 0% 20%;
   --clr-white: 0, 0%, 100%;
   --clr-red: 6, 86%, 56%;
   --clr-red-deep: 6, 85%, 35%;
   --clr-pink: 22, 55%, 82%;
+  --clr-pink-light: 22, 54%, 89%;
   --clr-grey-dark: 0, 0%, 29%;
   --clr-blue-light: 190, 60%, 51%;
   --clr-blue-grey: 210, 14%, 53%;
@@ -92,7 +94,7 @@ select {
 
   /* Font Families */
   --ff-serif: 'Crimson Text', serif;
-  --ff-sans: 'Work Sans', sans-serif;
+  --ff-sans-normal: 'Work Sans', sans-serif;
   --ff-sans-cond: 'Ubuntu Condensed', sans-serif;
 
   /* Font Sizes */
@@ -168,7 +170,7 @@ select {
   background-color: hsl(var(--clr-red));
 }
 .text-dark {
-  color: hsl(var(--clr-black));
+  color: hsl(var(--clr-text-black));
 }
 .text-grey {
   color: hsl(var(--clr-grey-dark));
@@ -230,7 +232,7 @@ select {
   letter-spacing: 2.7px;
 }
 .letter-spacing-3 {
-  letter-spacing: 2.35px;
+  letter-spacing: 1px;
 }
 
 .fs-900,
@@ -242,14 +244,15 @@ select {
 /*--------------*/
 /* Styling      */
 /*--------------*/
-
 body {
+  min-height: 100vh;
   flex-direction: column;
+  --gap: 0px;
 }
 .headerMenuWrap,
 .footerMenuWrap {
   padding: 10px 10px;
-  min-height: 38px;
+  height: 80px;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
   display: flex;
@@ -260,18 +263,25 @@ body {
 .headerFirstItem:hover {
   text-decoration: none;
   margin-right: auto;
+  font-family: var(--ff-sans-normal);
+  color: hsl(var(--clr-text-black));
+  font-weight: 700;
+  font-size: var(--fs-800);
 }
 .headerListItem,
 .footerListItem {
   text-decoration: none;
   margin: 0 16px;
+  color: hsl(var(--clr-white));
+  font-size: var(--fs-600);
+  font-family: var(--ff-sans-normal);
 }
 .headerListItem:hover,
 .footerListItem:hover {
   color: hsl(var(--clr-blue-light));
-  padding-bottom: 8px;
+  padding-bottom: 6px;
   border-bottom: solid 2px;
-  transform: translate(0, 4px);
+  transform: translate(0, 2px);
 }
 .footerMenuWrap {
   justify-content: center;
@@ -279,9 +289,9 @@ body {
 .currentLink,
 .currentLink:hover {
   color: hsl(var(--clr-white));
-  padding-bottom: 8px;
+  padding-bottom: 6px;
   border-bottom: solid 2px;
-  transform: translate(0, 4px);
+  transform: translate(0, 2px);
 }
 .pageMain {
   min-height: 100vh;
@@ -290,7 +300,6 @@ body {
 }
 .hero {
   position: relative;
-  top: -16px;
   flex-direction: column;
   justify-content: space-between;
   background-image: url('../images/miscUse/heroImages/bedotiaHeroCrop_2400.jpg');
@@ -304,6 +313,23 @@ body {
   padding-right: 30px;
   padding-bottom: 20px;
 }
+.postHero {
+  justify-content: space-evenly;
+}
+.postHero__text {
+  font-family: var(--ff-serif);
+  font-size: var(--fs-600);
+  line-height: 1.2;
+  padding: 30px 20px;
+  max-width: 40vw;
+  text-align: center;
+  background-color: hsl(var(--clr-pink-light));
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: var(--clr-text-black);
+}
+
 @media only screen and (min-width: 560px) {
   .navIcon {
     display: none;
