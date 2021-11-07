@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Madagascar Fishes - Pachypanchax Sakaramyi</title>
+
+    <link href="../resources/css/reset.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="../resources/css/focal.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Neuton:wght@400;700&family=Oswald:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://kit.fontawesome.com/f5812fa2c6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="navHeader">
+        <nav class="headerMenuWrap">
+            <a class="headerFirstItem" href="../index.html">
+                Madagascar Fishes
+            </a>
+            <a class="headerListItem" href="../about.html"><span class="navIcon"><i
+                        class="fas fa-question"></i></span><span class="navName">About</span></a>
+            <a class="headerListItem" href="../projects.html"><span class="navIcon"><i
+                        class="fas fa-globe-africa fa-lg"></i></span><span class="navName">Projects</span></a>
+            <a class="headerListItem" href="../species.html"><span class="navIcon"><i
+                        class="fas fa-fish fa-lg"></i></span><span class="navName">Species</span></a>
+            <a class="headerListItem" href="../collaborators.html"><span class="navIcon"><i
+                        class="fas fa-users fa-lg"></i></span><span class="navName">Collaborators</span></a>
+        </nav>
+    </header>
+    <main class="speciesMain">
+        <h1>Pachypanchax sakaramyi</h1>
+        <div class="speciesHeader">
+            <div class="speciesImages"><img src="../resources/images/species/aplocheilidae/20080310_pSakaramyi_600.jpg" alt="Pachypanchax sakaramyi">
+            </div>
+            <div class="speciesMap">
+                <div id='map'></div>
+            </div>
+        </div>
+        <h2>Species Details</h2>
+        <div class="speciesDetails">
+            <div class="tabset">
+                <input type="radio" name="tabset_1" id="tabset_1_naturalHistory" hidden aria-hidden="true" checked>
+                <input type="radio" name="tabset_1" id="tabset_1_conservation" hidden aria-hidden="true">
+                <input type="radio" name="tabset_1" id="tabset_1_husbandry" hidden aria-hidden="true">
+                <ul hidden aria-hidden="true">
+                    <li><label for="tabset_1_naturalHistory">Natural History</label></li>
+                    <li><label for="tabset_1_conservation">Conservation</label></li>
+                    <li><label for="tabset_1_husbandry">Husbandry</label></li>
+                </ul>
+                <div>
+                    <section>
+                        <h2>Natural History</h2>
+                        <div class="innerTab">
+                            <h3>Collection Locations:</h3>
+                            <a href="../collectionSites/13_X_2006_03_C.html">Site: 13_X_2006_03_C</a>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Conservation</h2>
+                        <div class="innerTab">
+                            <h3>Conservation Efforts:</h3>
+                            <p>This species is currently in conservation breeding programs in North American and Europe.
+                            </p>
+                            <p>This species is thought to occur in Lac Texier and one other low altitude crater lake. These lakes are located inside the boundaries of Montagne d’Ambre National Park and may offer some protection to the species.</p>
+                            <p>These habitats have not been sampled since the late 1950s and nothing is known of the current status of these subpopulations.</p>
+                        </div>
+                    </section>
+                    <section>
+                        <h2>Husbandry</h2>
+                        <div class="innerTab">
+                            <p>This species has not been kept in captivity.</p>
+                            <div class="innerTab"></div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- <div class="speciesSummary">
+                <h4>Species Summary</h4>
+                <ul>
+                    <h4>Collection Locations:</h4>
+                    <li><a href="../collectionSites/13_X_2006_03_C.html">13_X_2006_03_C</a></li>
+                </ul>
+
+            </div>
+            <div class="speciesDiscussion">
+                <h4>Species Discussion</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A voluptatibus
+                    recusandae itaque, inventore optio laboriosam quaerat sed velit sapiente quae dolor deserunt aliquid
+                    fuga incidunt. Delectus laudantium expedita est reprehenderit?</p>
+            </div> -->
+        </div>
+    </main>
+
+    <footer class="pageFooter">
+        <nav class="footerMenuWrap">
+            <a class="footerListItem"
+                href="https://us5.list-manage.com/contact-form?u=3b42d6e2447bdae5dbad626f7&form_id=9fc62a01312406dd4f2089c3fb9eaeeb"><span
+                    class="navIcon"><i class="far fa-envelope fa-lg"></i></span><span class="navName">Contact
+                    Us</span></a>
+            <a class="footerListItem" href="../index.html"><span class="navIcon"><i
+                        class="fas fa-sitemap fa-lg"></i></span><span class="navName">Site Map</span></a>
+            <a class="footerListItem" href="../index.html"><span class="navIcon"><i
+                        class="fas fa-user-shield fa-lg"></i></span><span class="navName">Our Privacy Policy</span></a>
+            <a class="footerListItem" href="../index.html"><span class="navIcon"><i
+                        class="far fa-copyright fa-lg"></i></span><span class="navName">© Madagascar Fishes
+                    2021</span></a>
+        </nav>
+    </footer>
+    <script src="../script/master.js" type="text/javascript"></script>
+    <script>
+        // The value for 'accessToken' begins with 'pk...'
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYWxla3NlaXNhdW5kZXJzIiwiYSI6ImNrc2RpMWxsZzBxd3oydG5ydG90c2c0M3MifQ.LL8KNLTtfteetRUvIJxt1Q';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            // Replace YOUR_STYLE_URL with your style URL.
+            style: 'mapbox://styles/alekseisaunders/cksdyykh915nc17pl7ymnnfxb',
+            center: [47.730000000000004, -23.0261111],
+            zoom: 12.7
+        });
+
+        map.addControl(new mapboxgl.NavigationControl());
+        map.scrollZoom.disable();
+        // Code from the next step will go here.
+        /*
+        Add an event listener that runs
+          when a user clicks on the map element.
+        */
+        map.on('click', function (e) {
+            // If the user clicked on one of your markers, get its information.
+            var features = map.queryRenderedFeatures(e.point, {
+                layers: ['bedotiaspnovmanombo'] // replace with your layer name
+            });
+            if (!features.length) {
+                return;
+            }
+            var feature = features[0];
+
+            // Code from the next step will go here.
+            /*
+      
+                Create a popup, specify its options
+                and properties, and add it to the map.
+              */
+            var popup = new mapboxgl.Popup({ offset: [0, -15] })
+                .setLngLat(feature.geometry.coordinates)
+                .setHTML(
+                    '<h3 class="mapH3">' + feature.properties.title + '</h3>' +
+                    '<p class="mapPara">' + feature.properties.description + '</p>'
+                    // '<a target="_blank" href="../resources/images/habitats/' + feature.properties.title + '.jpg">Image link</a>'
+                )
+                .addTo(map);
+        });
+    </script>
+</body>
+
+</html>
