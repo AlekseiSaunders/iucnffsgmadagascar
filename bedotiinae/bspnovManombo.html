@@ -37,7 +37,8 @@
     <main class="speciesMain">
         <h1>Bedotoa sp nov "Manombo"</h1>
         <div class="speciesHeader">
-            <div class="speciesImages"><img src="../resources/images/species/bedotiinae/bspnovManombo_1200.jpg" alt="">
+            <div class="speciesImages"><img src="../resources/images/species/bedotiinae/bspnovManombo_1200.jpg"
+                    alt="An undescribed species of Bedotia from the Parc Special Reserve Manombo">
             </div>
             <div class="speciesMap">
                 <div id='map'></div>
@@ -136,7 +137,8 @@
             var features = map.queryRenderedFeatures(e.point, {
                 layers: ['bedotiaspnovmanombo'] // replace with your layer name
             });
-            if (!features.length) {
+            if (!features.length)
+            {
                 return;
             }
             var feature = features[0];
