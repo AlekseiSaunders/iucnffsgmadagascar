@@ -37,7 +37,8 @@
     <main class="speciesMain">
         <h1>Pachypanchax sakaramyi</h1>
         <div class="speciesHeader">
-            <div class="speciesImages"><img src="../resources/images/species/aplocheilidae/20080310_pSakaramyi_600.jpg" alt="Pachypanchax sakaramyi">
+            <div class="speciesImages"><img src="../resources/images/species/aplocheilidae/20080310_pSakaramyi_600.jpg"
+                    alt="Pachypanchax sakaramyi">
             </div>
             <div class="speciesMap">
                 <div id='map'></div>
@@ -59,7 +60,16 @@
                         <h2>Natural History</h2>
                         <div class="innerTab">
                             <h3>Collection Locations:</h3>
-                            <a href="../collectionSites/13_X_2006_03_C.html">Site: 13_X_2006_03_C</a>
+                            <p>Reports by Loiselle (2006) indicate that this species has become restricted in range.
+                                Originally extant along the northern and eastern aspects of the Ambohitra Massif, P.
+                                sakaramyi appears to have become restricted to short stretches of the Sakaramy River
+                                between Ambohitra and Sakaramy village.</p>
+                            <p>Local reports indicate that the species may be found in the Farihy Texier and Farihy
+                                Fantany (crater lakes low on Manokan' Ambohitra). De Rham has reported finding
+                                superficially similar pachypanchax between Bobasokoa and Anivorano, near the village of
+                                Andranotohiliny. This population warrants further examination as it would expand the
+                                range of p. sakaramyi.</p>
+
                         </div>
                     </section>
                     <section>
@@ -68,14 +78,28 @@
                             <h3>Conservation Efforts:</h3>
                             <p>This species is currently in conservation breeding programs in North American and Europe.
                             </p>
-                            <p>This species is thought to occur in Lac Texier and one other low altitude crater lake. These lakes are located inside the boundaries of Montagne d’Ambre National Park and may offer some protection to the species.</p>
-                            <p>These habitats have not been sampled since the late 1950s and nothing is known of the current status of these subpopulations.</p>
+                            <p>This species is thought to occur in Lac Texier and one other low altitude crater lake.
+                                These lakes are located inside the boundaries of Montagne d’Ambre National Park and may
+                                offer some protection to the species.</p>
+                            <p>These habitats have not been sampled since the late 1950s and nothing is known of the
+                                current status of these subpopulations.</p>
                         </div>
                     </section>
                     <section>
                         <h2>Husbandry</h2>
                         <div class="innerTab">
-                            <p>This species has not been kept in captivity.</p>
+                            <p>This species has an extensive history in captive collections. It could be considered a
+                                relatively easy species to care for and breed.</p>
+                            <p>Experiences by Aleksei Saunders - it was found that male:female ratios of 1:3 worked well
+                                in 10 gallon glass aquaria with sponge filters and yarn/synthetic floating mops.</p>
+                            <p>Males could become determined to breed and defend territories causing issues with both
+                                females and less dominant males, but these instances usually resolved themselves without
+                                loss of life.</p>
+                            <p>Eggs were commonly found in mops early in the day, diffusely deposited at various depths.
+                                Golden in color and slightly adhesive, fertile eggs could be identified by resistance to
+                                pressure. Gestation at 73&deg;F was, on average, 3 days.</p>
+                            <p>Predation upon fry was common amongst first hatching in "clutches" but decreased with
+                                time. Sub-adults appeared to be rarely in danger of consumption by adults.</p>
                             <div class="innerTab"></div>
                     </section>
                 </div>
@@ -120,10 +144,11 @@
         var map = new mapboxgl.Map({
             container: 'map',
             // Replace YOUR_STYLE_URL with your style URL.
-            style: 'mapbox://styles/alekseisaunders/cksdyykh915nc17pl7ymnnfxb',
-            center: [47.730000000000004, -23.0261111],
-            zoom: 12.7
+            style: 'mapbox://styles/mapbox/satellite-streets-v11',
+            center: [49.266667, -12.45],
+            zoom: 8
         });
+
 
         map.addControl(new mapboxgl.NavigationControl());
         map.scrollZoom.disable();
@@ -132,31 +157,25 @@
         Add an event listener that runs
           when a user clicks on the map element.
         */
-        map.on('click', function (e) {
-            // If the user clicked on one of your markers, get its information.
-            var features = map.queryRenderedFeatures(e.point, {
-                layers: ['bedotiaspnovmanombo'] // replace with your layer name
-            });
-            if (!features.length) {
-                return;
-            }
-            var feature = features[0];
 
-            // Code from the next step will go here.
-            /*
-      
-                Create a popup, specify its options
-                and properties, and add it to the map.
-              */
-            var popup = new mapboxgl.Popup({ offset: [0, -15] })
-                .setLngLat(feature.geometry.coordinates)
-                .setHTML(
-                    '<h3 class="mapH3">' + feature.properties.title + '</h3>' +
-                    '<p class="mapPara">' + feature.properties.description + '</p>'
-                    // '<a target="_blank" href="../resources/images/habitats/' + feature.properties.title + '.jpg">Image link</a>'
-                )
-                .addTo(map);
-        });
+
+        // Code from the next step will go here.
+        /*
+  
+            Create a popup, specify its options
+            and properties, and add it to the map.
+          */
+        const popup = new mapboxgl.Popup({ offset: [0, -15] }).setText(
+            'Type Locale for Pachypanchax sakaramyi - Holly (1928)'
+        );
+
+        const el = document.createElement('div');
+        el.id = 'marker';
+
+        const typeLocaleMarker = new mapboxgl.Marker()
+            .setLngLat([49.266667, -12.45])
+            .setPopup(popup)
+            .addTo(map);
     </script>
 </body>
 
