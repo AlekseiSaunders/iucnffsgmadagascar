@@ -82,42 +82,53 @@ select {
   --clr-black: 0, 0%, 0%;
   --clr-text-black: 0, 0% 20%;
   --clr-white: 0, 0%, 100%;
-  --clr-red: 6, 86%, 56%;
-  --clr-red-deep: 6, 85%, 35%;
-  --clr-pink: 22, 55%, 82%;
-  --clr-pink-light: 22, 54%, 89%;
+  --clr-accent-400: 6, 86%, 56%;
+  --clr-accent-600: 6, 85%, 35%;
+  --clr-accent-200: 22, 55%, 82%;
+  --clr-accent-100: 22, 54%, 89%;
   --clr-grey-dark: 0, 0%, 29%;
-  --clr-blue-light: 190, 60%, 51%;
+  --clr-hover: 190, 60%, 51%;
   --clr-blue-grey: 210, 14%, 53%;
-  --clr-yellow: 48, 87%, 65%;
+  --clr-card-body: 48, 87%, 65%;
   --clr-brown-grey: 18, 4%, 50%;
 
   /* Font Families */
-  --ff-serif: 'Crimson Text', serif;
+  /* --ff-serif: 'Crimson Text', serif;
   --ff-sans-normal: 'Work Sans', sans-serif;
-  --ff-sans-cond: 'Ubuntu Condensed', sans-serif;
+  --ff-sans-cond: 'Ubuntu Condensed', sans-serif; */
+  --ff-sans-body: 'Hind Madurai', sans-serif;
+  --ff-serif: 'Lora', serif;
+  --ff-sans-headings: 'Montserrat', sans-serif;
 
   /* Font Sizes */
-  --fs-900: 3.5rem;
-  --fs-800: 2.5rem;
-  --fs-700: 2.25rem;
-  --fs-600: 2rem;
-  --fs-500: 1.75rem;
-  --fs-400: 1.125rem;
+  --fs-900: 3.815rem;
+  --fs-800: 3.05rem;
+  --fs-700: 2.441rem;
+  --fs-600: 1.953rem;
+  --fs-500: 1.563rem;
+  --fs-400: 1.25rem;
   --fs-300: 1rem;
-  --fs-200: 0.875rem;
+  --fs-200: 0.8rem;
+  --fs-100: 0.64rem;
 
   /* Font Weight */
-  --fw-200: 200;
+  --fw-300: 300;
   --fw-400: 400;
+  --fw-600: 600;
   --fw-700: 700;
-  --fw-900: 900;
 
   /* Font Style */
   --fstyle-italic: italic;
 
+  /* Line Height */
+  --lh-h1: 5.625rem;
+  --lh-h2: 3.75rem;
+  --lh-p: 1.875rem;
+
   /* Spacing */
   --flow-space: 1rem;
+  --typo-bm-reg: 1.875rem;
+  --typo-bm-sm: 0.9375rem;
 }
 
 /*-----------------*/
@@ -160,17 +171,23 @@ select {
 }
 
 /* Colors */
-.bg-pink {
-  background-color: hsl(var(--clr-pink));
+.bg-accent-200 {
+  background-color: hsl(var(--clr-accent-200));
 }
-.bg-yellow {
-  background-color: hsl(var(--clr-yellow));
+.bg-card-body {
+  background-color: hsl(var(--clr-card-body));
 }
-.bg-red {
-  background-color: hsl(var(--clr-red));
+.bg-accent {
+  background-color: hsl(var(--clr-accent));
+}
+.bg-black {
+  background-color: hsl(var(--clr-black));
 }
 .text-dark {
   color: hsl(var(--clr-text-black));
+}
+.text-accent {
+  color: hsl(var(--clr-accent-400));
 }
 .text-grey {
   color: hsl(var(--clr-grey-dark));
@@ -178,8 +195,8 @@ select {
 .text-white {
   color: hsl(var(--clr-white));
 }
-.text-blue-light {
-  color: hsl(var(--clr-blue-light));
+.text-hover {
+  color: hsl(var(--clr-hover));
 }
 /* Typography */
 
@@ -193,11 +210,11 @@ select {
 .ff-serif {
   font-family: var(--ff-serif);
 }
-.ff-sans-normal {
-  font-family: var(--ff-sans-normal);
+.ff-sans-headings {
+  font-family: var(--ff-sans-headings);
 }
-.ff-sans-cond {
-  font-family: var(--ff-sans-cond);
+.ff-sans-body {
+  font-family: var(--ff-sans-body);
 }
 
 .fs-900 {
@@ -235,26 +252,19 @@ select {
   letter-spacing: 1px;
 }
 
-.fs-900,
-.fs-800,
-.fs-700,
-.fs-600 {
-  line-height: 1.1;
-}
 /*--------------*/
 /* Styling      */
 /*--------------*/
 body {
   min-height: 100vh;
   flex-direction: column;
+  line-height: var(--lh-p);
   --gap: 0px;
 }
 .headerMenuWrap,
 .footerMenuWrap {
   padding: 10px 10px;
-  height: 80px;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  height: (var(--lh-h1));
   display: flex;
   align-items: center;
 }
@@ -263,25 +273,26 @@ body {
 .headerFirstItem:hover {
   text-decoration: none;
   margin-right: auto;
-  font-family: var(--ff-sans-normal);
-  color: hsl(var(--clr-text-black));
+  font-family: var(--ff-sans-headings);
+  color: hsl(var(--clr-accent-400));
   font-weight: 700;
-  font-size: var(--fs-800);
+  font-size: var(--fs-100);
+  letter-spacing: 0.1em;
 }
 .headerListItem,
 .footerListItem {
   text-decoration: none;
-  margin: 0 16px;
-  color: hsl(var(--clr-white));
-  font-size: var(--fs-600);
-  font-family: var(--ff-sans-normal);
+  margin: 0 10px;
+  color: hsl(var(--clr-accent-400));
+  font-size: var(--fs-100);
+  font-family: var(--ff-sans-body);
 }
 .headerListItem:hover,
 .footerListItem:hover {
-  color: hsl(var(--clr-blue-light));
-  padding-bottom: 6px;
+  color: hsl(var(--clr-hover));
+  /* padding-bottom: 6px;
   border-bottom: solid 2px;
-  transform: translate(0, 2px);
+  transform: translate(0, 2px); */
 }
 .footerMenuWrap {
   justify-content: center;
@@ -302,32 +313,53 @@ body {
   position: relative;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url('../images/miscUse/heroImages/bedotiaHeroCrop_2400.jpg');
+  background-image: linear-gradient(
+      hsla(0, 0%, 0%, 0.6) 0%,
+      hsla(0, 0%, 0%, 0.1) 40%,
+      hsla(0, 0%, 0%, 0.2) 70%,
+      hsla(0, 0%, 0%, 0.8) 100%
+    ),
+    url('../images/miscUse/heroImages/bedotiaHero_600.jpg');
   background-size: cover;
-  aspect-ratio: 2.4;
+  aspect-ratio: 1.5;
 }
 .heroText,
 .actionCall {
+  font-size: var(--fs-300);
   max-width: 75%;
   align-self: flex-end;
-  padding-right: 30px;
-  padding-bottom: 20px;
+  padding: 5px 10px;
+  line-height: 1.4rem;
 }
 .postHero {
   justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 .postHero__text {
   font-family: var(--ff-serif);
-  font-size: var(--fs-600);
-  line-height: 1.2;
+  font-size: var(--fs-300);
   padding: 30px 20px;
-  max-width: 40vw;
+  max-width: 80vw;
   text-align: center;
-  background-color: hsl(var(--clr-pink-light));
+  outline: 1px solid hsl(var(--clr-accent-400));
   border-radius: 10px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 20px 0px;
   color: var(--clr-text-black);
+}
+.btnLike {
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--ff-sans-body);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+  color: hsl(var(--clr-text-black));
+  /* background-color: hsl(90, 97%, 13%); */
+  background-color: hsl(90, 97%, 30%);
+  padding: 0.5em 1.75em;
+  border-radius: 60px;
+  margin-top: 1rem;
 }
 
 @media only screen and (min-width: 560px) {
@@ -340,3 +372,4 @@ body {
     display: none;
   }
 }
+/* aspect ratio 2.4 */
