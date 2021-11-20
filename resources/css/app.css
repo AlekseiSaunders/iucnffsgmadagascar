@@ -402,7 +402,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-image: linear-gradient(
-        hsla(0, 0%, 0%, 0.6) 0%,
+        hsla(0, 0%, 0%, 0.8) 0%,
         hsla(0, 0%, 0%, 0.1) 40%,
         hsla(0, 0%, 0%, 0.2) 80%,
         hsla(0, 0%, 0%, 0.8) 100%
