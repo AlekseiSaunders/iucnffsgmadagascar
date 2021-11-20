@@ -493,3 +493,48 @@ body {
     max-width: 35%;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .headerMenuWrap,
+  .footerMenuWrap {
+    padding: 10px 10px;
+    height: 4.5rem;
+  }
+  .headerFirstItem,
+  .headerFirstItem:visited,
+  .headerFirstItem:hover {
+    font-weight: 700;
+    font-size: var(--fs-700);
+  }
+  .headerListItem,
+  .footerListItem {
+    margin: 0 15px;
+    font-size: var(--fs-600);
+  }
+  .heroText,
+  .actionCall {
+    font-size: var(--fs-800);
+    line-height: 3rem;
+    max-width: 65%;
+    padding: 10px 20px;
+  }
+  .card__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--flow-space);
+    max-width: 90vw;
+    margin: 30px 0px;
+  }
+  .card__text p {
+    font-size: var(--fs-600);
+    font-weight: 400;
+    line-height: 2.75rem;
+    min-width: 50%;
+  }
+  .card__img {
+    flex-grow: 1;
+    display: inline;
+    aspect-ratio: 1;
+    max-width: 35%;
+  }
+}
