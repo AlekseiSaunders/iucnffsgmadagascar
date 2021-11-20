@@ -278,12 +278,23 @@ select {
 .letter-spacing-3 {
   letter-spacing: 1px;
 }
+h1 {
+  font-family: var(--ff-sans-headings);
+  font-size: var(--fs-500);
+  font-weight: var(--fw-700);
+  margin-bottom: var(--typo-bm-reg);
+}
 h2 {
   font-family: var(--ff-sans-headings);
   font-size: var(--fs-800);
   font-weight: var(--fw-700);
   line-height: var(--lh-h2);
   margin-bottom: var(--typo-bm-reg);
+}
+h3 {
+  font-family: var(--ff-sans-headings);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-700);
 }
 p {
   font-size: var(--fs-300);
@@ -337,14 +348,12 @@ body {
 }
 .currentLink,
 .currentLink:hover {
-  color: hsl(var(--clr-white));
-  padding-bottom: 6px;
+  color: hsl(var(--clr-hover));
   border-bottom: solid 2px;
   transform: translate(0, 2px);
 }
 .pageMain {
   min-height: 100vh;
-  display: flex;
   flex-direction: column;
 }
 .hero {
@@ -396,6 +405,42 @@ body {
   color: hsl(var(--clr-text-black));
   background-color: hsl(var(--clr-card-btn-hover));
 }
+.featureProject__container {
+  padding: 30px 20px;
+  outline: 3px solid hsl(var(--clr-text-black));
+  color: hsl(var(--clr-text-black));
+  border-radius: 10px;
+  margin: 20px 0px;
+}
+.featureProject__img {
+  position: relative;
+  background-image: linear-gradient(
+      hsla(0, 0%, 0%, 0.6) 0%,
+      hsla(0, 0%, 0%, 0.1) 40%,
+      hsla(0, 0%, 0%, 0.2) 70%,
+      hsla(0, 0%, 0%, 0.8) 100%
+    ),
+    url('../images/species/cichlidae/ptyInsolitus_600.jpg');
+  background-size: cover;
+  aspect-ratio: 1.5;
+}
+.featureProject__logo {
+  position: absolute;
+  width: 60px;
+  top: -25px;
+  left: -15px;
+}
+.featureProject__icon {
+  position: absolute;
+  width: 150px;
+  top: -25px;
+  right: -65px;
+}
+.featureProject__text h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
 @media (min-width: 500px) {
   .hero {
     position: relative;
@@ -416,11 +461,11 @@ body {
   .navName {
     display: none;
   }
-  .card__img {
-    display: none;
+  .card__text {
+    order: -1;
+    margin-bottom: 2rem;
   }
 }
-
 @media only screen and (min-width: 560px) {
   .navIcon {
     display: none;
@@ -436,6 +481,10 @@ body {
   .footerListItem {
     margin: 0 10px;
     font-size: var(--fs-200);
+  }
+  .currentLink,
+  .currentLink:hover {
+    padding-bottom: 0.2em;
   }
   .heroText,
   .actionCall {
