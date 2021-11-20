@@ -537,4 +537,11 @@ body {
     aspect-ratio: 1;
     max-width: 35%;
   }
+  .btnLike {
+    font-size: var(--fs-600);
+    font-weight: var(--fw-600);
+    padding: 0.75em 2em;
+    border-radius: 80px;
+    box-shadow: var(--shadow-elevation-medium);
+  }
 }
