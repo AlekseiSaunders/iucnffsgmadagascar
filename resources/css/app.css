@@ -394,11 +394,17 @@ body {
 .heroText,
 .actionCall {
   font-size: var(--fs-300);
-  max-width: 75%;
+  max-width: 31ch;
   align-self: flex-end;
   padding: 5px 10px;
   line-height: 1.4rem;
   margin-bottom: 0;
+}
+.focus__text {
+  font-family: var(--ff-sans-headings);
+  font-style: italic;
+  color: hsl(var(--clr-accent-400));
+  font-weight: 700;
 }
 .card__container {
   font-size: var(--fs-300);
@@ -612,7 +618,7 @@ body {
     font-size: var(--fs-800);
     line-height: 3rem;
     max-width: 65%;
-    padding: 10px 20px;
+    padding: 20px 20px;
   }
   .card__container {
     display: flex;
