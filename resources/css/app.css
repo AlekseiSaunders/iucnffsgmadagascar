@@ -421,6 +421,7 @@ body {
   font-size: var(--fs-400);
   font-weight: var(--fw-600);
   text-transform: uppercase;
+  text-align: center;
   color: hsl(var(--clr-text-white));
   background-color: hsl(var(--clr-card-btn));
   padding: 0.5em 1.75em;
