@@ -344,6 +344,16 @@ p {
   line-height: var(--lh-p);
   margin-bottom: var(--typo-bm-reg);
 }
+hr {
+  border: 0;
+  height: 1px;
+  width: 70%;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
 /*--------------*/
 /* Styling      */
 /*--------------*/
@@ -523,6 +533,7 @@ body {
   color: hsl(var(--clr-text-white));
   background-color: hsl(var(--clr-card-donate-hover));
 }
+
 @media (min-width: 500px) {
   .hero {
     position: relative;
@@ -548,7 +559,7 @@ body {
     margin-bottom: 1.5rem;
   }
   .card__text p {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
 }
 @media only screen and (min-width: 560px) {
