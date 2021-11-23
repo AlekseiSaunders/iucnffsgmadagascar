@@ -435,6 +435,9 @@ h1 {
   line-height: 1.4rem;
   margin-bottom: 0;
 }
+.hero h1 {
+  margin-top: 0;
+}
 .focus__text {
   font-family: var(--ff-sans-headings);
   font-style: italic;
