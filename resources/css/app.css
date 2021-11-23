@@ -322,13 +322,13 @@ select {
 }
 h1 {
   font-family: var(--ff-sans-headings);
-  font-size: var(--fs-500);
+  font-size: var(--fs-800);
   font-weight: var(--fw-700);
   margin-bottom: var(--typo-bm-reg);
 }
 h2 {
   font-family: var(--ff-sans-headings);
-  font-size: var(--fs-800);
+  font-size: var(--fs-700);
   font-weight: var(--fw-700);
   line-height: var(--lh-h2);
   margin-bottom: var(--typo-bm-reg);
@@ -362,6 +362,9 @@ body {
   flex-direction: column;
   line-height: var(--lh-p);
   --gap: 0px;
+}
+h1 {
+  margin-top: 2rem;
 }
 .headerMenuWrap,
 .footerMenuWrap {
