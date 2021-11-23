@@ -153,6 +153,26 @@ select {
     44.6px 44.2px 75.4px -1.7px hsl(var(--shadow-color) / 0.37),
     64.8px 64.2px 109.5px -2px hsl(var(--shadow-color) / 0.39);
 
+  --shadow-color-img: 0deg 0% 10%;
+  --shadow-elevation-low-img: 0.6px 0.6px 1px
+      hsl(var(--shadow-color-img) / 0.28),
+    1.1px 1.1px 1.9px -1px hsl(var(--shadow-color-img) / 0.32),
+    2.6px 2.6px 4.4px -2px hsl(var(--shadow-color-img) / 0.37);
+  --shadow-elevation-medium-img: 0.6px 0.6px 1px
+      hsl(var(--shadow-color-img) / 0.29),
+    2.3px 2.3px 3.9px -0.7px hsl(var(--shadow-color-img) / 0.32),
+    5.5px 5.5px 9.3px -1.3px hsl(var(--shadow-color-img) / 0.36),
+    13px 12.8px 21.9px -2px hsl(var(--shadow-color-img) / 0.4);
+  --shadow-elevation-high-img: 0.6px 0.6px 1px
+      hsl(var(--shadow-color-img) / 0.27),
+    4.4px 4.3px 7.4px -0.3px hsl(var(--shadow-color-img) / 0.28),
+    8px 8px 13.6px -0.6px hsl(var(--shadow-color-img) / 0.3),
+    12.8px 12.6px 21.6px -0.9px hsl(var(--shadow-color-img) / 0.32),
+    19.7px 19.5px 33.3px -1.1px hsl(var(--shadow-color-img) / 0.34),
+    29.9px 29.6px 50.5px -1.4px hsl(var(--shadow-color-img) / 0.35),
+    44.6px 44.2px 75.4px -1.7px hsl(var(--shadow-color-img) / 0.37),
+    64.8px 64.2px 109.5px -2px hsl(var(--shadow-color-img) / 0.39);
+
   --shadow-color-donate: 190 60% 51%;
   --shadow-elevation-low-donate: 0.6px 0.6px 1px
       hsl(var(--shadow-color-donate) / 0.28),
@@ -411,10 +431,13 @@ body {
 .card__container {
   font-size: var(--fs-300);
   padding: 30px 20px;
-  outline: 1px solid hsl(var(--clr-accent-400));
+  /*         */
   color: hsl(var(--clr-text-black));
   border-radius: 10px;
   margin: 20px 0px;
+}
+.card__img {
+  box-shadow: var(--shadow-elevation-medium-img);
 }
 .btnLike {
   display: inline-block;
@@ -522,7 +545,10 @@ body {
   }
   .card__text {
     order: -1;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .card__text p {
+    margin-bottom: .5rem;
   }
 }
 @media only screen and (min-width: 560px) {
@@ -555,6 +581,9 @@ body {
     font-size: var(--fs-400);
     max-width: 90vw;
     margin: 30px 0px;
+  }
+  .card__text p {
+    font-size: var(--fs-500);
   }
   .card__img {
     display: none;
@@ -599,6 +628,7 @@ body {
     display: inline;
     aspect-ratio: 1;
     max-width: 35%;
+    margin-right: 10px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -644,6 +674,7 @@ body {
     display: inline;
     aspect-ratio: 1;
     max-width: 35%;
+    margin-right: 20px;
   }
   .btnLike {
     font-size: var(--fs-600);
