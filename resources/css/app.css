@@ -423,6 +423,16 @@ h1 {
       hsla(0, 0%, 0%, 0.8) 100%
     ),
     url('../images/miscUse/heroImages/bedotiaHero_600.jpg');
+  background-image: -webkit-image-set(
+    url('../images/miscUse/heroImages/bedotiaHero_600.jpg') 1x,
+    url('../images/miscUse/heroImages/bedotiaHeroCrop_1200.jpg') 2x,
+    url('../images/miscUse/heroImages/bedotiaHeroCrop_2400.jpg') 3x
+  );
+  background-image: image-set(
+    '../images/miscUse/heroImages/bedotiaHero_600.jpg' 1x,
+    '../images/miscUse/heroImages/bedotiaHeroCrop_1200.jpg' 2x,
+    '../images/miscUse/heroImages/bedotiaHeroCrop_2400.jpg' 3x
+  );
   background-size: cover;
   aspect-ratio: 1.5;
 }
@@ -494,6 +504,16 @@ h1 {
       hsla(0, 0%, 0%, 0.8) 100%
     ),
     url('../images/species/cichlidae/ptyInsolitus_600.jpg');
+  background-image: -webkit-image-set(
+    url('../images/species/cichlidae/ptyInsolitus_600.jpg') 1x,
+    url('../images/species/cichlidae/ptyInsolitus_1200.jpg') 2x,
+    url('../images/species/cichlidae/ptyInsolitus_2400.jpg') 3x
+  );
+  background-image: image-set(
+    '../images/species/cichlidae/ptyInsolitus_600.jpg' 1x,
+    '../images/species/cichlidae/ptyInsolitus_1200.jpg' 2x,
+    '../images/species/cichlidae/ptyInsolitus_2400.jpg' 3x
+  );
   background-size: cover;
   aspect-ratio: 1.5;
   flex-direction: column;
@@ -617,7 +637,17 @@ h1 {
     font-size: var(--fs-500);
   }
   .card__img {
-    display: none;
+    flex-grow: 1;
+    display: inline;
+    aspect-ratio: 1;
+    max-width: 75vw;
+    margin-bottom: 30px;
+    align-self: flex-start;
+  }
+  .featureProject__img p {
+    font-size: var(--fs-700);
+    margin-top: 1rem;
+    margin-bottom: var(--typo-bm-reg);
   }
 }
 @media only screen and (min-width: 800px) {
