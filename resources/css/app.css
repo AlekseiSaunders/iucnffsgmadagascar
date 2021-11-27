@@ -366,6 +366,9 @@ body {
 h1 {
   margin-top: 2rem;
 }
+main {
+  position: relative;
+}
 .headerMenuWrap,
 .footerMenuWrap {
   padding: 10px 10px;
@@ -417,24 +420,18 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   background-image: linear-gradient(
-      hsla(0, 0%, 0%, 0.6) 0%,
-      hsla(0, 0%, 0%, 0.1) 40%,
-      hsla(0, 0%, 0%, 0.2) 70%,
-      hsla(0, 0%, 0%, 0.8) 100%
-    ),
-    url('../images/miscUse/heroImages/bedotiaHero_600.jpg');
-  background-image: -webkit-image-set(
-    url('../images/miscUse/heroImages/bedotiaHero_600.jpg') 1x,
-    url('../images/miscUse/heroImages/bedotiaHeroCrop_1200.jpg') 2x,
-    url('../images/miscUse/heroImages/bedotiaHeroCrop_2400.jpg') 3x
+    hsla(0, 0%, 0%, 0.6) 0%,
+    hsla(0, 0%, 0%, 0.1) 40%,
+    hsla(0, 0%, 0%, 0.2) 70%,
+    hsla(0, 0%, 0%, 0.8) 100%
   );
-  background-image: image-set(
-    '../images/miscUse/heroImages/bedotiaHero_600.jpg' 1x,
-    '../images/miscUse/heroImages/bedotiaHeroCrop_1200.jpg' 2x,
-    '../images/miscUse/heroImages/bedotiaHeroCrop_2400.jpg' 3x
-  );
-  background-size: cover;
   aspect-ratio: 1.5;
+}
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 .heroText,
 .actionCall {
@@ -580,13 +577,11 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     background-image: linear-gradient(
-        hsla(0, 0%, 0%, 0.8) 0%,
-        hsla(0, 0%, 0%, 0.1) 40%,
-        hsla(0, 0%, 0%, 0.2) 80%,
-        hsla(0, 0%, 0%, 0.8) 100%
-      ),
-      url('../images/miscUse/heroImages/bedotiaHeroCrop_1200.jpg');
-    background-size: cover;
+      hsla(0, 0%, 0%, 0.8) 0%,
+      hsla(0, 0%, 0%, 0.1) 40%,
+      hsla(0, 0%, 0%, 0.2) 80%,
+      hsla(0, 0%, 0%, 0.8) 100%
+    );
     aspect-ratio: 2.4;
   }
 }
