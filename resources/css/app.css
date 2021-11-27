@@ -487,29 +487,25 @@ main {
   color: hsl(var(--clr-text-black));
   border-radius: 10px;
   margin: 20px 0px;
+  position: relative;
 }
 .featureProject__title {
   font-size: var(--fs-500);
   margin-top: 0;
 }
+.featurebg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 .featureProject__img {
   position: relative;
   background-image: linear-gradient(
-      hsla(0, 0%, 0%, 0.6) 0%,
-      hsla(0, 0%, 0%, 0.1) 40%,
-      hsla(0, 0%, 0%, 0.2) 70%,
-      hsla(0, 0%, 0%, 0.8) 100%
-    ),
-    url('../images/species/cichlidae/ptyInsolitus_600.jpg');
-  background-image: -webkit-image-set(
-    url('../images/species/cichlidae/ptyInsolitus_600.jpg') 1x,
-    url('../images/species/cichlidae/ptyInsolitus_1200.jpg') 2x,
-    url('../images/species/cichlidae/ptyInsolitus_2400.jpg') 3x
-  );
-  background-image: image-set(
-    '../images/species/cichlidae/ptyInsolitus_600.jpg' 1x,
-    '../images/species/cichlidae/ptyInsolitus_1200.jpg' 2x,
-    '../images/species/cichlidae/ptyInsolitus_2400.jpg' 3x
+    hsla(0, 0%, 0%, 0.6) 0%,
+    hsla(0, 0%, 0%, 0.1) 40%,
+    hsla(0, 0%, 0%, 0.2) 70%,
+    hsla(0, 0%, 0%, 0.8) 100%
   );
   background-size: cover;
   aspect-ratio: 1.5;
@@ -520,14 +516,14 @@ main {
 .featureProject__logo {
   display: none;
   position: absolute;
-  width: 150px;
+  width: 100px;
   top: -35px;
   left: -25px;
 }
 .featureProject__icon {
   display: none;
   position: absolute;
-  width: 120px;
+  width: 90px;
   top: -23px;
   right: -20px;
 }
@@ -757,5 +753,11 @@ main {
     padding: 0.75em 2em;
     border-radius: 80px;
     box-shadow: var(--shadow-elevation-medium);
+  }
+  .featureProject__icon {
+    width: 120px;
+  }
+  .featureProject__logo {
+    width: 150px;
   }
 }
