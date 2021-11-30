@@ -555,6 +555,7 @@ main {
 /* Animated Cards */
 .equalize {
   justify-content: center;
+  flex-wrap: wrap;
 }
 .animated__card {
   position: relative;
@@ -777,7 +778,6 @@ main {
   }
   .card__container {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     gap: 30px;
