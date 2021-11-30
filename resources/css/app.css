@@ -570,6 +570,7 @@ main {
   overflow: hidden; /*solves bottom corners not rounding */
   transition: transform 500ms ease;
   min-height: 560px;
+  box-shadow: var(--shadow-elevation-medium-img);
 }
 .animated__bg-image {
   max-width: 100%;
@@ -686,6 +687,7 @@ main {
     aspect-ratio: 2.4;
   }
 }
+
 @media only screen and (max-width: 560px) {
   .navName {
     display: none;
@@ -696,6 +698,13 @@ main {
   }
   .card__text p {
     margin-bottom: 0.5rem;
+  }
+  .animated__card {
+    padding: 10rem 0 0;
+    min-height: fit-content;
+  }
+  .animated__bg-image {
+    top: 50px;
   }
 }
 @media only screen and (min-width: 560px) {
@@ -768,6 +777,7 @@ main {
   }
   .card__container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     gap: 30px;
@@ -855,5 +865,38 @@ main {
     padding: 0.75em 2em;
     border-radius: 80px;
     box-shadow: var(--shadow-elevation-medium);
+  }
+  .animated__card {
+    max-width: 28ch;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .navName {
+    display: none;
+  }
+  .card__text {
+    order: -1;
+    margin-bottom: 1.5rem;
+  }
+  .card__text p {
+    margin-bottom: 0.5rem;
+  }
+  .animated__card {
+    padding: 10rem 0 0;
+    min-height: fit-content;
+  }
+  .animated__bg-image {
+    top: 50px;
+  }
+}
+
+@media (max-width: 499px) {
+  .animated__card {
+    padding: 1rem 0 0;
+    min-height: fit-content;
+  }
+  .animated__bg-image {
+    top: 50px;
   }
 }
