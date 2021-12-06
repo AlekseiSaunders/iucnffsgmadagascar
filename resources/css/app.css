@@ -621,6 +621,12 @@ main {
   padding-top: 1.5em;
   padding-bottom: 1em;
 }
+.animated__card-body a,
+.animated__card-body a:visited {
+  font-family: var(ff-sans-body);
+  text-decoration: none;
+  color: hsl(var(--clr-hover));
+}
 @media (hover) {
   .animated__card-content {
     transform: translateY(70%);
