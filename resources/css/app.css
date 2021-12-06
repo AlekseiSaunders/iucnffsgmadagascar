@@ -451,10 +451,10 @@ main {
   color: hsl(var(--clr-accent-400));
   font-weight: 700;
 }
+
 .card__container {
   font-size: var(--fs-300);
   padding: 30px 20px;
-  /*         */
   color: hsl(var(--clr-text-black));
   border-radius: 10px;
   margin: 20px 0px;
@@ -572,6 +572,7 @@ main {
   transition: transform 500ms ease;
   min-height: 560px;
   box-shadow: var(--shadow-elevation-medium-img);
+  min-height: 650px;
 }
 .animated__bg-image {
   max-width: 100%;
