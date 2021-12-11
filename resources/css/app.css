@@ -579,16 +579,14 @@ main {
   background-position: center;
   background-size: contain;
   background-color: black;
-  padding: 15rem 0 0;
-  margin-bottom: 20px;
+  padding: 3rem 0 0;
+  margin-bottom: 30px;
   max-width: 30ch;
   border-radius: 1em;
   filter: drop-shadow(0px 0px 12px);
   overflow: hidden; /*solves bottom corners not rounding */
   transition: transform 500ms ease;
-  min-height: 560px;
   box-shadow: var(--shadow-elevation-medium-img);
-  min-height: 650px;
 }
 .animated__bg-image {
   max-width: 100%;
@@ -610,6 +608,7 @@ main {
     hsla(0, 0%, 0%, 0.3) 20%,
     hsla(0, 0%, 0%, 1)
   );
+  min-height: 500px;
 }
 .animated__card-title {
   position: relative;
@@ -657,7 +656,6 @@ main {
 }
 
 .speciesImg {
-  padding: 2px 6px 10px 4px;
   box-shadow: var(--shadow-elevation-medium-img);
 }
 .speciesMap {
@@ -885,10 +883,6 @@ section div.innerTab h3 {
   .card__text p {
     margin-bottom: 0.5rem;
   }
-  .animated__card {
-    padding: 10rem 0 0;
-    min-height: fit-content;
-  }
   .animated__bg-image {
     top: 50px;
   }
@@ -987,6 +981,7 @@ section div.innerTab h3 {
     max-width: 35%;
     margin-right: 10px;
   }
+
   .featureProject__title {
     font-size: var(--fs-700);
   }
@@ -1005,18 +1000,12 @@ section div.innerTab h3 {
   }
   .speciesCardWrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 340px));
     justify-content: center;
     align-items: stretch;
     grid-gap: 5px;
     margin: 10px;
   }
-  .speciesCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-  }
+
   .speciesSummary p {
     text-align: left;
     font-size: 1.5rem;
@@ -1027,6 +1016,27 @@ section div.innerTab h3 {
     text-align: left;
     font-size: 1.15rem;
     line-height: 1.5rem;
+  }
+.speciesCard {
+    max-width: 625px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  .speciesCardWrapper {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 600px));
+  }
+  .speciesImg {
+    width: 80%;
+  }
+  .speciesMap {
+    width: 70%;
+    padding: 2px 6px 10px 4px;
+  }
+  .speciesText,
+  .speciesText p {
+    width: 40ch;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1082,6 +1092,7 @@ section div.innerTab h3 {
     box-shadow: var(--shadow-elevation-medium);
   }
   .animated__card {
+    padding: 8rem 0 0;
     max-width: 28ch;
   }
   .speciesCard {
@@ -1096,7 +1107,6 @@ section div.innerTab h3 {
   }
   .speciesImg {
     width: 80%;
-    padding: 2px 6px 10px 4px;
   }
   .speciesMap {
     width: 70%;
@@ -1119,19 +1129,10 @@ section div.innerTab h3 {
   .card__text p {
     margin-bottom: 0.5rem;
   }
-  .animated__card {
-    padding: 10rem 0 0;
-    min-height: fit-content;
-  }
-  .animated__bg-image {
-    top: 50px;
-  }
 }
-
 @media (max-width: 499px) {
   .animated__card {
     padding: 1rem 0 0;
-    min-height: fit-content;
   }
   .animated__bg-image {
     top: 50px;
