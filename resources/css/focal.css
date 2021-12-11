@@ -1,162 +1,3 @@
-/**Base Setting**/
-html {
-  font-size: 16px;
-}
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-/**Header Styles Mobile First**/
-.headerMenuWrap,
-.footerMenuWrap {
-  background-color: #ef4430;
-  padding: 0.5rem 0.5rem;
-  min-height: 2.25rem;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  display: flex;
-  align-items: center;
-}
-
-.headerFirstItem,
-.headerFirstItem:visited,
-.headerFirstItem:hover {
-  font-family: 'Merriweather Sans', sans-serif;
-  color: black;
-  text-decoration: none;
-  font-size: 1rem;
-  margin-right: auto;
-  line-height: 1.25rem;
-}
-.headerListItem,
-.footerListItem {
-  color: white;
-  text-decoration: none;
-  font-family: 'Oswald', serif;
-  font-size: 0.75rem;
-  letter-spacing: 0.125rem;
-  padding: 0 1rem;
-}
-.headerListItem:last-of-type {
-  padding-right: 0.75rem;
-}
-.headerListItem:hover,
-.footerListItem:hover {
-  color: #3a9bc8;
-}
-.footerMenuWrap {
-  justify-content: center;
-}
-
-/**Content**/
-.pageMain {
-  padding: 0 5% 4rem 5%;
-  background-color: rgba(196, 106, 54, 0.356);
-  color: #4a4a4a;
-  min-height: 100vh;
-}
-.speciesMain {
-  padding: 0 5% 4rem 5%;
-  background-color: rgba(196, 106, 54, 0.356);
-  color: #4a4a4a;
-  min-height: 100vh;
-  text-align: center;
-}
-.sectionTitle {
-  padding: 2rem 0rem;
-}
-/** Typography **/
-/**additional fonts
-font-family: "Neuton", serif;
-font-family: "Oswald", sans-serif;
-**/
-h1 {
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 2.25rem;
-  padding: 1rem 2rem;
-  font-weight: 700;
-  color: black;
-}
-h2 {
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 2rem;
-  padding: 1rem 2rem;
-  font-weight: 700;
-  color: black;
-}
-h3 {
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.5rem;
-  padding: 1.5rem 2rem 0.5rem 2rem;
-  font-weight: 700;
-  color: black;
-}
-h4 {
-  font-family: 'Neutron', sans-serif;
-  font-size: 1.75rem;
-  padding: 1.5rem 2rem 0.5rem 2rem;
-  font-weight: 500;
-  color: black;
-}
-p {
-  font-weight: 400;
-  font-family: 'Neutron', serif;
-  font-size: 1.5rem;
-  padding: 0.75rem 1rem;
-  line-height: 2.5rem;
-  color: black;
-}
-/* ul {
-  font-weight: 400;
-  font-family: 'Neutron', serif;
-  font-size: 2rem;
-  padding: 1rem 1rem;
-  line-height: 2.5rem;
-  color: black;
-  list-style-type: disc;
-} */
-
-/* li {
-  font-weight: 300;
-  font-family: 'Neutron', serif;
-  font-size: 1.5rem;
-  padding: 1rem 1rem;
-  line-height: 2rem;
-  color: black;
-  text-align: left;
-} */
-.italic {
-  font-style: italic;
-}
-.speciesHeader {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  border: #4a4a4a 2px solid;
-  padding: 25px 15px;
-}
-.speciesImages img {
-  max-width: 300px;
-  height: auto;
-  filter: drop-shadow(5px 5px 5px #6e8387);
-}
-.speciesMain h1 {
-  font-size: 1.25rem;
-}
-.speciesMain h2 {
-  font-size: 1.25rem;
-}
-.speciesMain h4 {
-  font-size: 1.25rem;
-  text-decoration: underline;
-}
-.speciesSummary li,
-p,
-a {
-  font-size: 1.25rem;
-}
-
 .speciesSummary {
   width: 600px;
 }
@@ -173,10 +14,10 @@ a {
 }
 /** Map styles **/
 #map {
-  width: 300px;
+  width: 100%;
   height: 400px;
   margin: 15px 0px 0px 0px;
-  filter: drop-shadow(5px 5px 5px #6e8387);
+  box-shadow: var(--shadow-elevation-medium-img);
 }
 
 .mapH3 {
@@ -190,93 +31,7 @@ a {
 }
 
 /** Tab Styles **/
-.tabset > input {
-  display: block;
-  position: absolute;
-  left: -100%;
-}
-.tabset > ul {
-  position: relative;
-  z-index: 999;
-  list-style: none;
-  display: flex;
-  margin-bottom: -1px;
-}
-.tabset > ul label,
-.tabset > div {
-  border: 1px solid hsla(6, 85%, 56%, 0.5);
-}
-.tabset > ul label {
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.25rem;
-  display: inline-block;
-  padding: 1em 1em;
-  background: hsla(6, 85%, 70%, 0.5);
-  border-right-width: 0;
-}
-.tabset > ul li:first-child label {
-  border-radius: 0.5em 0 0 0;
-}
-.tabset > ul li:last-child label {
-  border-right-width: 1px;
-  border-radius: 0 0.5em 0 0;
-}
-.tabset > div {
-  position: relative;
-  background: hsla(220, 100%, 98%, 0.5);
-  border-radius: 0 0.5em 0.5em 0.5em;
-}
-.tabset > input:nth-child(1):focus ~ ul li:nth-child(1) label,
-.tabset > input:nth-child(2):focus ~ ul li:nth-child(2) label,
-.tabset > input:nth-child(3):focus ~ ul li:nth-child(3) label {
-  text-decoration: none;
-}
-.tabset > input:nth-child(1):checked ~ ul li:nth-child(1) label,
-.tabset > input:nth-child(2):checked ~ ul li:nth-child(2) label,
-.tabset > input:nth-child(3):checked ~ ul li:nth-child(3) label {
-  background: hsla(220, 100%, 98%, 0.5);
-  border-bottom-color: hsla(220, 100%, 98%, 0.5);
-}
-.tabset > div > section,
-.tabset > div > section h2 {
-  position: absolute;
-  top: -999em;
-  left: -999em;
-}
-.tabset > div > section {
-  padding: 1em 1em 0;
-}
-.tabset > input:nth-child(1):checked ~ div > section:nth-child(1),
-.tabset > input:nth-child(2):checked ~ div > section:nth-child(2),
-.tabset > input:nth-child(3):checked ~ div > section:nth-child(3) {
-  position: static;
-}
-.tabset > ul label {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-section div.innerTab {
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-}
-section div.innerTab h3 {
-  text-decoration: underline;
-}
-.innerTab a {
-  padding: 10px 55px;
-  text-decoration: none;
-}
 
-/**Footer style**/
-
-.pageFooter {
-  margin-top: auto;
-}
 
 /** Media queries **/
 @media only screen and (max-width: 560px) {
@@ -302,7 +57,7 @@ section div.innerTab h3 {
     height: 450px;
     margin: 15px 0px 0px 0px;
   }
-  .speciesMain h1 {
+  .in h1 {
     font-size: 1.75rem;
   }
   .speciesMain h2 {
@@ -361,24 +116,5 @@ section div.innerTab h3 {
   }
   .speciesMain h2 {
     font-size: 1.75rem;
-  }
-}
-@media only screen and (min-width: 1450px) {
-  .speciesImages img {
-    max-width: 100%;
-    height: 400px;
-  }
-  .speciesHeader {
-    flex-wrap: nowrap;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .photo {
-    width: 75%;
-  }
-}
-@media only screen and (min-width: 580px) {
-  .pageMain {
-    padding: 1rem 2% 1rem 2%;
   }
 }
