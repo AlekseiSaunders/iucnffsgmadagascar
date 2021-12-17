@@ -2,200 +2,165 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Madagascar Fishes - Ptychochromis insolitus</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<title>Madagascar Fishes - Ptychochromis insolitus</title>
 
-    <link href="../resources/css/reset.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="../resources/css/focal.css" rel="stylesheet" type="text/css" media="screen">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abel&family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;1,300&family=Neuton:wght@400;700&family=Oswald:wght@300;400;700&display=swap"
-        rel="stylesheet">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css' rel='stylesheet' />
-    <script src="https://kit.fontawesome.com/f5812fa2c6.js" crossorigin="anonymous"></script>
+	<link href="../resources/css/reset.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="../resources/css/focal.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="../resources/css/app.css" rel="stylesheet" type="text/css" media="screen">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;600&family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css' rel='stylesheet' />
+	<script src="https://kit.fontawesome.com/f5812fa2c6.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <header class="navHeader">
-        <nav class="headerMenuWrap">
-            <a class="headerFirstItem" href="../index.html">
-                Madagascar Fishes
-            </a>
-            <a class="headerListItem" href="../about.html"><span class="navIcon"><i
-                        class="fas fa-question"></i></span><span class="navName">About</span></a>
-            <a class="headerListItem" href="../projects.html"><span class="navIcon"><i
-                        class="fas fa-globe-africa fa-lg"></i></span><span class="navName">Projects</span></a>
-            <a class="headerListItem" href="../species.html"><span class="navIcon"><i
-                        class="fas fa-fish fa-lg"></i></span><span class="navName">Species</span></a>
-            <a class="headerListItem" href="../collaborators.html"><span class="navIcon"><i
-                        class="fas fa-users fa-lg"></i></span><span class="navName">Collaborators</span></a>
-        </nav>
-    </header>
-    <main class="speciesMain">
-        <h1>Ptychochromis insolitus</h1>
-        <div class="speciesHeader">
-            <div class="speciesImages"><img src="../resources/images/species/cichlidae/ptyInsolitus_1200.jpg"
-                    alt="Adult male Ptychochromis insolitus in captivity">
-            </div>
-            <div class="speciesMap">
-                <div id='map'></div>
-            </div>
-        </div>
-        <h2>Species Details</h2>
-        <div class="speciesDetails">
-            <div class="tabset">
-                <input type="radio" name="tabset_1" id="tabset_1_naturalHistory" hidden aria-hidden="true" checked>
-                <input type="radio" name="tabset_1" id="tabset_1_conservation" hidden aria-hidden="true">
-                <input type="radio" name="tabset_1" id="tabset_1_husbandry" hidden aria-hidden="true">
-                <ul hidden aria-hidden="true">
-                    <li><label for="tabset_1_naturalHistory">Natural History</label></li>
-                    <li><label for="tabset_1_conservation">Conservation</label></li>
-                    <li><label for="tabset_1_husbandry">Husbandry</label></li>
-                </ul>
-                <div>
-                    <section>
-                        <h2>Natural History</h2>
-                        <div class="innerTab">
-                            <h3>Collection Locations:</h3>
-                            <h4>Species Summary</h4>
-                            <ul>
-                                <h4>Collection Locations:</h4>
-                                <li>Type location - Northeastern Madagascar, Mahajanga Province, near town of
-                                    Mandritsara, Sofia
-                                    drainage basin, Amboaboa (Ambomboa) River.</li>
-                                <li>Location: -15.83 &#176;S, 48.71 &#176;E</li>
-                            </ul>
-                            <h4>Species Discussion</h4>
-                            <p>Described in <citation>Stiassny, M., and Sparks, J. S. (2006). Phylogeny and Taxonomic
-                                    Revision of
-                                    the Endemic Malagasy Genus Ptychochromis
-                                    (Teleostei: Cichlidae), with the Description of Five New Species and a Diagnosis for
-                                    Katria, New
-                                    Genus.</citation> - <a href="http://hdl.handle.net/2246/5813"
-                                    target="_blank">American Museum
-                                    novitates, no.
-                                    3535</a></p>
-                        </div>
-                    </section>
-                    <section>
-                        <h2>Conservation</h2>
-                        <div class="innerTab">
-                            <h3>Support the Conservation of this Species</h3>
-                            <p>Support of the conservation efforts around <span class="italic">Ptychochromis
-                                    insolitus</span> can be
-                                done:</p>
-                            <h3>Through Donation</h3>
-                            <p>By contacting the insitution of your choice linked below and ear-marking your donation.
-                            </p>
-                            <h3>Conservation Breeding</h3>
-                            <p>In Europe - depending on your resources and expertise, you may qualify for the Citizen
-                                Conservation
-                                Program through Cologne Zoo.</p>
-                            <p>In North America - you may be able to secure specimens through Below Water in Toronto
-                                (link below).</p>
-                            <h3>Paricipation Other Ways</h3>
-                            <p>Join the <a
-                                    href="https://www.facebook.com/groups/138780182853473/permalink/4507599769304804">Madagascar
-                                    Endangered Fishes Facebook Groop</a></p>
-                            <p>Donations of hard goods (nets, pumps, etc) is often prohibitively expensive due to
-                                freight and custom
-                                costs.</p>
-                            <h4>Conservation Efforts</h4>
-                            <p><span class="italic">Ptychochromis insolitus</span> is currently being pond bred by the
-                                Association
-                                des
-                                Producteurs Privés d'Alevins d'Andapa (APPA) with the support of:
-                            <ul>
-                                <li>
-                                    <a href="https://fishnetmadagascar.com/">Fish Net Madagascar </a>
-                                </li>
-                                <li>The European Union of Aquarium Curators <a href="https://www.euac.org/">(EUAC)</a>
-                                </li>
-                                <li>The American Cichlid Association <a href="https://cichlid.org/">(ACA)</a></li>
-                                <li><a href="https://www.torontozoo.com/">Toronto Zoo</a></li>
-                                <li>Zoological Society London<a href="https://www.zsl.org/">(ZSL)</a></li>
-                            </ul>
-                            </p>
-                            <p><span class="italic">Ex-situ</span> breeding populations also exist in Zoological
-                                institutions such
-                                as Toronto Zoo, ZSL, and <a href="https://www.koelnerzoo.de/en/home-en">Cologne Zoo.</a>
-                            </p>
-                            <p><span class="italic">Ptychochromis insolitus</span> is also becoming more available to
-                                enthusiasts
-                                through a Citizen Conservation Program in Europe and <a
-                                    href="https://www.facebook.com/belowwater">Below Water</a>
-                                in Canada.</p>
-                        </div>
-                    </section>
-                    <section>
-                        <h2>Husbandry</h2>
-                        <div class="innerTab">
-                            <p>This species has been kept in captivity both in North America and Europe/UK.</p>
-                            <div class="innerTab"></div>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </main>
+	<header class="navHeader">
+		<nav class="headerMenuWrap bg-black">
+			<a class="headerFirstItem uppercase" href="../index.html">
+				Madagascar Fishes
+			</a>
+			<a class="headerListItem" href="../about.html"><span class="navIcon"><i class="fas fa-question"></i></span><span
+					class="navName">About</span></a>
+			<a class="headerListItem" href="../projects.html"><span class="navIcon"><i
+						class="fas fa-globe-africa fa-lg"></i></span><span class="navName">Projects</span></a>
+			<a class="headerListItem" href="../species.html"><span class="navIcon"><i
+						class="fas fa-fish fa-lg"></i></span><span class="navName">Species</span></a>
+			<a class="headerListItem" href="../collaborators.html"><span class="navIcon"><i
+						class="fas fa-users fa-lg"></i></span><span class="navName">Collaborators</span></a>
+		</nav>
+	</header>
+	<main class="speciesMain">
+		<h1>Ptychochromis insolitus</h1>
+		<div class="speciesHeader">
+			<div class="speciesImages"><img src="../resources/images/species/cichlidae/ptyInsolitus_1200.jpg" alt="">
+			</div>
+			<div class="speciesMap">
+				<div id='map'></div>
+			</div>
+		</div>
+		<h2>Support the Conservation of this Species</h2>
+		<div class="supportBanner">
+			<p>Support of the conservation efforts around <span class="italic">Ptychochromis insolitus</span> can be
+				done:</p>
+			<h3>Through Donation</h3>
+			<p>By contacting the insitution of your choice linked below and ear-marking your donation. </p>
+			<h3>Conservation Breeding</h3>
+			<p>In Europe - depending on your resources and expertise, you may qualify for the Citizen Conservation Program
+				through Cologne Zoo.</p>
+			<p>In North America - you may be able to secure specimens through Below Water in Toronto (link below).</p>
+			<h3>Paricipation Other Ways</h3>
+			<p>Join the <a href="https://www.facebook.com/groups/138780182853473/permalink/4507599769304804">Madagascar
+					Endangered Fishes Facebook Groop</a></p>
+			<p>Donations of hard goods (nets, pumps, etc) is often prohibitively expensive due to freight and custom costs.
+			</p>
 
-    <footer class="pageFooter">
-        <nav class="footerMenuWrap">
-            <a class="footerListItem"
-                href="https://us5.list-manage.com/contact-form?u=3b42d6e2447bdae5dbad626f7&form_id=9fc62a01312406dd4f2089c3fb9eaeeb"><span
-                    class="navIcon"><i class="far fa-envelope fa-lg"></i></span><span class="navName">Contact
-                    Us</span></a>
-            <a class="footerListItem" href="../index.html"><span class="navIcon"><i
-                        class="fas fa-sitemap fa-lg"></i></span><span class="navName">Site Map</span></a>
-            <a class="footerListItem" href="../index.html"><span class="navIcon"><i
-                        class="fas fa-user-shield fa-lg"></i></span><span class="navName">Our Privacy Policy</span></a>
-            <a class="footerListItem" href="../index.html"><span class="navIcon"><i
-                        class="far fa-copyright fa-lg"></i></span><span class="navName">© Madagascar Fishes
-                    2021</span></a>
-        </nav>
-    </footer>
-    <script src="../script/master.js" type="text/javascript"></script>
-    <script>
-        // The value for 'accessToken' begins with 'pk...'
-        mapboxgl.accessToken = 'pk.eyJ1IjoiYWxla3NlaXNhdW5kZXJzIiwiYSI6ImNrc2RpMWxsZzBxd3oydG5ydG90c2c0M3MifQ.LL8KNLTtfteetRUvIJxt1Q';
-        var map = new mapboxgl.Map({
-            container: 'map',
-            // Replace YOUR_STYLE_URL with your style URL.
-            style: 'mapbox://styles/mapbox/satellite-streets-v11',
-            center: [48.71416666666667, -15.8336111],
-            zoom: 6
-        });
+		</div>
+		<h2>Species Details</h2>
+		<div class="speciesDetails">
+
+			<div class="speciesSummary">
+				<h4>Species Summary</h4>
+				<ul>
+					<h4>Collection Locations:</h4>
+					<li>Type location - Northeastern Madagascar, Mahajanga Province, near town of Mandritsara, Sofia
+						drainage basin, Amboaboa (Ambomboa) River.</li>
+					<li>Location: -15.83 &#176;S, 48.71 &#176;E</li>
+				</ul>
+				<h4>Species Discussion</h4>
+				<p>Described in <citation>Stiassny, M., and Sparks, J. S. (2006). Phylogeny and Taxonomic Revision of
+						the Endemic Malagasy Genus Ptychochromis
+						(Teleostei: Cichlidae), with the Description of Five New Species and a Diagnosis for Katria, New
+						Genus.</citation> - <a href="http://hdl.handle.net/2246/5813" target="_blank">American Museum
+						novitates, no.
+						3535</a></p>
+
+			</div>
+			<div class="speciesDiscussion">
+				<h4>Conservation Efforts</h4>
+				<p><span class="italic">Ptychochromis insolitus</span> is currently being pond bred by the Association
+					des
+					Producteurs Privés d'Alevins d'Andapa (APPA) with the support of:
+				<ul>
+					<li>
+						<a href="https://fishnetmadagascar.com/">Fish Net Madagascar </a>
+					</li>
+					<li>The European Union of Aquarium Curators <a href="https://www.euac.org/">(EUAC)</a></li>
+					<li>The American Cichlid Association <a href="https://cichlid.org/">(ACA)</a></li>
+					<li><a href="https://www.torontozoo.com/">Toronto Zoo</a></li>
+					<li>Zoological Society London<a href="https://www.zsl.org/">(ZSL)</a></li>
+				</ul>
+				</p>
+				<p><span class="italic">Ex-situ</span> breeding populations also exist in Zoological institutions such
+					as Toronto Zoo, ZSL, and <a href="https://www.koelnerzoo.de/en/home-en">Cologne Zoo.</a></p>
+				<p><span class="italic">Ptychochromis insolitus</span> is also becoming more available to enthusiasts
+					through a Citizen Conservation Program in Europe and <a href="https://www.facebook.com/belowwater">Below
+						Water</a> in Canada.</p>
+			</div>
+		</div>
+	</main>
+	<footer class="pageFooter">
+		<nav class="footerMenuWrap bg-black">
+			<a class="footerListItem text-accent ff-sans-headings fs-400"
+				href="https://us5.list-manage.com/contact-form?u=3b42d6e2447bdae5dbad626f7&form_id=9fc62a01312406dd4f2089c3fb9eaeeb"
+				target="_blank"><span class="navIcon"><i class="far fa-envelope fa-lg"></i></span><span class="navName">Contact
+					Us</span></a>
+			<a class="footerListItem text-white ff-sans-normal fs-400" href="../index.html"><span class="navIcon"><i
+						class="fas fa-sitemap fa-lg"></i></span><span class="navName">Site Map</span></a>
+			<a class="footerListItem text-white ff-sans-normal fs-400" href="../index.html"><span class="navIcon"><i
+						class="fas fa-user-shield fa-lg"></i></span><span class="navName">Our Privacy Policy</span></a>
+			<a class="footerListItem text-white ff-sans-normal fs-400" href="../index.html"><span class="navIcon"><i
+						class="far fa-copyright fa-lg"></i></span><span class="navName">© Madagascar Fishes
+					2021</span></a>
+		</nav>
+	</footer>
+	<script src="../script/master.js" type="text/javascript"></script>
+	<script>
+		// The value for 'accessToken' begins with 'pk...'
+		mapboxgl.accessToken = 'pk.eyJ1IjoiYWxla3NlaXNhdW5kZXJzIiwiYSI6ImNrc2RpMWxsZzBxd3oydG5ydG90c2c0M3MifQ.LL8KNLTtfteetRUvIJxt1Q';
+		var map = new mapboxgl.Map({
+			container: 'map',
+			// Replace YOUR_STYLE_URL with your style URL.
+			style: 'mapbox://styles/mapbox/satellite-streets-v11',
+			center: [48.71416666666667, -15.8336111],
+			zoom: 6
+		});
 
 
-        map.addControl(new mapboxgl.NavigationControl());
-        map.scrollZoom.disable();
-        // Code from the next step will go here.
-        /*
-        Add an event listener that runs
-          when a user clicks on the map element.
-        */
+		map.addControl(new mapboxgl.NavigationControl());
+		map.scrollZoom.disable();
+		// Code from the next step will go here.
+		/*
+		Add an event listener that runs
+			when a user clicks on the map element.
+		*/
 
 
-        // Code from the next step will go here.
-        /*
-  
-            Create a popup, specify its options
-            and properties, and add it to the map.
-          */
-        const popup = new mapboxgl.Popup({ offset: [0, -15] }).setText(
-            'Type Locale for Ptychochromis insolitus - Stiassny, M., and Sparks, J. S. (2006)'
-        );
+		// Code from the next step will go here.
+		/*
+ 
+				Create a popup, specify its options
+				and properties, and add it to the map.
+			*/
+		const popup = new mapboxgl.Popup({ offset: [0, -15] }).setText(
+			'Type Locale for Ptychochromis insolitus - Stiassny, M., and Sparks, J. S. (2006)'
+		);
 
-        const el = document.createElement('div');
-        el.id = 'marker';
+		const el = document.createElement('div');
+		el.id = 'marker';
 
-        const typeLocaleMarker = new mapboxgl.Marker()
-            .setLngLat([48.71416666666667, -15.8336111])
-            .setPopup(popup)
-            .addTo(map);
-    </script>
+		const typeLocaleMarker = new mapboxgl.Marker()
+			.setLngLat([48.71416666666667, -15.8336111])
+			.setPopup(popup)
+			.addTo(map);
+	</script>
 </body>
 
 </html>
