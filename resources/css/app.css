@@ -832,7 +832,7 @@ section div.innerTab h3 {
   }
 }
 @media (hover: none) {
-  picture {
+  .animated__bg-image {
     display: none;
   }
 }
