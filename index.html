@@ -40,16 +40,20 @@
 				in Madagascar</h1>
 			<p class="actionCall text-white ff-sans-body">We are going to <span class="focus__text">change</span> that</p>
 			<picture class="bg-image">
-				<source media="(max-width: 499px)" srcset="./resources/images/miscUse/heroImages/bedotiaHero_600.jpg">
-				<source media="(min-width: 500px)" srcset="./resources/images/miscUse/heroImages/bedotiaHeroCrop_1200.jpg">
-				<source media="(min-width: 1200px)" srcset="./resources/images/miscUse/heroImages/bedotiaHeroCrop_2400.webp">
+				<source type="image/webp" media="(max-width: 499px)"
+					srcset="./resources/images/miscUse/heroImages/bedotiaHero_600.webp">
+				<source type="image/webp" media="(min-width: 500px)"
+					srcset="./resources/images/miscUse/heroImages/bedotiaHeroCrop_1200.webp">
 				<img src="./resources/images/miscUse/heroImages/bedotiaHeroCrop_1200.jpg" alt="A Bedotia marojejy male">
 			</picture>
 		</div>
 		<section class="container ff-serif">
 			<div class="card__container flex column">
-				<div class="card__img"><img src="./resources/images/habitatPostHero_1200.jpg"
-						alt="A small river flows through forest cover, southeast Madagascar"></div>
+				<picture class="card__img">
+					<source type="image/webp" srcset="./resources/images/habitatPostHero_600.webp">
+					<img src="./resources/images/habitatPostHero_1200.jpg"
+						alt="A small river flows through forest cover, southeast Madagascar">
+				</picture>
 				<div class="card__text">
 					<p>
 						The Madagascar Fishes website
@@ -60,8 +64,10 @@
 				</div>
 			</div>
 			<div class="card__container flex column">
-				<div class="card__img"><img src="./resources/images/groupPostHero_1200.jpg"
-						alt="A group of citizens, scientists, and students"></div>
+				<picture class="card__img">
+					<source type="image/webp" srcset="./resources/images/groupPostHero_600.webp">
+					<img src="./resources/images/groupPostHero_1200.jpg" alt="A group of citizens, scientists, and students">
+				</picture>
 				<div class="card__text">
 					<p>
 						As a group we are working together to secure a future in
