@@ -715,6 +715,10 @@ main {
   font-size: 1rem;
   line-height: normal;
 }
+.copyImg {
+  max-width: 100%;
+  width: 300px;
+}
 /* Tab Styles */
 section {
   font-family: var(--ff-sans-body);
