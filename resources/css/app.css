@@ -688,6 +688,9 @@ main {
   line-height: 1.1rem;
   padding-top: 10px;
 }
+.speciesCardTitle {
+  font-size: var(--fs-600);
+}
 .speciesText,
 .speciesText p {
   font-family: var(--ff-sans-body);
@@ -697,6 +700,11 @@ main {
 }
 .speciesText p:first-of-type {
   padding-top: 2em;
+}
+.speciesCardLink {
+  color: hsl(var(--clr-accent-400));
+  text-decoration: none;
+  cursor: pointer;
 }
 /** Map styles **/
 #map {
