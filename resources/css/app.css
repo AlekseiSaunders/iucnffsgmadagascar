@@ -706,6 +706,78 @@ main {
   text-decoration: none;
   cursor: pointer;
 }
+details {
+  margin: 2rem ;
+  width: 75%;
+}
+details p {
+  padding: 0.5rem 3rem;
+  margin-bottom: 0;
+  line-height: 2;
+  font-size: 1rem;
+  text-align: left;
+}
+details[open] summary {
+  color: red;
+  transition: all 300ms ease;
+}
+details[open] p {
+  -webkit-animation: openDetail 400ms ease;
+  animation: openDetail 400ms ease;
+  background: #f9f9f9;
+}
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+@-webkit-keyframes openDetail {
+  0% {
+    opacity: 0;
+    background: white;
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(3%);
+  }
+  100% {
+    opacity: 1;
+    background: #f9f9f9;
+    transform: translateY(0%);
+  }
+}
+@keyframes openDetail {
+  0% {
+    opacity: 0;
+    background: white;
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(3%);
+  }
+  100% {
+    opacity: 1;
+    background: #f9f9f9;
+    transform: translateY(0%);
+  }
+}
+summary {
+  font-size: var(--fs-400);
+  display: block;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::before {
+  display: inline-block;
+  content: '\203A';
+  margin-right: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 300ms ease;
+}
+summary:hover {
+  cursor: pointer;
+}
+
 /** Map styles **/
 #map {
   width: 100%;
