@@ -93,6 +93,7 @@ select {
   --clr-card-donate-hover: 210, 90%, 55%;
   --clr-grey-dark: 0, 0%, 29%;
   --clr-hover: 190, 60%, 51%;
+  --clr-hover-pageMain: 197, 100%, 25%;
   --clr-blue-grey: 210, 14%, 53%;
   --clr-card-body: 48, 87%, 65%;
   --clr-brown-grey: 18, 4%, 50%;
@@ -382,6 +383,32 @@ body {
 
 main {
   position: relative;
+}
+
+.styledLinks {
+  text-decoration: none;
+  color: hsl(var(--clr-accent-600));
+  background: linear-gradient(
+      to right,
+      hsl(var(--clr-accent-600)) 0%,
+      hsl(var(--clr-accent-600)) 100%
+    ),
+    linear-gradient(
+      to right,
+      hsl(var(--clr-hover-pageMain), 0.4) 0%,
+      hsl(var(--clr-hover-pageMain), 0.6) 50%,
+      hsl(var(--clr-hover-pageMain), 1) 100%
+    );
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.styledLinks:hover,
+.styledLinks:focus {
+  color: hsl(var(--clr-hover-pageMain));
+  background-size: 0 0.1em, 100% 0.1em;
 }
 .headerMenuWrap,
 .footerMenuWrap {
@@ -707,7 +734,7 @@ main {
   cursor: pointer;
 }
 details {
-  margin: 2rem ;
+  margin: 2rem;
   width: 75%;
 }
 details p {
