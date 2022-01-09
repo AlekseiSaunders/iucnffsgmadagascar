@@ -219,6 +219,10 @@ select {
   flex-direction: column;
   align-items: center;
 }
+.inlineBlock {
+  display: inline-block;
+  margin-bottom: 0;
+}
 .sr-only {
   /*Screen Reader Only for Acessibility Improvements */
   position: absolute;
