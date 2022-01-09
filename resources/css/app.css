@@ -613,6 +613,7 @@ main {
   padding: 3rem 0 0;
   margin-bottom: 30px;
   max-width: 30ch;
+  min-width: fit-content;
   border-radius: 1em;
   filter: drop-shadow(0px 0px 12px);
   overflow: hidden; /*solves bottom corners not rounding */
@@ -644,7 +645,7 @@ main {
 .animated__card-title {
   position: relative;
   width: max-content;
-  font-size: var(--fs-600);
+  font-size: var(--fs-500);
 }
 .animated__card-title::after {
   content: '';
