@@ -390,8 +390,8 @@ main {
   color: hsl(var(--clr-accent-600));
   background: linear-gradient(
       to right,
-      hsl(var(--clr-accent-600)) 0%,
-      hsl(var(--clr-accent-600)) 100%
+      hsl(var(--clr-white)),
+      hsl(var(--clr-white))
     ),
     linear-gradient(
       to right,
