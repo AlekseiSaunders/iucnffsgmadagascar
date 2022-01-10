@@ -801,10 +801,17 @@ summary::-webkit-details-marker {
 summary::before {
   display: inline-block;
   content: '\203A';
-  margin-right: 0.5rem;
+  margin-right: 0.75rem;
   font-weight: bold;
   font-size: 1rem;
   transition: all 300ms ease;
+  padding: 0 1rem;
+  padding-bottom: 0.3rem;
+  background-color: hsl(var(--clr-hover));
+  border-radius: 30%;
+}
+summary::before:hover {
+  background-color: hsl(var(--clr-hover-pageMain));
 }
 summary:hover {
   cursor: pointer;
