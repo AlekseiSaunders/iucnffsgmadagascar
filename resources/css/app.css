@@ -318,6 +318,11 @@ main {
   position: relative;
 }
 
+.pageMain {
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 /* Header & Footer */
 
 .headerMenuWrap,
@@ -357,6 +362,19 @@ main {
   justify-content: center;
 }
 
+/*------------*/
+/*   Links    */
+/*------------*/
+
+/* Basic Link Style */
+
+.currentLink,
+.currentLink:hover {
+  color: hsl(var(--clr-hover));
+  border-bottom: solid 2px;
+  transform: translate(0, 2px);
+}
+
 /* Animated links for specialized use */
 .styledLinks {
   text-decoration: none;
@@ -383,19 +401,62 @@ main {
   color: hsl(var(--clr-hover-pageMain));
   background-size: 0 0.1em, 100% 0.1em;
 }
-/* Basic Link Style */
 
-.currentLink,
-.currentLink:hover {
+/* Button Like Links */
+
+.btnLike {
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--ff-sans-body);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-600);
+  text-transform: uppercase;
+  text-align: center;
+  color: hsl(var(--clr-text-white));
+  background-color: hsl(var(--clr-card-btn));
+  padding: 0.5em 1.75em;
+  border-radius: 60px;
+  box-shadow: var(--shadow-elevation-medium);
+}
+.btnLike:hover,
+.btnLike:focus {
+  color: hsl(var(--clr-text-black));
+  background-color: hsl(var(--clr-card-btn-hover));
+}
+
+.btnLike-donate {
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--ff-sans-headings);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  color: hsl(var(--clr-text-black));
+  background-color: hsl(var(--clr-card-donate-btn));
+  padding: 0.5em 1.75em;
+  border-radius: 60px;
+  box-shadow: var(--shadow-elevation-medium-donate);
+}
+.btnLike-donate:hover,
+.btnLike-donate:focus {
+  font-weight: 700;
+  color: hsl(var(--clr-text-white));
+  background-color: hsl(var(--clr-card-donate-hover));
+}
+
+/* Currently limited use - refactor below */
+.linkSpan {
+  text-decoration: none;
+  color: hsl(var(--clr-accent-400));
+}
+
+.linkSpan:hover,
+.link:focus {
   color: hsl(var(--clr-hover));
-  border-bottom: solid 2px;
-  transform: translate(0, 2px);
 }
+/* Currently limited use - refactor above */
 
-.pageMain {
-  min-height: 100vh;
-  flex-direction: column;
-}
+/* Hero image section */
 .hero {
   position: relative;
   flex-direction: column;
@@ -423,18 +484,19 @@ main {
   line-height: 1.4rem;
   margin-bottom: 0;
 }
-.hero h1 {
-  margin-top: 0;
-}
+
 .focus__text {
   font-family: var(--ff-sans-headings);
   font-style: italic;
   color: hsl(var(--clr-accent-400));
   font-weight: 700;
 }
+/* test for removal below */
 .outline {
   outline: 1px solid hsl(var(--clr-black));
 }
+/* test for removal above */
+
 .card__container {
   font-size: var(--fs-300);
   padding: 30px 20px;
@@ -445,25 +507,7 @@ main {
 .card__img {
   box-shadow: var(--shadow-elevation-medium-img);
 }
-.btnLike {
-  display: inline-block;
-  text-decoration: none;
-  font-family: var(--ff-sans-body);
-  font-size: var(--fs-400);
-  font-weight: var(--fw-600);
-  text-transform: uppercase;
-  text-align: center;
-  color: hsl(var(--clr-text-white));
-  background-color: hsl(var(--clr-card-btn));
-  padding: 0.5em 1.75em;
-  border-radius: 60px;
-  box-shadow: var(--shadow-elevation-medium);
-}
-.btnLike:hover,
-.btnLike:focus {
-  color: hsl(var(--clr-text-black));
-  background-color: hsl(var(--clr-card-btn-hover));
-}
+
 .featureProject__container {
   padding: 30px 20px;
   outline: 3px solid hsl(var(--clr-text-black));
@@ -507,34 +551,7 @@ main {
   font-weight: var(--fw-700);
   margin-top: 0.5em;
 }
-.linkSpan {
-  text-decoration: none;
-  color: hsl(var(--clr-accent-400));
-}
 
-.linkSpan:hover,
-.link:focus {
-  color: hsl(var(--clr-hover));
-}
-.btnLike-donate {
-  display: inline-block;
-  text-decoration: none;
-  font-family: var(--ff-sans-headings);
-  font-size: var(--fs-400);
-  font-weight: var(--fw-700);
-  text-transform: uppercase;
-  color: hsl(var(--clr-text-black));
-  background-color: hsl(var(--clr-card-donate-btn));
-  padding: 0.5em 1.75em;
-  border-radius: 60px;
-  box-shadow: var(--shadow-elevation-medium-donate);
-}
-.btnLike-donate:hover,
-.btnLike-donate:focus {
-  font-weight: 700;
-  color: hsl(var(--clr-text-white));
-  background-color: hsl(var(--clr-card-donate-hover));
-}
 /* Animated Cards */
 .equalize {
   justify-content: center;
