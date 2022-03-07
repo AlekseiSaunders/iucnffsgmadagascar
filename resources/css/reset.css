@@ -54,13 +54,6 @@ table {
   border-spacing: 0;
 }
 
-/*---Make Images Easier To Work With---*/
-img,
-picture {
-  width: 100%; /*Helps with responsive image resizing */
-  display: block; /*Eliminates some white space issues */
-}
-
 /*---Make Forms Easier To Work With---*/
 input,
 button,
@@ -138,6 +131,7 @@ video,
 canvas,
 svg {
   display: block;
+  width: 100%;
   max-width: 100%;
 }
 /*

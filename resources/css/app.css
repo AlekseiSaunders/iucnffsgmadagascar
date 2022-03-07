@@ -247,7 +247,10 @@
 .letter-spacing-3 {
   letter-spacing: 1px;
 }
+/*------------*/
 /* Typography */
+/*------------*/
+
 h1,
 h2,
 h3,
@@ -302,12 +305,11 @@ p,
 a {
   font-size: 1.25rem;
 }
+
 /*--------------*/
 /* Styling      */
 /*--------------*/
 body {
-  min-height: 100vh;
-  flex-direction: column;
   line-height: var(--lh-p);
   --gap: 0px;
 }
@@ -316,31 +318,8 @@ main {
   position: relative;
 }
 
-.styledLinks {
-  text-decoration: none;
-  color: hsl(var(--clr-accent-600));
-  background: linear-gradient(
-      to right,
-      hsl(var(--clr-white)),
-      hsl(var(--clr-white))
-    ),
-    linear-gradient(
-      to right,
-      hsl(var(--clr-hover-pageMain), 0.4) 0%,
-      hsl(var(--clr-hover-pageMain), 0.6) 50%,
-      hsl(var(--clr-hover-pageMain), 1) 100%
-    );
-  background-size: 100% 0.1em, 0 0.1em;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
-}
+/* Header & Footer */
 
-.styledLinks:hover,
-.styledLinks:focus {
-  color: hsl(var(--clr-hover-pageMain));
-  background-size: 0 0.1em, 100% 0.1em;
-}
 .headerMenuWrap,
 .footerMenuWrap {
   padding: 10px 10px;
@@ -377,12 +356,42 @@ main {
 .footerMenuWrap {
   justify-content: center;
 }
+
+/* Animated links for specialized use */
+.styledLinks {
+  text-decoration: none;
+  color: hsl(var(--clr-accent-600));
+  background: linear-gradient(
+      to right,
+      hsl(var(--clr-white)),
+      hsl(var(--clr-white))
+    ),
+    linear-gradient(
+      to right,
+      hsl(var(--clr-hover-pageMain), 0.4) 0%,
+      hsl(var(--clr-hover-pageMain), 0.6) 50%,
+      hsl(var(--clr-hover-pageMain), 1) 100%
+    );
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.styledLinks:hover,
+.styledLinks:focus {
+  color: hsl(var(--clr-hover-pageMain));
+  background-size: 0 0.1em, 100% 0.1em;
+}
+/* Basic Link Style */
+
 .currentLink,
 .currentLink:hover {
   color: hsl(var(--clr-hover));
   border-bottom: solid 2px;
   transform: translate(0, 2px);
 }
+
 .pageMain {
   min-height: 100vh;
   flex-direction: column;
