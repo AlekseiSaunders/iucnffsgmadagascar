@@ -305,6 +305,19 @@ p,
 a {
   font-size: 1.25rem;
 }
+/*- Feather Icons -*/
+
+.feather {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  display: inline-block;
+  padding-left: 5px;
+}
 
 /*--------------*/
 /* Styling      */
@@ -585,6 +598,11 @@ main {
 .animated__card:focus-within {
   transform: scale(1.05);
 }
+.animated__card:hover.inactive,
+.animated__card:focus-within.inactive {
+  transform: scale(1.05);
+  filter: grayscale(90%);
+}
 .animated__card-content {
   --padding: 1.5rem;
   padding: var(--padding);
@@ -597,8 +615,9 @@ main {
 }
 .animated__card-title {
   position: relative;
-  width: max-content;
+  /* width: max-content; */
   font-size: var(--fs-500);
+  overflow-wrap: break-word;
 }
 .animated__card-title::after {
   content: '';
@@ -920,6 +939,7 @@ section div.innerTab h3 {
   background-color: hsl(var(--clr-card-btn));
   padding: 0.5em 1.25em;
   border-radius: 0.25em;
+  font-size: 1rem;
 }
 
 .animated__btnLike:hover,
