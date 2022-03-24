@@ -1026,7 +1026,7 @@ section div.innerTab h3 {
     flex-grow: 1;
     display: inline;
     aspect-ratio: 1;
-    max-width: 75vw;
+    max-width: 70vw;
     margin-bottom: 30px;
     align-self: flex-start;
   }
@@ -1039,6 +1039,9 @@ section div.innerTab h3 {
     width: 450px;
     height: 450px;
     margin: 15px 0px 0px 0px;
+  }
+  .animated__bg-image {
+    top: 50px;
   }
 }
 @media only screen and (min-width: 800px) {
